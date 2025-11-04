@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="206" height="192" viewBox="0 0 206 192">
+    <defs>
+        <linearGradient id="linear-gradient" x2=".694" y1=".01" y2=".657" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#97df79"/>
+            <stop offset="1" stop-color="#7bce76"/>
+        </linearGradient>
+        <clipPath id="clip-path">
+            <rect id="Rectangle_170" width="170" height="156" class="cls-1" rx="8" transform="translate(9677 3307)"/>
+        </clipPath>
+        <filter id="Rectangle_169" width="206" height="192" x="0" y="0" filterUnits="userSpaceOnUse">
+            <feOffset/>
+            <feGaussianBlur result="blur" stdDeviation="6"/>
+            <feFlood flood-opacity=".161"/>
+            <feComposite in2="blur" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <style>
+            .cls-1,.cls-7{fill:#fff}.cls-7{opacity:.07}
+        </style>
+    </defs>
+    <g id="Group_364" transform="translate(-9978 -3089)">
+        <g filter="url(#Rectangle_169)" transform="translate(9978 3089)">
+            <path id="Rectangle_169-2" fill="url(#linear-gradient)" d="M8 0h162v156H8a8 8 0 0 1-8-8V8a8 8 0 0 1 8-8z" transform="translate(18 18)"/>
+        </g>
+        <g id="Mask_Group_8" clip-path="url(#clip-path)" transform="translate(319 -200)">
+            <g id="Group_360" transform="translate(-331 -21)">
+                <g id="Group_293" opacity="0.11" transform="translate(9998.143 3372.159)">
+                    <path id="Path_368" d="M2578.484-561.924a29.957 29.957 0 0 1-7.131 19.427 21.473 21.473 0 0 1-5.6-3.8 23.27 23.27 0 0 0 6.01-15.625 23.27 23.27 0 0 0-6.01-15.625q-.645-.713-1.345-1.374a23.345 23.345 0 0 0-5.606-3.913c-.605-.3-1.225-.581-1.859-.829a23.226 23.226 0 0 0-8.536-1.617 23.383 23.383 0 0 0-23.357 23.357 23.383 23.383 0 0 0 23.357 23.356 23.227 23.227 0 0 0 8.536-1.616 32.257 32.257 0 0 0 5.606 4.8 29.881 29.881 0 0 1-14.143 3.538 30.115 30.115 0 0 1-30.082-30.082 30.115 30.115 0 0 1 30.082-30.082 29.88 29.88 0 0 1 14.143 3.538q.951.508 1.859 1.081a30.269 30.269 0 0 1 5.606 4.552q.7.721 1.343 1.484a29.957 29.957 0 0 1 7.127 19.43z" class="cls-1" transform="translate(-2518.32 592.006)"/>
+                    <path id="Path_369" d="M3588.763-561.924a30.115 30.115 0 0 1-30.082 30.082 29.882 29.882 0 0 1-14.143-3.538q-.951-.508-1.859-1.081a30.283 30.283 0 0 1-5.606-4.552c-.463-.48-.913-.975-1.343-1.484a29.957 29.957 0 0 1-7.131-19.427 29.957 29.957 0 0 1 7.131-19.427 21.471 21.471 0 0 1 5.6 3.8 23.271 23.271 0 0 0-6.01 15.625 23.271 23.271 0 0 0 6.01 15.625q.645.713 1.345 1.374a23.343 23.343 0 0 0 5.606 3.913c.605.3 1.225.581 1.859.829a23.228 23.228 0 0 0 8.537 1.616 23.382 23.382 0 0 0 23.356-23.356 23.382 23.382 0 0 0-23.356-23.357 23.227 23.227 0 0 0-8.537 1.617 32.257 32.257 0 0 0-5.606-4.8 29.881 29.881 0 0 1 14.143-3.538 30.115 30.115 0 0 1 30.086 30.079z" class="cls-1" transform="translate(-3496.596 592.006)"/>
+                </g>
+                <circle id="Ellipse_33" cx="5" cy="5" r="5" fill="#fff" opacity="0.51" transform="translate(10134 3348)"/>
+                <circle id="Ellipse_36" cx="4.5" cy="4.5" r="4.5" fill="#fff" opacity="0.17" transform="translate(10042 3434)"/>
+                <ellipse id="Ellipse_34" cx="11.5" cy="11" class="cls-7" rx="11.5" ry="11" transform="translate(10059 3445)"/>
+                <ellipse id="Ellipse_35" cx="11.5" cy="12" class="cls-7" rx="11.5" ry="12" transform="translate(10067 3370)"/>
+                <path id="Path_370" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="12px" d="M-8396.463-990v68.756" opacity="0.19" transform="translate(18523.217 4439.118)"/>
+                <path id="Path_371" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="12px" d="M-8396.463-990v68.756" opacity="0.1" transform="translate(18542.652 4415.179)"/>
+            </g>
+        </g>
+    </g>
+</svg>

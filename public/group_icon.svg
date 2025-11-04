@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="170" height="156" viewBox="0 0 170 156">
+  <defs>
+    <linearGradient id="linear-gradient" y1="0.01" x2="0.694" y2="0.657" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#97df79"/>
+      <stop offset="1" stop-color="#7bce76"/>
+    </linearGradient>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_170" data-name="Rectangle 170" width="170" height="156" rx="8" transform="translate(9677 3307)" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="Group_617" data-name="Group 617" transform="translate(-22797 3459)">
+    <path id="Rectangle_169" data-name="Rectangle 169" d="M8,0H170a0,0,0,0,1,0,0V156a0,0,0,0,1,0,0H8a8,8,0,0,1-8-8V8A8,8,0,0,1,8,0Z" transform="translate(22797 -3459)" fill="url(#linear-gradient)"/>
+    <g id="Mask_Group_8" data-name="Mask Group 8" transform="translate(13120 -6766)" clip-path="url(#clip-path)">
+      <g id="Group_360" data-name="Group 360" transform="translate(-331 -21)">
+        <g id="Group_293" data-name="Group 293" transform="translate(9998.143 3372.159)" opacity="0.11">
+          <path id="Path_368" data-name="Path 368" d="M2578.484-561.924a29.957,29.957,0,0,1-7.131,19.427,21.473,21.473,0,0,1-5.6-3.8,23.27,23.27,0,0,0,6.01-15.625,23.27,23.27,0,0,0-6.01-15.625q-.645-.713-1.345-1.374a23.345,23.345,0,0,0-5.606-3.913c-.605-.3-1.225-.581-1.859-.829a23.226,23.226,0,0,0-8.536-1.617,23.383,23.383,0,0,0-23.357,23.357,23.383,23.383,0,0,0,23.357,23.356,23.227,23.227,0,0,0,8.536-1.616,32.257,32.257,0,0,0,5.606,4.8,29.881,29.881,0,0,1-14.143,3.538,30.115,30.115,0,0,1-30.082-30.082,30.115,30.115,0,0,1,30.082-30.082,29.88,29.88,0,0,1,14.143,3.538q.951.508,1.859,1.081a30.269,30.269,0,0,1,5.606,4.552q.7.721,1.343,1.484A29.957,29.957,0,0,1,2578.484-561.924Z" transform="translate(-2518.32 592.006)" fill="#fff"/>
+          <path id="Path_369" data-name="Path 369" d="M3588.763-561.924a30.115,30.115,0,0,1-30.082,30.082,29.882,29.882,0,0,1-14.143-3.538q-.951-.508-1.859-1.081a30.283,30.283,0,0,1-5.606-4.552c-.463-.48-.913-.975-1.343-1.484a29.957,29.957,0,0,1-7.131-19.427,29.957,29.957,0,0,1,7.131-19.427,21.471,21.471,0,0,1,5.6,3.8,23.271,23.271,0,0,0-6.01,15.625,23.271,23.271,0,0,0,6.01,15.625q.645.713,1.345,1.374a23.343,23.343,0,0,0,5.606,3.913c.605.3,1.225.581,1.859.829a23.228,23.228,0,0,0,8.537,1.616,23.382,23.382,0,0,0,23.356-23.356,23.382,23.382,0,0,0-23.356-23.357,23.227,23.227,0,0,0-8.537,1.617,32.257,32.257,0,0,0-5.606-4.8,29.881,29.881,0,0,1,14.143-3.538A30.115,30.115,0,0,1,3588.763-561.924Z" transform="translate(-3496.596 592.006)" fill="#fff"/>
+        </g>
+        <circle id="Ellipse_33" data-name="Ellipse 33" cx="5" cy="5" r="5" transform="translate(10134 3348)" fill="#fff" opacity="0.51"/>
+        <circle id="Ellipse_36" data-name="Ellipse 36" cx="4.5" cy="4.5" r="4.5" transform="translate(10042 3434)" fill="#fff" opacity="0.17"/>
+        <ellipse id="Ellipse_34" data-name="Ellipse 34" cx="11.5" cy="11" rx="11.5" ry="11" transform="translate(10059 3445)" fill="#fff" opacity="0.07"/>
+        <ellipse id="Ellipse_35" data-name="Ellipse 35" cx="11.5" cy="12" rx="11.5" ry="12" transform="translate(10067 3370)" fill="#fff" opacity="0.07"/>
+        <path id="Path_370" data-name="Path 370" d="M-8396.463-990v68.756" transform="translate(18523.217 4439.118)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="12" opacity="0.19"/>
+        <path id="Path_371" data-name="Path 371" d="M-8396.463-990v68.756" transform="translate(18542.652 4415.179)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="12" opacity="0.1"/>
+      </g>
+    </g>
+    <g id="Group_500" data-name="Group 500" transform="translate(22893.605 -3381.807)">
+      <path id="Path_6406" data-name="Path 6406" d="M22.805,17.611a4.805,4.805,0,1,1,4.805-4.805A4.819,4.819,0,0,1,22.805,17.611Zm0-7.208a2.27,2.27,0,0,0-2.4,2.4,2.27,2.27,0,0,0,2.4,2.4,2.27,2.27,0,0,0,2.4-2.4A2.27,2.27,0,0,0,22.805,10.4Z" transform="translate(-18 -8)" fill="#fff" stroke="#fff" stroke-width="1.5"/>
+    </g>
+    <g id="Group_501" data-name="Group 501" transform="translate(22893.605 -3369.793)">
+      <path id="Path_6407" data-name="Path 6407" d="M31.215,22.611a1.135,1.135,0,0,1-1.2-1.2v-2.4a3.7,3.7,0,0,0-3.6-3.6H19.2a1.2,1.2,0,1,1,0-2.4h7.208a5.948,5.948,0,0,1,6.007,6.007v2.4A1.135,1.135,0,0,1,31.215,22.611Z" transform="translate(-18 -13)" fill="#fff" stroke="#fff" stroke-width="1.5"/>
+    </g>
+    <g id="Group_502" data-name="Group 502" transform="translate(22855.094 -3381.807)">
+      <path id="Path_6408" data-name="Path 6408" d="M6.805,17.611a4.805,4.805,0,1,1,4.805-4.805A4.819,4.819,0,0,1,6.805,17.611Zm0-7.208a2.27,2.27,0,0,0-2.4,2.4,2.27,2.27,0,0,0,2.4,2.4,2.27,2.27,0,0,0,2.4-2.4A2.27,2.27,0,0,0,6.805,10.4Z" transform="translate(-2 -8)" fill="#fff" stroke="#fff" stroke-width="1.5"/>
+    </g>
+    <g id="Group_503" data-name="Group 503" transform="translate(22850.289 -3369.793)">
+      <path id="Path_6409" data-name="Path 6409" d="M1.2,22.611a1.135,1.135,0,0,1-1.2-1.2v-2.4A5.948,5.948,0,0,1,6.007,13h7.208a1.2,1.2,0,0,1,0,2.4H6.007a3.7,3.7,0,0,0-3.6,3.6v2.4A1.135,1.135,0,0,1,1.2,22.611Z" transform="translate(0 -13)" fill="#fff" stroke="#fff" stroke-width="1.5"/>
+    </g>
+    <g id="Group_504" data-name="Group 504" transform="translate(22871.621 -3383.962)">
+      <path id="Path_6410" data-name="Path 6410" d="M16.208,20.916A7.079,7.079,0,0,1,9,13.708,7.079,7.079,0,0,1,16.208,6.5a7.079,7.079,0,0,1,7.208,7.208A7.079,7.079,0,0,1,16.208,20.916Zm0-12.013a4.805,4.805,0,1,0,4.805,4.805A4.819,4.819,0,0,0,16.208,8.9Z" transform="translate(-9 -6.5)" fill="#fff" stroke="#fff" stroke-width="1.5"/>
+    </g>
+    <g id="Group_505" data-name="Group 505" transform="translate(22865.615 -3365.942)">
+      <path id="Path_6411" data-name="Path 6411" d="M31.728,26.013a1.135,1.135,0,0,1-1.2-1.2V20.007a3.7,3.7,0,0,0-3.6-3.6H12.507a3.7,3.7,0,0,0-3.6,3.6v4.805a1.135,1.135,0,0,1-1.2,1.2,1.135,1.135,0,0,1-1.2-1.2V20.007A5.948,5.948,0,0,1,12.507,14H26.923a5.948,5.948,0,0,1,6.007,6.007v4.805A1.135,1.135,0,0,1,31.728,26.013Z" transform="translate(-6.5 -14)" fill="#fff" stroke="#fff" stroke-width="1.5"/>
+    </g>
+  </g>
+</svg>

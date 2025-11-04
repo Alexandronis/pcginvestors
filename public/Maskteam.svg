@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="296" height="72" viewBox="0 0 296 72">
+    <defs>
+        <clipPath id="clip-path">
+            <rect id="Rectangle_272" width="296" height="72" class="cls-1" rx="8"/>
+        </clipPath>
+        <style>
+            .cls-1,.cls-6{fill:#fff}.cls-6{opacity:.07}
+        </style>
+    </defs>
+    <g id="Mask_Group_11" clip-path="url(#clip-path)">
+        <g id="Group_375" transform="translate(60.408 7)">
+            <g id="Group_374" opacity="0.11" transform="translate(0 9.626)">
+                <path id="Path_6272" d="M2568.671-568.192a22.97 22.97 0 0 1-5.968 15.379 18.05 18.05 0 0 1-4.69-3.01 17.877 17.877 0 0 0 5.029-12.369 17.877 17.877 0 0 0-5.029-12.369q-.54-.565-1.126-1.088a19.6 19.6 0 0 0-4.692-3.1c-.507-.24-1.025-.46-1.556-.656a20.415 20.415 0 0 0-7.144-1.28c-10.779 0-19.547 8.294-19.547 18.49s8.769 18.49 19.547 18.49a20.418 20.418 0 0 0 7.144-1.28 26.665 26.665 0 0 0 4.692 3.8 26.151 26.151 0 0 1-11.836 2.8c-13.882 0-25.175-10.683-25.175-23.814s11.293-23.814 25.175-23.814a26.151 26.151 0 0 1 11.836 2.8q.8.4 1.556.856a25.121 25.121 0 0 1 4.692 3.6c.388.38.764.772 1.124 1.175a22.97 22.97 0 0 1 5.968 15.39z" class="cls-1" transform="translate(-2518.32 592.006)"/>
+                <path id="Path_6273" d="M3578.95-568.192c0 13.132-11.293 23.814-25.175 23.814a26.154 26.154 0 0 1-11.836-2.8q-.8-.4-1.556-.856a25.134 25.134 0 0 1-4.692-3.6q-.582-.57-1.124-1.175a22.97 22.97 0 0 1-5.968-15.379 22.969 22.969 0 0 1 5.968-15.379 18.047 18.047 0 0 1 4.689 3.01 17.879 17.879 0 0 0-5.029 12.369 17.879 17.879 0 0 0 5.029 12.369q.541.565 1.126 1.088a19.6 19.6 0 0 0 4.691 3.1c.507.24 1.025.46 1.556.656a20.417 20.417 0 0 0 7.144 1.28c10.778 0 19.547-8.294 19.547-18.49s-8.768-18.49-19.547-18.49a20.414 20.414 0 0 0-7.144 1.28 26.649 26.649 0 0 0-4.692-3.8 26.154 26.154 0 0 1 11.836-2.8c13.883-.011 25.177 10.672 25.177 23.803z" class="cls-1" transform="translate(-3501.816 592.006)"/>
+            </g>
+            <ellipse id="Ellipse_792" cx="4.5" cy="4" fill="#fff" opacity="0.51" rx="4.5" ry="4" transform="translate(166.592)"/>
+            <ellipse id="Ellipse_793" cx="4" cy="3.5" fill="#fff" opacity="0.17" rx="4" ry="3.5" transform="translate(36.592 59)"/>
+            <ellipse id="Ellipse_794" cx="10" cy="9" class="cls-6" rx="10" ry="9" transform="translate(50.592 67)"/>
+            <circle id="Ellipse_795" cx="9.5" cy="9.5" r="9.5" class="cls-6" transform="translate(57.592 8)"/>
+            <path id="Path_6274" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="12px" d="M-8396.463-990v54.431" opacity="0.19" transform="translate(8542.592 1036.009)"/>
+            <path id="Path_6275" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="12px" d="M-8396.463-990v54.431" opacity="0.1" transform="translate(8558.858 1017.058)"/>
+        </g>
+    </g>
+</svg>

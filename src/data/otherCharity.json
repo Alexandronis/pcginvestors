@@ -1,0 +1,103 @@
+[
+    {
+        "id":0,
+        "name":"Environmental Defense"
+    },
+    {
+        "id":1,
+        "name":"Pan Mass Challenge - Boston Bike ride"
+    },
+    {
+        "id":2,
+        "name":"American Diabetes Assoc        "
+    },
+    {
+        "id":3,
+        "name":"California Advanced IM Atherton        "
+    },
+    {
+        "id":4,
+        "name":"MDA- Augies Quest        "
+    },
+    {
+        "id":5,
+        "name":"San Francisco School Alliance        "
+    },
+    {
+        "id":6,
+        "name":"BYU Management Society        "
+    },
+    {
+        "id":7,
+        "name":"BLK Access Fund        "
+    },
+    {
+        "id":8,
+        "name":"Network For Good        "
+    },
+    {
+        "id":9,
+        "name":"DonorsChoose.org        "
+    },
+    {
+        "id":10,
+        "name":"Caring Bridge        "
+    },
+    {
+        "id":11,
+        "name":"Joeys Medical Ex"
+    },
+    {
+        "id":12,
+        "name":"ALS Therapy Development-Augies Quest        "
+    },
+    {
+        "id":13,
+        "name":"BYU Management Society"
+    },
+    {
+        "id":14,
+        "name":"Golden Courage International"
+    },
+    {
+        "id":15,
+        "name":"ALS Therapy Development- Augies Quest"
+    },
+    {
+        "id":16,
+        "name":"Network For Good - donation to Team IMPACT"
+    },
+    {
+        "id":17,
+        "name":"CMT San Jose (Childrens Musical Theater)"
+    },
+    {
+        "id":18,
+        "name":"Augies Quest Bash"
+    },
+    {
+        "id":19,
+        "name":"Utah Food Bank"
+    },
+    {
+        "id":20,
+        "name":"Utah Food Bank"
+    },
+    {
+        "id":21,
+        "name":"Second Harvest of Silicon Valley"
+    },
+    {
+        "id":22,
+        "name":"SF Marin Food Bank"
+    },
+    {
+        "id":23,
+        "name":"New Jersey Together"
+    },
+    {
+        "id":24,
+        "name":"Carry the Vision"
+    }
+
+]

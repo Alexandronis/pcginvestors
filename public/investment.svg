@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="84" height="83" viewBox="0 0 84 83">
+  <defs>
+    <filter id="Union_23" x="4" y="4" width="80" height="79" filterUnits="userSpaceOnUse">
+      <feOffset dx="2" dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Union_24" x="0" y="0" width="80" height="79" filterUnits="userSpaceOnUse">
+      <feOffset dx="-2" dy="-2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-2"/>
+      <feFlood flood-color="#fff" flood-opacity="0.612"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_919" data-name="Group 919" transform="translate(-667 -137)">
+    <g id="Group_908" data-name="Group 908" transform="translate(-17518 -12087)">
+      <g transform="matrix(1, 0, 0, 1, 18185, 12224)" filter="url(#Union_23)">
+        <path id="Union_23-2" data-name="Union 23" d="M37,61a4,4,0,0,1-4-4V36a4,4,0,0,1,4-4H58a4,4,0,0,1,4,4V57a4,4,0,0,1-4,4ZM4,61a4,4,0,0,1-4-4V36a4,4,0,0,1,4-4H25a4,4,0,0,1,4,4V57a4,4,0,0,1-4,4ZM37,29a4,4,0,0,1-4-4V4a4,4,0,0,1,4-4H58a4,4,0,0,1,4,4V25a4,4,0,0,1-4,4ZM4,29a4,4,0,0,1-4-4V4A4,4,0,0,1,4,0H25a4,4,0,0,1,4,4V25a4,4,0,0,1-4,4Z" transform="translate(11 11)" fill="#f1f1f1"/>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, 18185, 12224)" filter="url(#Union_24)">
+        <path id="Union_24-2" data-name="Union 24" d="M37,61a4,4,0,0,1-4-4V36a4,4,0,0,1,4-4H58a4,4,0,0,1,4,4V57a4,4,0,0,1-4,4ZM4,61a4,4,0,0,1-4-4V36a4,4,0,0,1,4-4H25a4,4,0,0,1,4,4V57a4,4,0,0,1-4,4ZM37,29a4,4,0,0,1-4-4V4a4,4,0,0,1,4-4H58a4,4,0,0,1,4,4V25a4,4,0,0,1-4,4ZM4,29a4,4,0,0,1-4-4V4A4,4,0,0,1,4,0H25a4,4,0,0,1,4,4V25a4,4,0,0,1-4,4Z" transform="translate(11 11)" fill="#f1f1f1"/>
+      </g>
+      <path id="Union_25" data-name="Union 25" d="M37,61a4,4,0,0,1-4-4V36a4,4,0,0,1,4-4H58a4,4,0,0,1,4,4V57a4,4,0,0,1-4,4ZM4,61a4,4,0,0,1-4-4V36a4,4,0,0,1,4-4H25a4,4,0,0,1,4,4V57a4,4,0,0,1-4,4ZM37,29a4,4,0,0,1-4-4V4a4,4,0,0,1,4-4H58a4,4,0,0,1,4,4V25a4,4,0,0,1-4,4ZM4,29a4,4,0,0,1-4-4V4A4,4,0,0,1,4,0H25a4,4,0,0,1,4,4V25a4,4,0,0,1-4,4Z" transform="translate(18196 12235)" fill="#8eae3f" opacity="0.7"/>
+    </g>
+  </g>
+</svg>

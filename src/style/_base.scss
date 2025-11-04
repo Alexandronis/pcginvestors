@@ -1,0 +1,373 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+//-------------Rremove highlight in mobile and ipad created by sachith (11/20/2020)----------------------
+@mixin Rremove-highlight {
+  a,
+  div {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+}
+//--------------Reset the browser elements---------------------------------------------------------------
+body {
+  font-family: "Poppins", sans-serif;
+}
+html {
+  //scroll-behavior: smooth;     //This is an auto smooth scrolling
+}
+ul,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+//--------------------Remove text decorations for all <a> tags created by sachith (12/01/2020)---------------
+a {
+  text-decoration: none;
+  color: #7098d2;
+}
+
+//--------------------Break line in member description created by sachith (11/19/2020)-----------------------
+p {
+  white-space: pre-line;
+  text-align: justify; //---------Justify the all <p> tages
+  @include respond-to("small") {
+    //white-space: normal;
+  }
+}
+//--------------------Rremove highlight in mobile and ipad created by sachith (11/20/2020)-------------------
+@include respond-to("medium_lg") {
+  @include Rremove-highlight;
+}
+@include respond-to("medium") {
+  @include Rremove-highlight;
+}
+@include respond-to("small") {
+  @include Rremove-highlight;
+}
+
+.inner-page-wrapper {
+  padding-top: 90px;
+  padding-bottom: 100px;
+  @include respond-to("small") {
+    padding-top: 68px;
+  }
+}
+//------------------scroll menu line in About and portfolio pages-----------------------------
+.scroll-menu-line {
+  width: 100%;
+  // padding: 50px 0;
+  @include respond-to("small") {
+    // padding: 20px 0 50px;
+  }
+  ul {
+    color: #000000;
+    text-decoration: none;
+    li {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      margin-bottom: 10px;
+      .menu-text {
+        color: #000000;
+        text-decoration: none;
+        @include respond-to("small") {
+          display: none;
+        }
+      }
+      span {
+        &.line {
+          width: 70px;
+          height: 1px;
+          background-color: #000000;
+          margin-right: 15px;
+          @include respond-to("small") {
+            display: none;
+          }
+        }
+      }
+      &.active {
+        font-size: 60px;
+        font-weight: 600;
+        letter-spacing: 2.5px;
+        @include respond-to("medium") {
+          font-size: 36px;
+        }
+        @include respond-to("small") {
+          font-size: 40px;
+          //padding-left: 40px;
+          margin: auto 7%;
+        }
+        span {
+          &.line {
+            width: 14%;
+            height: 3px;
+            @include respond-to("medium_lg") {
+              width: 13%;
+            }
+            @include respond-to("medium") {
+              width: 13%;
+            }
+          }
+        }
+      }
+    }
+  }
+  .select-menu {
+    position: absolute;
+    font-family: "Poppins", sans-serif;
+    left: 55%;
+    @include respond-to("medium_lg") {
+      left: 54%;
+    }
+    @include respond-to("medium") {
+      position: relative;
+      left: 0;
+      right: 0;
+      width: 70%;
+      margin: 00px auto 0;
+    }
+    @include respond-to("small") {
+      width: 78%;
+    }
+    //------------------Dropdown menu in portfolio page-----------------------------
+    label {
+      select {
+        padding-left: 3%;
+        background-color: #ffffff;
+        opacity: 0.9;
+        font-family: "Poppins", sans-serif;
+        font-size: 18px;
+        letter-spacing: 0.65px;
+        font-weight: 600;
+        border: 0px;
+        outline: 0px;
+        border-radius: 8px;
+        box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.06);
+        width: 324px;
+        height: 48px;
+        cursor: pointer;
+        //------------this is for arrow icon------------------------
+        background-position: right 25px center;
+        background-repeat: no-repeat;
+        background-size: auto;
+        color: #000000;
+        // background-image: url("../../pulic/portfolio_img/select down arrow.svg");
+        appearance: none;
+        @include respond-to("medium_lg") {
+          width: 252px;
+        }
+        @include respond-to("medium") {
+          width: 70%;
+          font-size: 14px;
+          margin-left: 10px;
+        }
+        @include respond-to("small") {
+          width: 69%;
+        }
+        &:focus {
+          outline: 0;
+          border: 0;
+        }
+      }
+      position: relative;
+      option {
+        font-size: 18px;
+        border: none;
+        outline: none;
+        border-style: none;
+        &:active {
+          font-weight: 600;
+        }
+        &:focus {
+          outline: 0;
+          border: 0;
+        }
+      }
+    }
+    label:after {
+      content: "\f078";
+      font-family: "FontAwesome";
+      font-size: 14px;
+      color: #000000;
+      right: 8px;
+      top: 4px;
+      padding: 0 0 2px;
+      position: absolute;
+      pointer-events: none;
+    }
+    label:before {
+      content: "";
+      right: 4px;
+      top: 0px;
+      width: 23px;
+      height: 18px;
+      background: #fff;
+      position: absolute;
+      pointer-events: none;
+      display: block;
+    }
+  }
+}
+//------------This code used for the portfolio company card pop up-------------------
+.popup-page {
+  .App-header {
+    opacity: 0.1;
+  }
+  footer {
+    display: none;
+  }
+  .footer_mobile {
+    display: none;
+  }
+}
+//---------------Page not found (404) page styles created by sachith-----------------
+.pagenotfound-wrapper {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: 99999;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+  .fourOfour {
+    object-fit: contain;
+    height: 54%;
+    object-position: top;
+    width: 100%;
+    @include respond-to("medium_lg") {
+      height: 30%;
+    }
+  }
+  h2 {
+    font-size: 24px;
+    opacity: 0.72;
+    color: #000000;
+    font-family: Poppins;
+    font-weight: normal;
+    margin-top: 30px;
+    @include respond-to("small") {
+      align-content: center;
+      margin: 10px 39px;
+      text-align: center;
+      font-size: 20px;
+    }
+  }
+  img {
+    margin-top: 29px;
+  }
+  a {
+    background-color: #8eae3f;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 6px 50px;
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 40px;
+  }
+}
+
+//===!!These below styles currently disabled!!======
+//------------Video slider styles------------------
+
+/* Dots */
+.slick-dotted.slick-slider {
+}
+.slick-dots {
+  li {
+    cursor: pointer;
+    button {
+      &:hover,
+      &:focus {
+        &:before {
+        }
+      }
+      &:before {
+        opacity: 0.75;
+        color: #6d6b6b !important;
+        font-size: 12px !important;
+      }
+    }
+    &.slick-active button:before {
+      color: #242424 !important;
+      font-size: 12px !important;
+    }
+  }
+}
+
+/* Video slider*/
+/* Arrows */
+.slick-prev,
+.slick-next {
+  &:hover,
+  &:focus {
+    color: #a5cf3d;
+    &:before {
+    }
+  }
+  &.slick-disabled:before {
+  }
+  &:before {
+  }
+}
+.show-section{
+  display: block;
+}
+.hide-section{
+  display: none;
+}
+
+
+.switch-lable{
+  width: 12%;
+  position: fixed;
+  @include respond-to("medium_lg"){
+    display: none;
+  }
+  ul{
+    .active-tab{
+      background-color: $primary-color;
+      padding: 12px;
+      border-top-right-radius: 24px;
+      border-bottom-right-radius: 24px;
+      color:$white-color;
+      font-weight: 500;
+      margin: 12px 0px;
+      a{
+        text-decoration: none;
+        color: $white-color;
+
+      }
+    }
+    .disable-tab{
+      background-color: #d1d1d1;
+      padding: 12px;
+      border-top-right-radius: 24px;
+      border-bottom-right-radius: 24px;
+      color:$white-color;
+      font-weight: 500;
+      margin: 12px 0px;
+      a{
+        text-decoration: none;
+        color: $white-color;
+
+      }
+    }
+  }
+}
