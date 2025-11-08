@@ -5,7 +5,6 @@ import {
   RouteComponentProps,
   Switch,
 } from "react-router-dom";
-import "./App.css";
 import "./style/main.scss";
 
 import About from "./component/about";
