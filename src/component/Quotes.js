@@ -22,7 +22,7 @@ var settings = {
           ...style,
           display: "block",
           opacity:0
-        
+
         }}
         onClick={onClick}
       />
@@ -45,7 +45,7 @@ var settings = {
   }
 
 
-const Quotes = (props)=>{
+const Quotes = () => {
     return (
         <div>
             <Slider {...settings}>

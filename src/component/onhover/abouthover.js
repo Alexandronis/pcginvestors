@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function abouthover() {
   return (
@@ -18,19 +18,6 @@ function abouthover() {
             <h2>ABOUT PCG</h2>
             <p>Explore who we are - our mission, values, and principles</p>
           </Link>
-          {/* <Link
-            to="/about/#our-team"
-            className="content-details"
-            onClick={() => document.getElementById("customFocus").focus}
-          >
-            <div className="img-box">
-              <img src="/Nav_hover_img/pcg_team.svg"></img>
-            </div>
-            <h2>PCG TEAM</h2>
-            <p>
-              Our team of investment professionals dedicated to your success
-            </p>
-          </Link> */}
         </div>
       </div>
     </div>

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link as RLink, useLocation, useHistory } from "react-router-dom";
+import { useLocation, useHistory } from "react-router-dom";
 import { Link } from "react-scroll";
 
 import Abouthover from "./onhover/abouthover";
@@ -8,13 +8,9 @@ import Contacthover from "./onhover/contacthover";
 import TeamHover from "./onhover/teamhover"
 function Header() {
   const [isShown, setIsShown] = useState(0);
-  // const boxRef = React.useRef(null);
-
   const [scroll, setScroll] = useState(false);
   const history = useHistory();
   const location = useLocation();
-
-
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -22,7 +18,6 @@ function Header() {
     });
   }, []);
   const menuOnclick = () => {
-    // document.getElementById("burgerBtn").checked = false;
     document.getElementById("burgerBtnMob").checked = false;
   };
   const resetDropdown = () => {
@@ -34,7 +29,6 @@ function Header() {
     onMouseLeave={() => {
       setIsShown(0);
     }}>
-      {/* {!window.matchMedia("(max-width: 1199px)").matches ? ():()} */}
       <header className="main-header">
         <div
           className="logo"
@@ -54,9 +48,8 @@ function Header() {
                 <Link
                       className={
                         (location.pathname === "/about/" && location.hash === "#about-pcg") ||
-                        (location.pathname === "/about" && location.hash === "") 
+                        (location.pathname === "/about" && location.hash === "")
                         ? "active" : ""}
-                      // activeClass={location.pathname === "/about" ? "active" : " "}
                       to="/about"
                       spy={true}
                       hashSpy={true}
@@ -84,7 +77,6 @@ function Header() {
               <li className="list">
                     <Link
                       className={location.pathname === "/portfolio-page/" ? "active" : ""}
-                      // activeClass={location.hash === "#Portfolio" ? "active" : " "}
                       to="/portfolio-page/#Portfolio"
                       spy={true}
                       hashSpy={true}
@@ -112,7 +104,6 @@ function Header() {
               <li className="list">
                     <Link
                       className={location.hash === "#our-team" ? "active" : ""}
-                      // activeClass={location.pathname === "/charitable-contributions" ? "active" : " "}
                       to="/about/#our-team"
                       spy={true}
                       hashSpy={true}
@@ -137,30 +128,9 @@ function Header() {
                   />
                 )}
                   </li>
-
-              {/* <li className="list">
-                    <Link
-                      className={location.pathname === "/charitable-contributions" ? "active" : ""}
-                      // activeClass={location.pathname === "/charitable-contributions" ? "active" : " "}
-                      to="/charitable-contributions"
-                      spy={true}
-                      hashSpy={true}
-                      smooth={true}
-                      offset={-150}
-                      duration={1500}
-                      onClick={() => {
-                        menuOnclick();
-                        history.replace("/charitable-contributions");
-                      }}
-                    >
-                      <p>Charitable Contributions</p>
-                      <span></span>
-                    </Link>
-                  </li> */}
                   <li className="list">
                     <Link
                       className={location.pathname === "/contact" ? "active" : ""}
-                      // activeClass={location.pathname === "/contact" ? "active" : " "}
                       to="/contact"
                       spy={true}
                       hashSpy={true}
@@ -206,7 +176,6 @@ function Header() {
                 <ul id={scroll ? "menu-white" : "menu-black"}>
                   <li className="list">
                     <Link
-                      // activeClass={location.pathname === "/" ? "active" : " "}
                       className={location.pathname === "/about" ? "active" : ""}
                       to="/about"
                       spy={true}
@@ -225,7 +194,6 @@ function Header() {
                   <li className="list">
                     <Link
                       className={location.hash === "#our-team" ? "active" : ""}
-                      // activeClass={location.hash === "#our-team" ? "active" : " "}
                       to="/about/#our-team"
                       spy={true}
                       hashSpy={true}
@@ -243,7 +211,6 @@ function Header() {
                   <li className="list">
                     <Link
                       className={location.hash === "#Portfolio" ? "active" : ""}
-                      // activeClass={location.hash === "#Portfolio" ? "active" : " "}
                       to="/portfolio-page/#Portfolio"
                       spy={true}
                       hashSpy={true}
@@ -261,7 +228,6 @@ function Header() {
                   <li className="list">
                     <Link
                       className={location.hash === "#Investment" ? "active" : " "}
-                      // activeClass={location.hash === "#Investment" ? "active" : " "}
                       to="/portfolio-page/#Investment"
                       spy={true}
                       hashSpy={true}
@@ -279,7 +245,6 @@ function Header() {
                   <li className="list">
                     <Link
                       className={location.hash === "#Criteria" ? "active" : " "}
-                      // activeClass={location.hash === "#Criteria" ? "active" : " "}
                       to="/portfolio-page/#Criteria"
                       spy={true}
                       hashSpy={true}
@@ -294,28 +259,9 @@ function Header() {
                      Criteria
                     </Link>
                   </li>
-                  {/* <li className="list">
-                    <Link
-                      className={location.pathname === "/charitable-contributions" ? "active" : " "}
-                      // activeClass={location.pathname === "/charitable-contributions" ? "active" : " "}
-                      to="/charitable-contributions"
-                      spy={true}
-                      hashSpy={true}
-                      smooth={true}
-                      offset={-150}
-                      duration={1500}
-                      onClick={() => {
-                        menuOnclick();
-                        history.replace("/charitable-contributions");
-                      }}
-                    >
-                      Charitable Contributions
-                    </Link>
-                  </li> */}
                   <li className="list">
                     <Link
                       className={location.pathname === "/contact" ? "active" : " "}
-                      // activeClass={location.pathname === "/contact" ? "active" : " "}
                       to="/contact"
                       spy={true}
                       hashSpy={true}

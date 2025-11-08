@@ -29,7 +29,6 @@ const Portfolio = (props) => {
 
   const ScrollWhenClick = (i) => {
     var amount = Math.floor(i / 3) * 170 - window.innerWidth / 2 + 380;
-    // console.log(amount);
     slider.current.scroll(amount, 0);
   };
 

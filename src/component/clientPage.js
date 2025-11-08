@@ -1,9 +1,5 @@
-import React, { useState, useCallback, useEffect } from "react";
+import React from "react";
 import {
-  BrowserRouter as Router,
-  Route,
-  Link,
-  Switch,
   useHistory,
 } from "react-router-dom";
 import ScrollHandler from "./scrollHandler";
@@ -108,7 +104,7 @@ function ClientPage(props) {
                           <li className="list-text">{data.leadership}</li>
                         </ul>
                     : null}
-              
+
                     <ul className="list-wrap">
                       <li className="list-title">Website</li>
                       <li className="list-text"><a href={data.url} target="_blank">

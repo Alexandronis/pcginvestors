@@ -1,23 +1,18 @@
 import React, { useEffect, useState, useRef } from "react";
 import {
   BrowserRouter as Router,
-  Route,
   Link,
-  Switch,
   useLocation,
   useHistory
 } from "react-router-dom";
 import MetaTags from "react-meta-tags";
-// import { useHistory } from "react-router-dom";
 import ScrollHandler from "./scrollHandler";
 const OrgData = require("./Portfolio/Data/organization.json");
 
 function PortfolioPage(props) {
   const [value, setValue] = useState(localStorage.getItem("portfolioOption"));
-  const [data, setData] = useState();
   const history = useHistory();
 
-  const { pathname } = Router;
   if (props.location.pathname === "/portfolio-page") {
     document.body.classList.add("inner-header");
   }
@@ -27,7 +22,6 @@ function PortfolioPage(props) {
     localStorage.setItem("portfolioOption", e.target.value);
   };
 
-  // scroll refs created by sachith 11/19/2020
   const Portfolio = useRef();
   const Investment = useRef();
   const Criteria = useRef();
@@ -95,15 +89,15 @@ function PortfolioPage(props) {
           <div className="page-block-portfolio">
             <div className="switch-lable">
               <ul>
-                <li className={Location.hash === "#Portfolio" || Location.hash === "" ? "active-tab" : "disable-tab"}><Link to="/about/#about-pcg"  
+                <li className={Location.hash === "#Portfolio" || Location.hash === "" ? "active-tab" : "disable-tab"}><Link to="/about/#about-pcg"
                   onClick={() => {
                         history.replace("/portfolio-page/#Portfolio");
                       }} >Portfolio</Link></li>
-                <li className={Location.hash === "#Investment" ? "active-tab" : "disable-tab"}><Link to="/about/#our-team" 
+                <li className={Location.hash === "#Investment" ? "active-tab" : "disable-tab"}><Link to="/about/#our-team"
                   onClick={() => {
                     history.replace("/portfolio-page/#Investment");
                   }}>Investment</Link></li>
-                   <li className={Location.hash === "#Criteria" ? "active-tab" : "disable-tab"}><Link to="/about/#our-team" 
+                   <li className={Location.hash === "#Criteria" ? "active-tab" : "disable-tab"}><Link to="/about/#our-team"
                   onClick={() => {
                     history.replace("/portfolio-page/#Criteria");
                   }}>Criteria</Link></li>
@@ -137,12 +131,10 @@ function PortfolioPage(props) {
                   <select name='Views' id='Views' onChange={divstatus}>
                     <option
                       defaultValue
-                      // selected={value == "Realized" ? true : false}
                       value='Realized'>
                       Unrealized / Realized
                     </option>
                     <option
-                      // selected={value == "Category" ? true : false}
                       value='Category'>
                       Category
                     </option>
@@ -150,7 +142,7 @@ function PortfolioPage(props) {
                 </label>
               </div>
             </div>
-          
+
             <div className='content-wrapper'>
               {value === "Realized" || value === null ? (
                 <div>
@@ -184,7 +176,6 @@ function PortfolioPage(props) {
                                   key={data.id}
                                 />
                               </div>
-                              {/* <span><p className="small-text">{i=== 0 || i === 1 || i === 4 || i === 5 ? "*partially realized" : ""}</p> </span> */}
                             </div>
                           );
                         })}
@@ -411,8 +402,8 @@ function PortfolioPage(props) {
                Location.hash === "#section4" ||
                Location.hash === "#section5" ||
                Location.hash === "#section6" ||
-               Location.hash === "#section7" || 
-               Location.hash === "#section8" 
+               Location.hash === "#section7" ||
+               Location.hash === "#section8"
 
                ? "show-section" : "hide-section"
             }

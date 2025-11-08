@@ -47,13 +47,6 @@ function Chart() {
                 onMouseLeave ={()=>
                   setonHover(0)
                 }
-                // onMouseEnter={() => {
-                //   setonHover(index + 1);
-                // }}
-                //className="white-circle"
-                // style={{
-                //   transform: `rotateZ(calc(75deg - (360deg /8) * ${data.id + 1}))`,
-                // }}
               >
                 <img
                   className={onHover === data.id+1 ? "icon-none" : "icon-image" }
@@ -62,11 +55,11 @@ function Chart() {
                 />
                 <div className={onHover === data.id+1 ? `card-active back${index}` : "card-hide"} >
                 <p>
-                  {data.description} 
+                  {data.description}
                 </p>
                 <p className="right-align"><a href={data.webLink}     target="_blank">See More 	&gt;</a></p>
                 </div>
-                
+
               </span>
             </li>
           );

@@ -1,15 +1,11 @@
 import React, { useEffect, useState, useRef } from "react";
 import {
   BrowserRouter as Router,
-  Route,
   Link,
-  Switch,
   useLocation,
-  useParams,
   useHistory
 } from "react-router-dom";
 import MetaTags from "react-meta-tags";
-// import Profile from "./profile.js";
 
 import ScrollHandler from "./scrollHandler";
 import CharitableContributions from "./CharitableContributions";
@@ -36,7 +32,6 @@ function About(props) {
     }
   };
 
-  const { pathname } = Router;
   if (props.location.pathname === "/about") {
     document.body.classList.add("inner-header");
   }
@@ -61,7 +56,6 @@ function About(props) {
     }
 
     //=============*This condition use for expand the member card when click seemore link in home member card* =============
-    //**************created by sachith 11/25/2020**************
     if (Location.hash.includes("sectionteam")) {
       var index = Number.parseInt(Location.hash.replace("#sectionteam", ""));
       setSelectedIndex(index + 1);
@@ -89,28 +83,18 @@ function About(props) {
           <div className="page-block-about">
             <div className="switch-lable">
               <ul>
-                {/* <li className={Location.hash === "#about-pcg" || Location.hash === "" ? "active-tab" : "disable-tab"}><Link to="/about/#about-pcg"  
-                  onClick={() => {
-                        history.replace("/about/#about-pcg");
-                      }} >About PCG</Link></li>
-                <li className={Location.hash === "#our-team" ? "active-tab" : "disable-tab"}><Link to="/about/#our-team" 
-                  onClick={() => {
-                    history.replace("/about/#our-team");
-                  }}>PCG Team</Link></li> */}
-
                 {Location.hash === "#about-pcg" || Location.hash === "" ?  <li className="active-tab">
-                  <Link to="/about/#about-pcg"  
+                  <Link to="/about/#about-pcg"
                   onClick={() => {
                         history.replace("/about/#about-pcg");
                       }} >About PCG</Link>
                   </li>:  <li className="active-tab">
-                  <Link to="/about/#our-team" 
+                  <Link to="/about/#our-team"
                   onClick={() => {
                     history.replace("/about/#our-team");
                   }}>PCG Team</Link>
                   </li>}
               </ul>
-
             </div>
             <div >
           {/* ABOUT PCG */}
@@ -133,31 +117,14 @@ function About(props) {
                   <div className="value-text">
                     <p className="padding-para">
                     Partnership Capital Growth was founded in 2006 with a vision to foster growth within the healthy living sector by investing in consumer products, services, and technology. Here at PCG, we share a vision to improve the world by helping people build a healthier and happier future.
-
                   </p>
                   <p>
                   Being founded by some of the first to specialize in the healthy living space, we bring an experience-led perspective that has outlasted the test of time since inception. With a 20- year legacy of successful investments in renowned brands, our mission is to deliver substantial value for our portfolio companies and investors through our partnership- capital-growth / value built on values approach.
-
                   </p>
                   </div>
                 </div>
-
-                {/* <div className="company-values">
-                  <div className="values-title">
-                    <h2>OUR MISSION</h2>
-                  </div>
-                  <div className="value-text">
-                    <p>
-                      To deliver superior economic and social returns for our
-                      portfolio companies and investors through our
-                      partnership-capital-growth / value built on values
-                      approach.
-                    </p>
-                  </div>
-                </div> */}
                 <div className="company-values">
                   <div className="values-title">
-                    {/* <span></span> */}
                     <h2>OUR VALUES</h2>
                   </div>
                   <div className="value-text">
@@ -330,7 +297,7 @@ function About(props) {
                 </div>
 
                 <div className="company-values">
-             
+
                    <CharitableContributions />
                 </div>
 
@@ -373,34 +340,6 @@ function About(props) {
                           </div>
                         </div>
                       </div>
-                      {/* <div className="card_containar">
-                        <div className="leftside_text">
-                          <div className="download_img">
-                            <a
-                              target="_blank"
-                              href="/pdf_files/PCG Investors 3 - Pager.pdf"
-                              download
-                            >
-                              <img
-                                className="image_containar"
-                                src="/green_card.svg"
-                                alt="Green Card"
-                              />
-                              <img
-                                className="download"
-                                src="/computing-cloud.svg"
-                                alt="Download Icon"
-                              />
-                            </a>
-                          </div>
-
-                          <div className="card_list_items">
-                            <ul>
-                              <li>PCG 3-pager</li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div> */}
                     </div>
                   </div>
                 </div>
@@ -414,24 +353,24 @@ function About(props) {
               OurTeam.current = el;
             }}
             className={
-              Location.hash === "#our-team" || 
+              Location.hash === "#our-team" ||
               Location.hash === "#sectionteam0" ||
               Location.hash === "#sectionteam1" ||
               Location.hash === "#sectionteam2"||
               Location.hash === "#sectionteam3"||
               Location.hash === "#sectionteam4"||
               Location.hash === "#sectionteam5" ||
-              Location.hash === "#sectionteam6" || 
-              Location.hash === "#sectionteam7" || 
-              Location.hash === "#sectionteam8" || 
-              Location.hash === "#sectionteam9" || 
+              Location.hash === "#sectionteam6" ||
+              Location.hash === "#sectionteam7" ||
+              Location.hash === "#sectionteam8" ||
+              Location.hash === "#sectionteam9" ||
               Location.hash === "#section0" ||
               Location.hash === "#section1" ||
               Location.hash === "#section2"||
               Location.hash === "#section3"||
               Location.hash === "#section4"||
               Location.hash === "#section5" ||
-              Location.hash === "#section6" || 
+              Location.hash === "#section6" ||
               Location.hash === "#section7"||
               Location.hash === "#section8"||
               Location.hash === "#section9"
@@ -471,9 +410,6 @@ function About(props) {
                           : "profile-main-content none-active"
                       }
                       id={`#sectionteam` + i}
-                      // onClick={() => {
-                      //   setIsShown(i + 1);
-                      // }}
                       key={i}
                     >
                       <div className="discription_block_team">
@@ -499,7 +435,7 @@ function About(props) {
                                 {data.email !== "" ?   <a href={data.email}>
                                   <img src={data.emailIcon} alt={data.emailAlt} />
                                 </a> :null }
-                              
+
                                 <a href={data.linkedin} target="_blank">
                                   <img
                                     src={data.linkedinIcon}
@@ -561,7 +497,7 @@ function About(props) {
                                               alt={data.emailAlt}
                                             />
                                           </a> :null}
-                                          
+
                                           {data.linkedin !== '' ? <a
                                             href={data.linkedin}
                                             target="_blank"
@@ -572,7 +508,7 @@ function About(props) {
                                               target="_blank"
                                             />
                                           </a> :''}
-                                          
+
                                           <Link to={`#section` + data.id}>
                                             <img
                                               className="arrow"
@@ -602,18 +538,12 @@ function About(props) {
                       </section>
                     </div>
                   );
-                })} 
-
-
-
+                })}
               </div>
             </div>
-
           </section>
             </div>
           </div>
-
-
         </Router>
       </div>
     </div>

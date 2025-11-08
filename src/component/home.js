@@ -1,61 +1,26 @@
-import React, { useEffect, useState, useRef } from "react";
-import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import React from "react";
+import { BrowserRouter as Router, Link } from "react-router-dom";
 import { Portfolio2 } from "./Portfolio";
 import ReactPlayer from "react-player";
 import MetaTags from "react-meta-tags";
-// import HTMLFlipBook from "react-pageflip";
-//import { PageFlip } from "page-flip";
-
-// import MemberCard from "./memberCard/memberCard";
-// import MemberCardMobile from "./memberCard/memberCardMobile";
 import ScrollHandler from "./scrollHandler";
-import HomeSlider from "./slider/homeSlider";
 import HomeVideo from "../Video/low_size.mp4";
 import Quotes from "./Quotes";
 
 function Home(props) {
   //==================Our Team==========================
-  // const [cardhover, setCardHover] = useState(0);
-  const boxRef = React.useRef([]);
-  const node = useRef();
-  const [activeClass, setActiveClass] = useState();
   const [isVideoLoaded, setIsVideoLoaded] = React.useState(false);
   const src = HomeVideo;
 
   const onLoadedData = () => {
     setIsVideoLoaded(true);
   };
-
-  // const outClick = (e) => {
-  //   let inSideFlag = false;
-  //   boxRef.current.forEach((re) => {
-  //     if (re.contains(e.target)) {
-  //       inSideFlag = true;
-  //     }
-  //   });
-
-  //   if (!inSideFlag) {
-  //     setCardHover(0);
-  //   }
-  // };
-  useEffect(() => {
-    //document.addEventListener("mousedown", outClick);
-    //return () => document.removeEventListener("mousedown", outClick);
-  }, []);
-
-  const memberDetails = require("./memberCard/data/memberDetails.json");
-  var memberList = memberDetails;
   //==================End Our Team==========================
-
-  const [showResults, setShowResults] = React.useState(false);
-  const { pathname } = Router;
-
   // used for changing the CSS class in header color
   if (props.location.pathname === "/") {
     document.body.classList.remove("inner-header");
   }
-  // const videoSrc =
-  //   "https://pcg-documents-ilabs.s3-us-west-2.amazonaws.com/low+size.mp4";
+
   return (
     <div>
       <MetaTags>
@@ -71,7 +36,6 @@ function Home(props) {
       <ScrollHandler />
       <div className="home-main-wrapper">
         <div className="home-banner">
-          {/* <HomeSlider /> */}
           <img
             src="/frame-opt.png"
             className="video-thumb tiny"
@@ -113,123 +77,6 @@ function Home(props) {
         <div className="logo-slider">
           <Portfolio2 />
         </div>
-        {/* <div className="our-team-wrapper">
-          <div className="section-title">
-            <h2>Our Team</h2>
-            <p>
-              We have an experienced team of senior investment professionals
-              dedicated to our success.
-            </p>
-          </div>
-          <div className="team-card-wrapper">
-            {memberList.map((member, index) => {
-              return (
-                <div
-                  ref={(el) => (boxRef.current[index] = el)}
-                  className={
-                    cardhover === index + 1
-                      ? "team-card active"
-                      : cardhover === 0
-                      ? "team-card"
-                      : "team-card none-active"
-                  }
-                  id={index}
-
-                  key={index}
-                  onClick={() => {
-                    cardhover === index + 1
-                      ? setCardHover(0)
-                      : setCardHover(index + 1);
-                  }}
-                >
-                  
-                  <img
-                    src={member.imgSrc2}
-                    className="img_color"
-                    alt={member.alt}
-                  ></img>
-                  <div className="details-box">
-                    <div className="line-1">
-                      <p className="name">{member.name}</p>
-                      <div className="icon-set">
-                        {member.email !== "" ? <a href={member.email}>
-                          <img src={member.emailIcon} alt={member.emailAlt}></img>
-                        </a>:null}
-                        {member.linkedin !== ""? <a href={member.linkedin} target="_blank">
-                          <img src={member.linkedinIcon} alt="Linkedin Icon"></img>
-                        </a>:null }
-                        
-                       
-                      </div>
-                    </div>
-                    <div className="line-2">
-                      <p className="title">{member.title}</p>
-                      <div className="icon-set">
-                        <a href={member.email}>
-                          <img src={member.emailIcon} alt={member.emailAlt}></img>
-                        </a>
-                        <a href={member.linkedin} target="_blank">
-                          <img src={member.linkedinIcon} alt="Linkedin Icon"></img>
-                        </a>
-                      </div>
-                      <p className="desc">
-                        {member.description}
-                        <span>
-                          <Link to={`/about/#sectionteam${member.id}`}>
-                            See more
-                          </Link>
-                        </span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-          <div className="principles">
-            {memberDetails.map((member, index) => {
-              return (
-                <div
-                  ref={(el) => (boxRef.current[index] = el)}
-                  className={
-                    cardhover === index + 1
-                      ? "team-card active"
-                      : cardhover === 0
-                      ? "team-card"
-                      : "team-card none-active"
-                  }
-                  id={index}
-                  onClick={() => {
-                    cardhover === index + 1
-                      ? setCardHover(0)
-                      : setCardHover(index + 1);
-                  }}
-                  key={index}
-                >
-                  <MemberCardMobile
-                    name={member.name}
-                    title={member.title}
-                    description={member.description}
-                    email={member.email}
-                    imgSrc={member.imgSrc}
-                    imgSrc2={member.imgSrc2}
-                    imgSrcMobile={member.imgSrcMobile}
-                    setCardHover={setCardHover}
-                    cardhover={cardhover}
-                    linkedin={member.linkedin}
-                    linkedinIcon={member.linkedinIcon}
-                    idx={index + 1}
-                    emailIcon={member.emailIcon}
-                    alt={member.alt}
-                    emailAlt={member.emailAlt}
-                  />
-                </div>
-              );
-            })}
-          </div>
-          <div></div>
-        </div> */}
-
       <div className="quotes-wrapper">
         <div className="qt-slider">
         <div className="section-title">
@@ -299,7 +146,6 @@ function Home(props) {
           ></img>
           <div className="contact">
             <div className="content">
-              {/* <h2>Join hands with PCG investors</h2> */}
               <p>
                 Our "partnership capital growth" approach means partnering with
                 strong investment partners (other investors and/or founders &

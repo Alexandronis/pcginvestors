@@ -7,8 +7,6 @@ import "slick-carousel/slick/slick-theme.css";
 import HomeVideo from "../../Video/low_size.mp4";
 
 function homeSlider() {
-  // const videoSrc =
-  //   "https://pcg-documents-ilabs.s3-us-west-2.amazonaws.com/low+size.mp4";
   function SamplePrevArrow(props) {
     const { className, style, onClick } = props;
     return (
@@ -56,7 +54,6 @@ function homeSlider() {
         style={{
           textalign: "right",
           bottom: "50%",
-          //left: "33%",
           top: "84%",
         }}
       >

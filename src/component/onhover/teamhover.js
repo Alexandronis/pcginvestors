@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function TeamHover() {
   return (
@@ -7,7 +7,7 @@ function TeamHover() {
       <div className="arrow-up about"></div>
       <div className="content">
         <div className="details-waper">
-         
+
           <Link
             to="/about/#our-team"
             className="content-details"

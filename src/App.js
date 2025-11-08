@@ -1,10 +1,5 @@
 import React from "react";
-import {
-  Route,
-  withRouter,
-  RouteComponentProps,
-  Switch,
-} from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import "./style/main.scss";
 
 import About from "./component/about";
@@ -14,7 +9,6 @@ import PortfolioPage from "./component/portfolioPage";
 import ClientPage from "./component/clientPage";
 import Header from "./component/header";
 import NotFoundPage from "./404";
-import CharitableContributions from "./component/CharitableContributions";
 import Footer from "./component/footer";
 
 
@@ -30,7 +24,6 @@ function App() {
               <Route exact path="/" component={Home} />
               <Route exact path="/about" component={About} />
               <Route exact path="/portfolio-page" component={PortfolioPage} />
-              {/* <Route exact path="/charitable-contributions" component={CharitableContributions} /> */}
               <Route exact path="/contact" component={Contact} />
               <Route exact path="/client-page" component={ClientPage} />
               <Route component={NotFoundPage} />

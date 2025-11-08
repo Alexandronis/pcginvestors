@@ -1,27 +1,10 @@
-import React, { useEffect, useRef } from "react";
-import {
-  BrowserRouter as Router,
-  useLocation,
-} from "react-router-dom";
-
-import ScrollHandler from "./scrollHandler";
+import React, { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import Chart from "./chart";
 
 function CharitableContributions(props) {
-  // if (props.location.pathname === "/charitable-contributions") {
-  //   document.body.classList.add("inner-header");
-  // }
-  const charitableContributions = useRef();
   const Location = useLocation();
   useEffect(() => {
-    // if (Location.pathname === "/charitable-contributions" && charitableContributions.current) {
-    //   charitableContributions.current.scrollIntoView();
-    // }
-
-    // if (props.location.pathname === "/charitable-contributions/") {
-    //   document.body.classList.add("inner-header");
-    // }
-
     setTimeout(() => {
       window.scrollTo(0, window.scrollY - 70);
     }, );
@@ -72,7 +55,7 @@ function CharitableContributions(props) {
           })
         }</div>
 
-        
+
       </div>
       <div className="other-charity">
         <div className="title">
@@ -89,9 +72,9 @@ function CharitableContributions(props) {
           })
         }
         </div>
-     
+
       </div>
-     
+
     </div>
   );
 }

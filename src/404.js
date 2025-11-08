@@ -1,5 +1,4 @@
 import React from "react";
-// import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 const NotFoundPage = (props) => {
   if (props.location.pathname === "/404") {

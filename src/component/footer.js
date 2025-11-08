@@ -1,12 +1,10 @@
 import React, { useState, useEffect } from "react";
-import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Footer() {
-  // reset Dropdown created by sachith 11/20/2020
   const resetDropdown = () => {
     localStorage.removeItem("portfolioOption");
   };
-    // Auto update year in footer copyright section created by sachith
     const [date, setDate] = useState();
     const getYear = () => setDate(new Date().getFullYear());
     useEffect(() => {

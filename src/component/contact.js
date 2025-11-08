@@ -4,19 +4,14 @@ import {
   useLocation,
 } from "react-router-dom";
 import MetaTags from 'react-meta-tags';
-import { useHistory } from "react-router-dom";
 
 import ScrollHandler from "./scrollHandler";
 
 function Contact(props) {
-  const history = useHistory();
-  const { pathname } = Router;
-
   if (props.location.pathname === "/contact") {
     document.body.classList.add("inner-header");
   }
 
-  // scroll refs created by sachith 11/19/2020
   const ContactUs = useRef();
   const Location = useLocation();
 
