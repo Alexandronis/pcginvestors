@@ -28,9 +28,9 @@ const PortfolioItem = props => {
           </div>
 
           <div className="desc_section">
-            <span>"</span>
+            <span>&quot;</span>
             <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{props.data.description}</p>
-            <span>"</span>
+            <span>&quot;</span>
           </div>
           <div className="name_section">
             <h4>{props.data.name}</h4>
@@ -40,16 +40,23 @@ const PortfolioItem = props => {
         </div>
       </div>
       <div
+        role="button"
+        tabIndex={0}
         className={props.opened ? "portfolioClose opened" : "portfolioClose"}
         onClick={handleClick}
+        onKeyPress={(e) => e.key === "Enter" && handleClick(e)}
+
       >
         <div className="icon">
           <span className="bar"></span>
         </div>
       </div>
       <div
+        role="button"
+        tabIndex={0}
         className={props.opened ? "portfolioItem opened" : "portfolioItem"}
         onClick={handleClick}
+        onKeyPress={(e) => e.key === "Enter" && handleClick(e)}
       >
         <img alt={props.data.alt} src={props.data.image} />
       </div>

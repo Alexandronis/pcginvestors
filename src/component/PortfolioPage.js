@@ -182,11 +182,14 @@ function PortfolioPage() {
                         <div className="card-wrapper">
                           {filteredUnrealized.map(data => (
                             <div
+                              role="button"
+                              tabIndex={0}
                               className="logo-box"
                               key={data.id}
                               onClick={() =>
                                 navigate("/client-page", { state: { data } })
                               }
+                              onKeyPress={(e) => e.key === "Enter" && navigate("/client-page", { state: { data } })}
                             >
                               <div className="logo-img-box">
                                 <img
@@ -212,11 +215,14 @@ function PortfolioPage() {
                         <div className="card-wrapper">
                           {filteredRealized.map(data => (
                             <div
+                              role="button"
+                              tabIndex={0}
                               className="logo-box"
                               key={data.id}
                               onClick={() =>
                                 navigate("/client-page", { state: { data } })
                               }
+                              onKeyPress={(e) => e.key === "Enter" && navigate("/client-page", { state: { data } })}
                             >
                               <div className="logo-img-box">
                                 <img
@@ -244,11 +250,14 @@ function PortfolioPage() {
                         <div className="card-wrapper">
                           {fitnessCategory.map(data => (
                             <div
+                              role="button"
+                              tabIndex={0}
                               className="logo-box"
                               key={data.id}
                               onClick={() =>
                                 navigate("/client-page", { state: { data } })
                               }
+                              onKeyPress={(e) => e.key === "Enter" && navigate("/client-page", { state: { data } })}
                             >
                               <div className="logo-img-box">
                                 <img
@@ -272,11 +281,14 @@ function PortfolioPage() {
                         <div className="card-wrapper">
                           {foodsCategory.map(data => (
                             <div
+                              role="button"
+                              tabIndex={0}
                               className="logo-box"
                               key={data.id}
                               onClick={() =>
                                 navigate("/client-page", { state: { data } })
                               }
+                              onKeyPress={(e) => e.key === "Enter" && navigate("/client-page", { state: { data } })}
                             >
                               <div className="logo-img-box">
                                 <img
@@ -300,11 +312,14 @@ function PortfolioPage() {
                         <div className="card-wrapper">
                           {consumerCategory.map(data => (
                             <div
+                              role="button"
+                              tabIndex={0}
                               className="logo-box"
                               key={data.id}
                               onClick={() =>
                                 navigate("/client-page", { state: { data } })
                               }
+                              onKeyPress={(e) => e.key === "Enter" && navigate("/client-page", { state: { data } })}
                             >
                               <div className="logo-img-box">
                                 <img
@@ -328,11 +343,14 @@ function PortfolioPage() {
                         <div className="card-wrapper">
                           {lifestyleCategory.map(data => (
                             <div
+                              role="button"
+                              tabIndex={0}
                               className="logo-box"
                               key={data.id}
                               onClick={() =>
                                 navigate("/client-page", { state: { data } })
                               }
+                              onKeyPress={(e) => e.key === "Enter" && navigate("/client-page", { state: { data } })}
                             >
                               <div className="logo-img-box">
                                 <img
@@ -356,11 +374,14 @@ function PortfolioPage() {
                         <div className="card-wrapper">
                           {suplemntsCategory.map(data => (
                             <div
+                              role="button"
+                              tabIndex={0}
                               className="logo-box"
                               key={data.id}
                               onClick={() =>
                                 navigate("/client-page", { state: { data } })
                               }
+                              onKeyPress={(e) => e.key === "Enter" && navigate("/client-page", { state: { data } })}
                             >
                               <div className="logo-img-box">
                                 <img
@@ -587,7 +608,7 @@ function PortfolioPage() {
                                 interests, attitudes, or opinions of groups or
                                 cultures and seek to inspire, guide, and
                                 motivate people, with the goal of their products
-                                contributing to the definition of the consumer's
+                                contributing to the definition of the consumer&apos;s
                                 way of life. A business becomes a lifestyle
                                 brand by focusing on evoking an emotional
                                 connection with its customers, creating a desire
@@ -647,7 +668,7 @@ function PortfolioPage() {
                                 bars, and liquids. People use dietary
                                 supplements for a wide assortment of reasons -
                                 diets, medical conditions, boost energy, or to
-                                get a good night's sleep.
+                                get a good night&apos;s sleep.
                               </p>
                               <div className="brand-logos">
                                 <img

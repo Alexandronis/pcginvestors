@@ -55,6 +55,12 @@ const Portfolio = () => {
         onMouseLeave={() => {
           scroller = setInterval(scrollSlider, 30);
         }}
+        onFocus={() => {
+          clearInterval(scroller);
+        }}
+        onBlur={() => {
+          scroller = setInterval(scrollSlider, 30);
+        }}
         ref={slider}
         className="prtfolio_slider"
       >

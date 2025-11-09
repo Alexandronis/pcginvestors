@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function aboutHover() {
+function AboutHover() {
   return (
     <div className="hover_container about">
       <div className="arrow-up about"></div>
@@ -13,7 +13,7 @@ function aboutHover() {
             onClick={() => document.getElementById("customFocus").focus}
           >
             <div className="img-box">
-              <img src="/Nav_hover_img/about_pcg.svg"></img>
+              <img src="/Nav_hover_img/about_pcg.svg" alt="About" />
             </div>
             <h2>ABOUT PCG</h2>
             <p>Explore who we are - our mission, values, and principles</p>
@@ -24,4 +24,4 @@ function aboutHover() {
   );
 }
 
-export default aboutHover;
+export default AboutHover;

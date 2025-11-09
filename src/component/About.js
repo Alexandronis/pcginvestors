@@ -482,10 +482,18 @@ function About() {
                                 <div className="arrow_btn">
                                   <span>
                                     <Link to={`#section` + data.id}>
+                                      {/* eslint-disable-next-line jsx-a11y/no-noninteractive-element-interactions */}
                                       <img
                                         onClick={() => {
                                           handleExpandClick(data.id);
                                           setIsShown(i + 1);
+                                        }}
+                                        onKeyPress={(e) => {
+                                          if (e.key === "Enter" || e.key === " ") {
+                                            e.preventDefault(); // prevents page from scrolling when Space is pressed
+                                            handleExpandClick(data.id);
+                                            setIsShown(i + 1);
+                                          }
                                         }}
                                         src="/arrowDown.svg"
                                         alt="Arrow Icon"
@@ -552,6 +560,7 @@ function About() {
                                             )}
 
                                             <Link to={`#section` + data.id}>
+                                              {/* eslint-disable-next-line jsx-a11y/no-noninteractive-element-interactions */}
                                               <img
                                                 className="arrow"
                                                 src="/arrowUp.svg"
@@ -559,6 +568,13 @@ function About() {
                                                 onClick={() => {
                                                   handleExpandClick(data.id);
                                                   setIsShown(0);
+                                                }}
+                                                onKeyPress={(e) => {
+                                                  if (e.key === "Enter" || e.key === " ") {
+                                                    e.preventDefault(); // prevents page from scrolling when Space is pressed
+                                                    handleExpandClick(data.id);
+                                                    setIsShown(0);
+                                                  }
                                                 }}
                                               />
                                             </Link>

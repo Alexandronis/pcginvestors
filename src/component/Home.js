@@ -155,7 +155,7 @@ function Home() {
           <div className="contact">
             <div className="content">
               <p>
-                Our "partnership capital growth" approach means partnering with
+                Our &quot;partnership capital growth&quot; approach means partnering with
                 strong investment partners (other investors and/or founders &
                 management teams) and providing capital for growth in businesses
                 where we can add value based on our experience and focus in

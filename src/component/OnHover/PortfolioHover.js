@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function portfolioHover() {
+function PortfolioHover() {
   return (
     <div className="hover_container portfolio">
       <div className="arrow-up portfolio"></div>
@@ -13,7 +13,7 @@ function portfolioHover() {
             onClick={() => document.getElementById("customFocus").focus}
           >
             <div className="img-box">
-              <img src="/Nav_hover_img/Portfolio.svg"></img>
+              <img src="/Nav_hover_img/Portfolio.svg" alt="Portfolio" />
             </div>
             <h2>Portfolio</h2>
             <p>Explore our portfolio companies</p>
@@ -24,7 +24,7 @@ function portfolioHover() {
             onClick={() => document.getElementById("customFocus").focus}
           >
             <div className="img-box">
-              <img src="/Nav_hover_img/investment.svg"></img>
+              <img src="/Nav_hover_img/investment.svg" alt="Investment" />
             </div>
             <h2>Investment Categories</h2>
             <p>Explore the areas we invest in</p>
@@ -35,7 +35,7 @@ function portfolioHover() {
             onClick={() => document.getElementById("customFocus").focus}
           >
             <div className="img-box">
-              <img src="/Nav_hover_img/Criteria.svg"></img>
+              <img src="/Nav_hover_img/Criteria.svg" alt="Criteria" />
             </div>
             <h2>Criteria</h2>
             <p>Explore how we select our investments</p>
@@ -46,4 +46,4 @@ function portfolioHover() {
   );
 }
 
-export default portfolioHover;
+export default PortfolioHover;

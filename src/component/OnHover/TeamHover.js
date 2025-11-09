@@ -13,7 +13,7 @@ function TeamHover() {
             onClick={() => document.getElementById("customFocus").focus}
           >
             <div className="img-box">
-              <img src="/Nav_hover_img/pcg_team.svg"></img>
+              <img src="/Nav_hover_img/pcg_team.svg" alt="Team" />
             </div>
             <h2>PCG TEAM</h2>
             <p>

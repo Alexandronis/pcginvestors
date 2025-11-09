@@ -36,9 +36,11 @@ function ClientPage() {
       <div className="inner-page-wrapper client-wrapper">
         <div className="content-wrapper">
           <div className="content-inner-box">
+            {/* eslint-disable-next-line jsx-a11y/no-noninteractive-element-interactions */}
             <img
               className="close-img"
               onClick={handleClick}
+              onKeyPress={(e) => e.key === "Enter" && handleClick(e)}
               src="/close-btn.svg"
               alt="close"
             />
@@ -74,12 +76,12 @@ function ClientPage() {
 
                   <div className="mob-set-inner">
                     <div className="desc_section">
-                      <span>"</span>
+                      <span>&quot;</span>
                       <p>
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         {data.short_description}
                       </p>
-                      <span>"</span>
+                      <span>&quot;</span>
                     </div>
                     <div className="name_labels">
                       <h4>{data.author}</h4>

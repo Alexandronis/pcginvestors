@@ -1,15 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 function Footer() {
   const resetDropdown = () => {
     localStorage.removeItem("portfolioOption");
   };
-  const [date, setDate] = useState();
-  const getYear = () => setDate(new Date().getFullYear());
-  useEffect(() => {
-    getYear();
-  }, []);
+  const [date] = useState(new Date().getFullYear());
 
   return (
     <div>

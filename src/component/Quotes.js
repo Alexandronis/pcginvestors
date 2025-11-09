@@ -19,6 +19,8 @@ function SamplePrevArrow(props) {
   const { className, style, onClick } = props;
   return (
     <div
+      role="button"
+      tabIndex={0}
       className={className}
       style={{
         ...style,
@@ -26,6 +28,7 @@ function SamplePrevArrow(props) {
         opacity: 0,
       }}
       onClick={onClick}
+      onKeyPress={(e) => e.key === "Enter" && onClick(e)}
     />
   );
 }
@@ -34,6 +37,8 @@ function SampleNextArrow(props) {
   const { className, style, onClick } = props;
   return (
     <div
+      role="button"
+      tabIndex={0}
       className={className}
       style={{
         ...style,
@@ -41,6 +46,7 @@ function SampleNextArrow(props) {
         opacity: 0,
       }}
       onClick={onClick}
+      onKeyPress={(e) => e.key === "Enter" && onClick(e)}
     />
   );
 }
@@ -52,8 +58,8 @@ const Quotes = () => {
         <div className="slider-card">
           <div className="quote-text">
             <p>
-              “PCG's early investment has helped SEB accelerate our U.S. and
-              global expansion, capitalizing on the company's robust growth rate
+              “PCG&apos;s early investment has helped SEB accelerate our U.S. and
+              global expansion, capitalizing on the company&apos;s robust growth rate
               and global consumer interest in fitness / health clubs.”
             </p>
           </div>

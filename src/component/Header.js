@@ -2,9 +2,9 @@ import React, { useState, useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { Link } from "react-scroll";
 
-import Abouthover from "./OnHover/AboutHover";
-import Portfoliohover from "./OnHover/PortfolioHover";
-import Contacthover from "./OnHover/ContactHover";
+import AboutHover from "./OnHover/AboutHover";
+import PortfolioHover from "./OnHover/PortfolioHover";
+import ContactHover from "./OnHover/ContactHover";
 import TeamHover from "./OnHover/TeamHover";
 
 function Header() {
@@ -35,10 +35,13 @@ function Header() {
     >
       <header className="main-header">
         <div
+          role="button"
+          tabIndex={0}
           className="logo"
           onClick={() => {
             localStorage.setItem("activePage", "");
           }}
+          onKeyPress={(e) => e.key === "Enter" && localStorage.setItem("activePage", "")}
         >
           <a href="/">
             <img src="/pcg-logo.png" alt="PCG Logo" />
@@ -73,7 +76,7 @@ function Header() {
                   <span></span>
                 </Link>
                 {isShown === 1 && (
-                  <Abouthover
+                  <AboutHover
                     onClick={() => {
                       isShown === 1 ? setIsShown(0) : setIsShown(1);
                       resetDropdown();
@@ -103,7 +106,7 @@ function Header() {
                   <span></span>
                 </Link>
                 {isShown === 2 && (
-                  <Portfoliohover
+                  <PortfolioHover
                     onClick={() => {
                       isShown === 2 ? setIsShown(0) : setIsShown(2);
                       resetDropdown();
@@ -159,7 +162,7 @@ function Header() {
                   <span></span>
                 </Link>
                 {isShown === 4 && (
-                  <Contacthover
+                  <ContactHover
                     onClick={() => {
                       isShown === 4 ? setIsShown(0) : setIsShown(4);
                       resetDropdown();
