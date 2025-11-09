@@ -472,7 +472,7 @@ function About() {
                                     </a>
                                   ) : null}
 
-                                  <a href={data.linkedin} target="_blank">
+                                  <a href={data.linkedin} target="_blank" rel="noreferrer">
                                     <img
                                       src={data.linkedinIcon}
                                       alt="Linkedin Icon"
@@ -539,7 +539,7 @@ function About() {
                                             {data.linkedin !== "" ? (
                                               <a
                                                 href={data.linkedin}
-                                                target="_blank"
+                                                target="_blank" rel="noreferrer"
                                               >
                                                 <img
                                                   src={data.linkedinIcon}

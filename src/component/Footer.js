@@ -92,7 +92,7 @@ function Footer() {
               <li>
                 <a
                   href="https://www.facebook.com/Partnership-Capital-Growth-428884540458567"
-                  target="_blank"
+                  target="_blank" rel="noreferrer"
                 >
                   <img
                     className=""
@@ -104,7 +104,7 @@ function Footer() {
               <li>
                 <a
                   href="https://www.instagram.com/pcg_investors/"
-                  target="_blank"
+                  target="_blank" rel="noreferrer"
                 >
                   <img
                     className=""
@@ -114,7 +114,7 @@ function Footer() {
                 </a>
               </li>
               <li>
-                <a href="https://twitter.com/PCG_Investors" target="_blank">
+                <a href="https://twitter.com/PCG_Investors" target="_blank" rel="noreferrer">
                   <img
                     className=""
                     src="/twitter_icon.svg"
@@ -125,7 +125,7 @@ function Footer() {
               <li>
                 <a
                   href="https://www.linkedin.com/company/partnership-capital-growth"
-                  target="_blank"
+                  target="_blank" rel="noreferrer"
                 >
                   <img
                     className=""
@@ -245,7 +245,7 @@ function Footer() {
             <li>
               <a
                 href="https://www.facebook.com/Partnership-Capital-Growth-428884540458567"
-                target="_blank"
+                target="_blank" rel="noreferrer"
               >
                 <img
                   className=""
@@ -257,7 +257,7 @@ function Footer() {
             <li>
               <a
                 href="https://www.instagram.com/pcg_investors/"
-                target="_blank"
+                target="_blank" rel="noreferrer"
               >
                 <img
                   className=""
@@ -267,14 +267,14 @@ function Footer() {
               </a>
             </li>
             <li>
-              <a href="https://twitter.com/PCG_Investors" target="_blank">
+              <a href="https://twitter.com/PCG_Investors" target="_blank" rel="noreferrer">
                 <img className="" src="/twitter_icon.svg" alt="Twitter Icon" />
               </a>
             </li>
             <li>
               <a
                 href="https://www.linkedin.com/company/partnership-capital-growth"
-                target="_blank"
+                target="_blank" rel="noreferrer"
               >
                 <img
                   className=""
