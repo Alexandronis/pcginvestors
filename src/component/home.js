@@ -1,13 +1,15 @@
 import React from "react";
-import { BrowserRouter as Router, Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { Portfolio2 } from "./Portfolio";
 import ReactPlayer from "react-player";
-import MetaTags from "react-meta-tags";
+import { Helmet } from "react-helmet";
 import ScrollHandler from "./scrollHandler";
 import HomeVideo from "../Video/low_size.mp4";
 import Quotes from "./Quotes";
 
-function Home(props) {
+function Home() {
+  const location = useLocation(); // <-- use React Router v6 hook
+
   //==================Our Team==========================
   const [isVideoLoaded, setIsVideoLoaded] = React.useState(false);
   const src = HomeVideo;
@@ -16,14 +18,15 @@ function Home(props) {
     setIsVideoLoaded(true);
   };
   //==================End Our Team==========================
+
   // used for changing the CSS class in header color
-  if (props.location.pathname === "/") {
+  if (location.pathname === "/") {
     document.body.classList.remove("inner-header");
   }
 
   return (
     <div>
-      <MetaTags>
+      <Helmet>
         <title>
           PCG Investors-Private equity firm for value-based investing
         </title>
@@ -31,7 +34,7 @@ function Home(props) {
           name="description"
           content="PCG is a private equity investor fund for growth stage consumer investing in healthcare, fitness and lifestyle to create value as a growth capital investor"
         />
-      </MetaTags>
+      </Helmet>
       <link rel="canonical" href="https://www.pcginvestors.com/"></link>
       <ScrollHandler />
       <div className="home-main-wrapper">
@@ -77,14 +80,14 @@ function Home(props) {
         <div className="logo-slider">
           <Portfolio2 />
         </div>
-      <div className="quotes-wrapper">
-        <div className="qt-slider">
-        <div className="section-title">
-          <h2>From Our CEOs</h2>
+        <div className="quotes-wrapper">
+          <div className="qt-slider">
+            <div className="section-title">
+              <h2>From Our CEOs</h2>
+            </div>
+            <Quotes />
+          </div>
         </div>
-        <Quotes/>
-        </div>
-      </div>
 
         <div className="inv-category-wrapper">
           <div className="section-title">
@@ -137,13 +140,18 @@ function Home(props) {
             </Link>
           </div>
         </div>
+
         <div className="home-contact-wrapper">
-          <img className="contact-img" src="/home-contact-banner.png" alt="PCG Banner Logo"></img>
+          <img
+            className="contact-img"
+            src="/home-contact-banner.png"
+            alt="PCG Banner Logo"
+          />
           <img
             className="contact-img-mobile"
             src="/contact/Mask Group 30.png"
             alt="PCG Banner Logo"
-          ></img>
+          />
           <div className="contact">
             <div className="content">
               <p>

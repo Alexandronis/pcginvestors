@@ -1,26 +1,22 @@
 import { useEffect } from "react";
-import PropTypes from "prop-types";
-import { withRouter } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
-const ScrollHandler = ({ location }) => {
+const ScrollHandler = () => {
+  const location = useLocation();
+
   useEffect(() => {
-    const element = document.getElementById(location.hash);
+    const elementId = location.hash.replace("#", ""); // remove '#' for getElementById
+    const element = document.getElementById(elementId);
 
     setTimeout(() => {
       window.scrollTo({
-        behavior: "auto", 
-        top: element ? element.offsetTop : -200,
+        behavior: "auto",
+        top: element ? element.offsetTop - 100 : 0, // adjust offset if needed
       });
-    }, );
+    }, 0); // 0ms timeout ensures DOM is ready
   }, [location]);
 
   return null;
 };
 
-ScrollHandler.propTypes = {
-  location: PropTypes.shape({
-    hash: PropTypes.string,
-  }).isRequired,
-};
-
-export default withRouter(ScrollHandler);
+export default ScrollHandler;

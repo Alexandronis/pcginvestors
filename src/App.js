@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Switch } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import "./style/main.scss";
 
 import About from "./component/about";
@@ -11,27 +11,19 @@ import Header from "./component/header";
 import NotFoundPage from "./404";
 import Footer from "./component/footer";
 
-
 function App() {
   return (
     <div className="App">
-      <Route
-        path={"(.+)"}
-        render={() => (
-          <>
-            <Header />
-            <Switch>
-              <Route exact path="/" component={Home} />
-              <Route exact path="/about" component={About} />
-              <Route exact path="/portfolio-page" component={PortfolioPage} />
-              <Route exact path="/contact" component={Contact} />
-              <Route exact path="/client-page" component={ClientPage} />
-              <Route component={NotFoundPage} />
-            </Switch>
-            <Footer/>
-          </>
-        )}
-      />
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/portfolio-page" element={<PortfolioPage />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/client-page" element={<ClientPage />} />
+        <Route path="*" element={<NotFoundPage />} />
+      </Routes>
+      <Footer />
     </div>
   );
 }

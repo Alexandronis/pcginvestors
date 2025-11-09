@@ -3,7 +3,7 @@ import {
   BrowserRouter as Router,
   useLocation,
 } from "react-router-dom";
-import MetaTags from 'react-meta-tags';
+import { Helmet } from "react-helmet";
 
 import ScrollHandler from "./scrollHandler";
 
@@ -35,10 +35,10 @@ function Contact(props) {
 
   return (
     <div>
-      <MetaTags>
+      <Helmet>
       <title>Contact PCG Investors for your investment needs</title>
       <meta name="description" content="Contact number, address, and e mail address of PCG investors" />
-      </MetaTags>
+      </Helmet>
       <link rel="canonical" href="https://www.pcginvestors.com/contact"></link>
       <Router>
         <ScrollHandler />
