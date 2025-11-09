@@ -4,11 +4,16 @@ import { Helmet } from "react-helmet";
 import ScrollHandler from "./scrollHandler";
 const OrgData = require("./Portfolio/Data/organization.json");
 
-function PortfolioPage(props) {
+function PortfolioPage() {
   const [value, setValue] = useState(localStorage.getItem("portfolioOption"));
   const navigate = useNavigate();
 
-  if (props.location.pathname === "/portfolio-page") {
+  const Portfolio = useRef();
+  const Investment = useRef();
+  const Criteria = useRef();
+  const Location = useLocation();
+
+  if (Location.pathname === "/portfolio-page") {
     document.body.classList.add("inner-header");
   }
 
@@ -16,11 +21,6 @@ function PortfolioPage(props) {
     setValue(e.target.value);
     localStorage.setItem("portfolioOption", e.target.value);
   };
-
-  const Portfolio = useRef();
-  const Investment = useRef();
-  const Criteria = useRef();
-  const Location = useLocation();
 
   const filteredRealized = OrgData.filter(org => org.status === 'realized');
   const filteredUnrealized = OrgData.filter(org => org.status === 'unrealized');
@@ -53,7 +53,7 @@ function PortfolioPage(props) {
       Portfolio.current.scrollIntoView();
       window.scrollTo(0, window.scrollY - 100);
     }
-    if (props.location.pathname === "/portfolio-page/") {
+    if (Location.pathname === "/portfolio-page/") {
       document.body.classList.add("inner-header");
     }
     if (Location.pathname === "/portfolio-page") {
@@ -76,7 +76,6 @@ function PortfolioPage(props) {
         rel='canonical'
         href='https://www.pcginvestors.com/portfolio-page'></link>
       <div className='inner-page-wrapper portfoilo-wrapper'>
-        <Router>
           <ScrollHandler />
           <div className="page-block-portfolio">
             <div className="switch-lable">
@@ -791,7 +790,6 @@ function PortfolioPage(props) {
               </section>
             </div>
           </div>
-        </Router>
       </div>
     </div>
   );
