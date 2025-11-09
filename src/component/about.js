@@ -179,156 +179,198 @@ function About() {
                         to:
                       </p>
                       <div className="principles">
-                          <div className="card_containar">
-                            <div className="leftside_text">
-                              <div className="image_containar">
-                                <img
-                                  className="image"
-                                  src="/green_card.svg"
-                                  alt="Green Card"
-                                />
-                                <img
-                                  className="image_icon"
-                                  src="/about_card/focus.svg"
-                                  alt="Focus Icon"
-                                />
-                                <h2>FOCUS</h2>
-                              </div>
+                        <div className="card_containar">
+                          <div className="leftside_text">
+                            <div className="image_containar">
+                              <img
+                                className="image"
+                                src="/green_card.svg"
+                                alt="Green Card"
+                              />
+                              <img
+                                className="image_icon"
+                                src="/about_card/focus.svg"
+                                alt="Focus Icon"
+                              />
+                              <h2>FOCUS</h2>
+                            </div>
 
-                              <div className="card_list_items">
-                                <ul>
-                                  <li>Only invest in areas we know</li>
-                                  <li>
-                                    Work with market leading companies with proven
-                                    profitability and growth
-                                  </li>
-                                  <li>Keep it simple</li>
-                                </ul>
-                              </div>
+                            <div className="card_list_items">
+                              <ul>
+                                <li>Only invest in areas we know</li>
+                                <li>
+                                  Work with market leading companies with proven
+                                  profitability and growth
+                                </li>
+                                <li>Keep it simple</li>
+                              </ul>
                             </div>
                           </div>
+                        </div>
 
-                          <div className="card_containar">
-                            <div className="leftside_text">
-                              <div className="image_containar">
-                                <img
-                                  className="image"
-                                  src="/green_card.svg"
-                                  alt="Green Card"
-                                />
-                                <img
-                                  className="image_icon"
-                                  src="/about_card/Partnerships.svg"
-                                  alt="Partnerships Icon"
-                                />
-                                <h2>PARTNERSHIP</h2>
-                              </div>
-                              <div className="card_list_items">
-                                <ul>
-                                  <li>Mutual trust and confidence</li>
-                                  <li>
-                                    Clearly aligned interests among all stakeholders
-                                  </li>
-                                </ul>
-                              </div>
+                        <div className="card_containar">
+                          <div className="leftside_text">
+                            <div className="image_containar">
+                              <img
+                                className="image"
+                                src="/green_card.svg"
+                                alt="Green Card"
+                              />
+                              <img
+                                className="image_icon"
+                                src="/about_card/Partnerships.svg"
+                                alt="Partnerships Icon"
+                              />
+                              <h2>PARTNERSHIP</h2>
+                            </div>
+                            <div className="card_list_items">
+                              <ul>
+                                <li>Mutual trust and confidence</li>
+                                <li>
+                                  Clearly aligned interests among all stakeholders
+                                </li>
+                              </ul>
                             </div>
                           </div>
+                        </div>
 
-                          <div className="card_containar">
-                            <div className="leftside_text">
-                              <div className="image_containar">
-                                <img
-                                  className="image"
-                                  src="/green_card.svg"
-                                  alt="Green Card"
-                                />
-                                <img
-                                  className="image_icon"
-                                  src="/about_card/Diligence.svg"
-                                  alt="Diligence Icon"
-                                />
-                                <h2>DILIGENCE</h2>
-                              </div>
-                              <div className="card_list_items">
-                                <ul>
-                                  <li>
-                                    Thorough understanding of key business
-                                    fundamentals and value drivers
-                                  </li>
-                                  <li>
-                                    Become intimately familiar with the downside
-                                    risks and upside opportunities
-                                  </li>
-                                </ul>
-                              </div>
+                        <div className="card_containar">
+                          <div className="leftside_text">
+                            <div className="image_containar">
+                              <img
+                                className="image"
+                                src="/green_card.svg"
+                                alt="Green Card"
+                              />
+                              <img
+                                className="image_icon"
+                                src="/about_card/Diligence.svg"
+                                alt="Diligence Icon"
+                              />
+                              <h2>DILIGENCE</h2>
+                            </div>
+                            <div className="card_list_items">
+                              <ul>
+                                <li>
+                                  Thorough understanding of key business
+                                  fundamentals and value drivers
+                                </li>
+                                <li>
+                                  Become intimately familiar with the downside
+                                  risks and upside opportunities
+                                </li>
+                              </ul>
                             </div>
                           </div>
+                        </div>
 
-                          <div className="card_containar">
-                            <div className="leftside_text">
-                              <div className="image_containar">
-                                <img
-                                  className="image"
-                                  src="/green_card.svg"
-                                  alt="Green Card"
-                                />
-                                <img
-                                  className="image_icon"
-                                  src="/about_card/structure.svg"
-                                  alt="Structure Icon"
-                                />
-                                <h2>STRUCTURE</h2>
-                              </div>
-                              <div className="card_list_items">
-                                <ul>
-                                  <li>
-                                    Appropriate capital structure to support growth
-                                    with limited leverage
-                                  </li>
-                                  <li>
-                                    Disciplined and constructive board, advisors and
-                                    outside resources
-                                  </li>
-                                </ul>
-                              </div>
+                        <div className="card_containar">
+                          <div className="leftside_text">
+                            <div className="image_containar">
+                              <img
+                                className="image"
+                                src="/green_card.svg"
+                                alt="Green Card"
+                              />
+                              <img
+                                className="image_icon"
+                                src="/about_card/structure.svg"
+                                alt="Structure Icon"
+                              />
+                              <h2>STRUCTURE</h2>
+                            </div>
+                            <div className="card_list_items">
+                              <ul>
+                                <li>
+                                  Appropriate capital structure to support growth
+                                  with limited leverage
+                                </li>
+                                <li>
+                                  Disciplined and constructive board, advisors and
+                                  outside resources
+                                </li>
+                              </ul>
                             </div>
                           </div>
+                        </div>
 
-                          <div className="card_containar">
-                            <div className="leftside_text">
-                              <div className="image_containar">
-                                <img
-                                  className="image"
-                                  src="/green_card.svg"
-                                  alt="Green Card"
-                                />
-                                <img
-                                  className="image_icon"
-                                  src="/about_card/Values_and_value.svg"
-                                  alt="Values Icon"
-                                />
-                                <h2>VALUES & VALUE</h2>
-                              </div>
-                              <div className="card_list_items">
-                                <ul>
-                                  <li>
-                                    Values: trust, respect, integrity, balance &
-                                    excellence
-                                  </li>
-                                  <li>
-                                    Value: consistent and transparent focus on
-                                    building eventual exit value
-                                  </li>
-                                </ul>
-                              </div>
+                        <div className="card_containar">
+                          <div className="leftside_text">
+                            <div className="image_containar">
+                              <img
+                                className="image"
+                                src="/green_card.svg"
+                                alt="Green Card"
+                              />
+                              <img
+                                className="image_icon"
+                                src="/about_card/Values_and_value.svg"
+                                alt="Values Icon"
+                              />
+                              <h2>VALUES & VALUE</h2>
+                            </div>
+                            <div className="card_list_items">
+                              <ul>
+                                <li>
+                                  Values: trust, respect, integrity, balance &
+                                  excellence
+                                </li>
+                                <li>
+                                  Value: consistent and transparent focus on
+                                  building eventual exit value
+                                </li>
+                              </ul>
                             </div>
                           </div>
+                        </div>
                       </div>
                     </div>
                   </div>
 
                   <div className="company-values">
-                    <CharitableContributions />
+                    <CharitableContributions/>
+                  </div>
+                </div>
+              </div>
+              <div className="content-wrapper learn-more-about">
+                <div className="content-inner-box">
+                  <div className="company-values">
+                    <div className="values-title">
+                      <span></span>
+                      <h2>LEARN MORE ABOUT US</h2>
+                    </div>
+                    <div className="value-text">
+                      <div className="principles">
+                        <div className="card_containar">
+                          <div className="leftside_text">
+                            <div className="download_img">
+                              <a
+                                target="_blank"
+                                href="/pdf_files/PCG Investors 1 - Pager.pdf"
+                                download
+                              >
+                                <img
+                                  className="image_containar"
+                                  src="/green_card.svg"
+                                  alt="Green Card"
+                                />
+                                <img
+                                  className="download"
+                                  src="/computing-cloud.svg"
+                                  alt="Download Icon"
+                                />
+                              </a>
+                            </div>
+
+                            <div className="card_list_items">
+                              <ul>
+                                <li>PCG 1-pager</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
