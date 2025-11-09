@@ -7,7 +7,7 @@ const Data = require("../../../data/portfolio.json");
 var scrollDir = 1;
 var scroller = null;
 
-const Portfolio = props => {
+const Portfolio = () => {
   const slider = useRef(null);
   const [OpenedItem, setOpenedItem] = useState(null);
 

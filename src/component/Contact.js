@@ -4,7 +4,7 @@ import { Helmet } from "react-helmet";
 
 import ScrollHandler from "./ScrollHandler";
 
-function Contact(props) {
+function Contact() {
   const ContactUs = useRef();
   const Location = useLocation();
 

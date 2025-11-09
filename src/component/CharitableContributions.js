@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import Chart from "./Chart";
 
-function CharitableContributions(props) {
+function CharitableContributions() {
   const Location = useLocation();
   useEffect(() => {
     setTimeout(() => {
