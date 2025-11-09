@@ -2,14 +2,14 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import "./style/main.scss";
 
-import About from "./component/about";
-import Home from "./component/home";
-import Contact from "./component/contact";
-import PortfolioPage from "./component/portfolioPage";
-import ClientPage from "./component/clientPage";
-import Header from "./component/header";
+import About from "./component/About";
+import Home from "./component/Home";
+import Contact from "./component/Contact";
+import PortfolioPage from "./component/PortfolioPage";
+import ClientPage from "./component/ClientPage";
+import Header from "./component/Header";
 import NotFoundPage from "./404";
-import Footer from "./component/footer";
+import Footer from "./component/Footer";
 
 function App() {
   return (

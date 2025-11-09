@@ -2,10 +2,10 @@ import React, { useEffect, useState, useRef } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet";
 
-import ScrollHandler from "./scrollHandler";
+import ScrollHandler from "./ScrollHandler";
 import CharitableContributions from "./CharitableContributions";
 
-const teamData = require("./Portfolio/Data/profile.json");
+const teamData = require("../data/profile.json");
 
 function About() {
   // scroll refs

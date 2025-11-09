@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function portfoliohover() {
+function portfolioHover() {
   return (
     <div className="hover_container portfolio">
       <div className="arrow-up portfolio"></div>
@@ -46,4 +46,4 @@ function portfoliohover() {
   );
 }
 
-export default portfoliohover;
+export default portfolioHover;

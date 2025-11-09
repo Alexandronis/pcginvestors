@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
-import ScrollHandler from "./scrollHandler";
+import ScrollHandler from "./ScrollHandler";
 
 function ClientPage() {
   const location = useLocation();

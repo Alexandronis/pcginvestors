@@ -1,23 +1,22 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function contacthover() {
+function aboutHover() {
   return (
-    <div className="hover_container contact">
-      <div className="arrow-up contact"></div>
+    <div className="hover_container about">
+      <div className="arrow-up about"></div>
       <div className="content">
         <div className="details-waper">
           <Link
-            to="/contact/#ContactUs"
+            to="/about/#about-pcg"
             className="content-details"
             onClick={() => document.getElementById("customFocus").focus}
           >
             <div className="img-box">
-              <img src="/Nav_hover_img/contact.svg"></img>
+              <img src="/Nav_hover_img/about_pcg.svg"></img>
             </div>
-
-            <h2>Contact</h2>
-            <p>Let's talk business</p>
+            <h2>ABOUT PCG</h2>
+            <p>Explore who we are - our mission, values, and principles</p>
           </Link>
         </div>
       </div>
@@ -25,4 +24,4 @@ function contacthover() {
   );
 }
 
-export default contacthover;
+export default aboutHover;

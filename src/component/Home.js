@@ -3,8 +3,8 @@ import { Link, useLocation } from "react-router-dom";
 import { Portfolio2 } from "./Portfolio";
 import ReactPlayer from "react-player";
 import { Helmet } from "react-helmet";
-import ScrollHandler from "./scrollHandler";
-import HomeVideo from "../Video/low_size.mp4";
+import ScrollHandler from "./ScrollHandler";
+import HomeVideo from "../assets/low_size.mp4";
 import Quotes from "./Quotes";
 
 function Home() {

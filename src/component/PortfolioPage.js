@@ -1,8 +1,8 @@
 import React, { useEffect, useState, useRef } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet";
-import ScrollHandler from "./scrollHandler";
-const OrgData = require("./Portfolio/Data/organization.json");
+import ScrollHandler from "./ScrollHandler";
+const OrgData = require("../data/organization.json");
 
 function PortfolioPage() {
   const [value, setValue] = useState(localStorage.getItem("portfolioOption"));

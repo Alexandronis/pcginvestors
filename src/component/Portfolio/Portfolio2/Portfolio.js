@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 
 import PortfolioItem from "./PortfolioItem";
 
-const Data = require("../Data/Portfolio.json");
+const Data = require("../../../data/portfolio.json");
 
 var scrollDir = 1;
 var scroller = null;
@@ -11,7 +11,7 @@ const Portfolio = props => {
   const slider = useRef(null);
   const [OpenedItem, setOpenedItem] = useState(null);
 
-  // scroll the slider
+  // scroll the Slider
   const scrollSlider = () => {
     if (slider.current && OpenedItem === null) {
       slider.current.scroll((slider.current.scrollLeft += scrollDir), 0);

@@ -2,10 +2,10 @@ import React, { useState, useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { Link } from "react-scroll";
 
-import Abouthover from "./onhover/abouthover";
-import Portfoliohover from "./onhover/portfoliohover";
-import Contacthover from "./onhover/contacthover";
-import TeamHover from "./onhover/teamhover";
+import Abouthover from "./OnHover/AboutHover";
+import Portfoliohover from "./OnHover/PortfolioHover";
+import Contacthover from "./OnHover/ContactHover";
+import TeamHover from "./OnHover/TeamHover";
 
 function Header() {
   const [isShown, setIsShown] = useState(0);

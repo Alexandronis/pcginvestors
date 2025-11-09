@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import { useLocation } from "react-router-dom";
 import { Helmet } from "react-helmet";
 
-import ScrollHandler from "./scrollHandler";
+import ScrollHandler from "./ScrollHandler";
 
 function Contact(props) {
   const ContactUs = useRef();
