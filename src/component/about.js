@@ -7,13 +7,13 @@ import CharitableContributions from "./CharitableContributions";
 
 const teamData = require("./Portfolio/Data/profile.json");
 
-function About(props) {
+function About() {
   // scroll refs
   const AboutPCG = useRef();
   const OurTeam = useRef();
   const navigate = useNavigate();
 
-  const Location = useLocation();
+  const location = useLocation(); // ✅ replaced Location/props.location usage
 
   const [selectedIndex, setSelectedIndex] = React.useState(false);
   const [isShown, setIsShown] = useState(0);
@@ -27,32 +27,34 @@ function About(props) {
     }
   };
 
-  if (props.location.pathname === "/about") {
+  // ✅ replaced props.location.pathname
+  if (location.pathname === "/about") {
     document.body.classList.add("inner-header");
   }
 
   useEffect(() => {
-    if (Location.hash === "#about-pcg" && AboutPCG.current) {
+    if (location.hash === "#about-pcg" && AboutPCG.current) {
       AboutPCG.current.scrollIntoView();
       window.scrollTo(0, window.scrollY - 100);
     }
 
-    if (Location.hash === "#our-team" && OurTeam.current) {
+    if (location.hash === "#our-team" && OurTeam.current) {
       OurTeam.current.scrollIntoView();
     }
 
-    if (Location.pathname === "/about" && AboutPCG.current) {
+    if (location.pathname === "/about" && AboutPCG.current) {
       AboutPCG.current.scrollIntoView();
       window.scrollTo(0, window.scrollY - 100);
     }
 
-    if (props.location.pathname === "/about/") {
+    // ✅ replaced props.location.pathname
+    if (location.pathname === "/about/") {
       document.body.classList.add("inner-header");
     }
 
     // Expand team card from hash
-    if (Location.hash.includes("sectionteam")) {
-      var index = Number.parseInt(Location.hash.replace("#sectionteam", ""));
+    if (location.hash.includes("sectionteam")) {
+      var index = Number.parseInt(location.hash.replace("#sectionteam", ""));
       setSelectedIndex(index + 1);
       setIsShown(index + 1);
     }
@@ -60,7 +62,7 @@ function About(props) {
     setTimeout(() => {
       window.scrollTo(0, window.scrollY - 100);
     });
-  }, [Location]);
+  }, [location]);
 
   const handleTabClick = (hash) => {
     navigate(`/about/${hash}`, { replace: true });
@@ -81,7 +83,7 @@ function About(props) {
         <div className="page-block-about">
           <div className="switch-lable">
             <ul>
-              {Location.hash === "#about-pcg" || Location.hash === "" ? (
+              {location.hash === "#about-pcg" || location.hash === "" ? (
                 <li className="active-tab">
                   <Link
                     to="/about/#about-pcg"
@@ -110,7 +112,7 @@ function About(props) {
                 AboutPCG.current = el;
               }}
               className={
-                Location.hash === "#about-pcg" || Location.hash === ""
+                location.hash === "#about-pcg" || location.hash === ""
                   ? "show-section"
                   : "hide-section"
               }
@@ -177,8 +179,150 @@ function About(props) {
                         to:
                       </p>
                       <div className="principles">
-                        {/* Principle cards */}
-                        {/* Keep all card JSX unchanged */}
+                          <div className="card_containar">
+                            <div className="leftside_text">
+                              <div className="image_containar">
+                                <img
+                                  className="image"
+                                  src="/green_card.svg"
+                                  alt="Green Card"
+                                />
+                                <img
+                                  className="image_icon"
+                                  src="/about_card/focus.svg"
+                                  alt="Focus Icon"
+                                />
+                                <h2>FOCUS</h2>
+                              </div>
+
+                              <div className="card_list_items">
+                                <ul>
+                                  <li>Only invest in areas we know</li>
+                                  <li>
+                                    Work with market leading companies with proven
+                                    profitability and growth
+                                  </li>
+                                  <li>Keep it simple</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div className="card_containar">
+                            <div className="leftside_text">
+                              <div className="image_containar">
+                                <img
+                                  className="image"
+                                  src="/green_card.svg"
+                                  alt="Green Card"
+                                />
+                                <img
+                                  className="image_icon"
+                                  src="/about_card/Partnerships.svg"
+                                  alt="Partnerships Icon"
+                                />
+                                <h2>PARTNERSHIP</h2>
+                              </div>
+                              <div className="card_list_items">
+                                <ul>
+                                  <li>Mutual trust and confidence</li>
+                                  <li>
+                                    Clearly aligned interests among all stakeholders
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div className="card_containar">
+                            <div className="leftside_text">
+                              <div className="image_containar">
+                                <img
+                                  className="image"
+                                  src="/green_card.svg"
+                                  alt="Green Card"
+                                />
+                                <img
+                                  className="image_icon"
+                                  src="/about_card/Diligence.svg"
+                                  alt="Diligence Icon"
+                                />
+                                <h2>DILIGENCE</h2>
+                              </div>
+                              <div className="card_list_items">
+                                <ul>
+                                  <li>
+                                    Thorough understanding of key business
+                                    fundamentals and value drivers
+                                  </li>
+                                  <li>
+                                    Become intimately familiar with the downside
+                                    risks and upside opportunities
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div className="card_containar">
+                            <div className="leftside_text">
+                              <div className="image_containar">
+                                <img
+                                  className="image"
+                                  src="/green_card.svg"
+                                  alt="Green Card"
+                                />
+                                <img
+                                  className="image_icon"
+                                  src="/about_card/structure.svg"
+                                  alt="Structure Icon"
+                                />
+                                <h2>STRUCTURE</h2>
+                              </div>
+                              <div className="card_list_items">
+                                <ul>
+                                  <li>
+                                    Appropriate capital structure to support growth
+                                    with limited leverage
+                                  </li>
+                                  <li>
+                                    Disciplined and constructive board, advisors and
+                                    outside resources
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div className="card_containar">
+                            <div className="leftside_text">
+                              <div className="image_containar">
+                                <img
+                                  className="image"
+                                  src="/green_card.svg"
+                                  alt="Green Card"
+                                />
+                                <img
+                                  className="image_icon"
+                                  src="/about_card/Values_and_value.svg"
+                                  alt="Values Icon"
+                                />
+                                <h2>VALUES & VALUE</h2>
+                              </div>
+                              <div className="card_list_items">
+                                <ul>
+                                  <li>
+                                    Values: trust, respect, integrity, balance &
+                                    excellence
+                                  </li>
+                                  <li>
+                                    Value: consistent and transparent focus on
+                                    building eventual exit value
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
                       </div>
                     </div>
                   </div>
@@ -197,27 +341,27 @@ function About(props) {
                 OurTeam.current = el;
               }}
               className={
-                Location.hash === "#our-team" ||
-                Location.hash === "#sectionteam0" ||
-                Location.hash === "#sectionteam1" ||
-                Location.hash === "#sectionteam2" ||
-                Location.hash === "#sectionteam3" ||
-                Location.hash === "#sectionteam4" ||
-                Location.hash === "#sectionteam5" ||
-                Location.hash === "#sectionteam6" ||
-                Location.hash === "#sectionteam7" ||
-                Location.hash === "#sectionteam8" ||
-                Location.hash === "#sectionteam9" ||
-                Location.hash === "#section0" ||
-                Location.hash === "#section1" ||
-                Location.hash === "#section2" ||
-                Location.hash === "#section3" ||
-                Location.hash === "#section4" ||
-                Location.hash === "#section5" ||
-                Location.hash === "#section6" ||
-                Location.hash === "#section7" ||
-                Location.hash === "#section8" ||
-                Location.hash === "#section9"
+                location.hash === "#our-team" ||
+                location.hash === "#sectionteam0" ||
+                location.hash === "#sectionteam1" ||
+                location.hash === "#sectionteam2" ||
+                location.hash === "#sectionteam3" ||
+                location.hash === "#sectionteam4" ||
+                location.hash === "#sectionteam5" ||
+                location.hash === "#sectionteam6" ||
+                location.hash === "#sectionteam7" ||
+                location.hash === "#sectionteam8" ||
+                location.hash === "#sectionteam9" ||
+                location.hash === "#section0" ||
+                location.hash === "#section1" ||
+                location.hash === "#section2" ||
+                location.hash === "#section3" ||
+                location.hash === "#section4" ||
+                location.hash === "#section5" ||
+                location.hash === "#section6" ||
+                location.hash === "#section7" ||
+                location.hash === "#section8" ||
+                location.hash === "#section9"
                   ? "show-section"
                   : "hide-section"
               }
