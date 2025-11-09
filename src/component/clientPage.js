@@ -75,7 +75,10 @@ function ClientPage() {
                   <div className="mob-set-inner">
                     <div className="desc_section">
                       <span>"</span>
-                      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{data.short_description}</p>
+                      <p>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        {data.short_description}
+                      </p>
                       <span>"</span>
                     </div>
                     <div className="name_labels">

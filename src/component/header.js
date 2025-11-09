@@ -51,7 +51,8 @@ function Header() {
               <li className="list">
                 <Link
                   className={
-                    (location.pathname === "/about/" && location.hash === "#about-pcg") ||
+                    (location.pathname === "/about/" &&
+                      location.hash === "#about-pcg") ||
                     (location.pathname === "/about" && location.hash === "")
                       ? "active"
                       : ""
@@ -83,7 +84,9 @@ function Header() {
 
               <li className="list">
                 <Link
-                  className={location.pathname === "/portfolio-page/" ? "active" : ""}
+                  className={
+                    location.pathname === "/portfolio-page/" ? "active" : ""
+                  }
                   to="/portfolio-page/#Portfolio"
                   spy={true}
                   hashSpy={true}
@@ -233,7 +236,9 @@ function Header() {
                       duration={1500}
                       onClick={() => {
                         menuOnclick();
-                        navigate("/portfolio-page/#Portfolio", { replace: true });
+                        navigate("/portfolio-page/#Portfolio", {
+                          replace: true,
+                        });
                       }}
                     >
                       Portfolio
@@ -242,7 +247,9 @@ function Header() {
 
                   <li className="list">
                     <Link
-                      className={location.hash === "#Investment" ? "active" : ""}
+                      className={
+                        location.hash === "#Investment" ? "active" : ""
+                      }
                       to="/portfolio-page/#Investment"
                       spy={true}
                       hashSpy={true}
@@ -251,7 +258,9 @@ function Header() {
                       duration={1500}
                       onClick={() => {
                         menuOnclick();
-                        navigate("/portfolio-page/#Investment", { replace: true });
+                        navigate("/portfolio-page/#Investment", {
+                          replace: true,
+                        });
                       }}
                     >
                       Investment Categories
@@ -269,7 +278,9 @@ function Header() {
                       duration={1500}
                       onClick={() => {
                         menuOnclick();
-                        navigate("/portfolio-page/#Criteria", { replace: true });
+                        navigate("/portfolio-page/#Criteria", {
+                          replace: true,
+                        });
                       }}
                     >
                       Criteria
@@ -278,7 +289,9 @@ function Header() {
 
                   <li className="list">
                     <Link
-                      className={location.pathname === "/contact" ? "active" : ""}
+                      className={
+                        location.pathname === "/contact" ? "active" : ""
+                      }
                       to="/contact"
                       spy={true}
                       hashSpy={true}

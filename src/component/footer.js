@@ -5,11 +5,11 @@ function Footer() {
   const resetDropdown = () => {
     localStorage.removeItem("portfolioOption");
   };
-    const [date, setDate] = useState();
-    const getYear = () => setDate(new Date().getFullYear());
-    useEffect(() => {
-      getYear();
-    }, []);
+  const [date, setDate] = useState();
+  const getYear = () => setDate(new Date().getFullYear());
+  useEffect(() => {
+    getYear();
+  }, []);
 
   return (
     <div>
@@ -94,7 +94,11 @@ function Footer() {
                   href="https://www.facebook.com/Partnership-Capital-Growth-428884540458567"
                   target="_blank"
                 >
-                  <img className="" src="/facebook_icon.svg" alt="Facebook Icon" />
+                  <img
+                    className=""
+                    src="/facebook_icon.svg"
+                    alt="Facebook Icon"
+                  />
                 </a>
               </li>
               <li>
@@ -102,12 +106,20 @@ function Footer() {
                   href="https://www.instagram.com/pcg_investors/"
                   target="_blank"
                 >
-                  <img className="" src="/instagram_icon.svg" alt="Instagram Icon" />
+                  <img
+                    className=""
+                    src="/instagram_icon.svg"
+                    alt="Instagram Icon"
+                  />
                 </a>
               </li>
               <li>
                 <a href="https://twitter.com/PCG_Investors" target="_blank">
-                  <img className="" src="/twitter_icon.svg" alt="Twitter Icon" />
+                  <img
+                    className=""
+                    src="/twitter_icon.svg"
+                    alt="Twitter Icon"
+                  />
                 </a>
               </li>
               <li>
@@ -115,18 +127,27 @@ function Footer() {
                   href="https://www.linkedin.com/company/partnership-capital-growth"
                   target="_blank"
                 >
-                  <img className="" src="/linkedin_icon.svg" alt="Linkedin Icon" />
+                  <img
+                    className=""
+                    src="/linkedin_icon.svg"
+                    alt="Linkedin Icon"
+                  />
                 </a>
               </li>
             </ul>
           </div>
           <div className="cert">
-            <img className="b_logo_containar" src="/b_certified.svg" alt="B Certified Logo" />
+            <img
+              className="b_logo_containar"
+              src="/b_certified.svg"
+              alt="B Certified Logo"
+            />
           </div>
         </div>
         <div className="footer-bottom">
           <p>
-            Copyright © {date} Partnership Capital Growth, LLC All Rights Reserved
+            Copyright © {date} Partnership Capital Growth, LLC All Rights
+            Reserved
           </p>
         </div>
       </footer>
@@ -182,7 +203,11 @@ function Footer() {
 
         <div className="footer-center">
           <div className="cert">
-            <img className="b_logo_containar" src="/b_certified.svg" alt="B Certified Logo" />
+            <img
+              className="b_logo_containar"
+              src="/b_certified.svg"
+              alt="B Certified Logo"
+            />
           </div>
 
           <div className="footer-top">
@@ -222,7 +247,11 @@ function Footer() {
                 href="https://www.facebook.com/Partnership-Capital-Growth-428884540458567"
                 target="_blank"
               >
-                <img className="" src="/facebook_icon.svg" alt="Facebook Icon" />
+                <img
+                  className=""
+                  src="/facebook_icon.svg"
+                  alt="Facebook Icon"
+                />
               </a>
             </li>
             <li>
@@ -230,7 +259,11 @@ function Footer() {
                 href="https://www.instagram.com/pcg_investors/"
                 target="_blank"
               >
-                <img className="" src="/instagram_icon.svg" alt="Instagram Icon" />
+                <img
+                  className=""
+                  src="/instagram_icon.svg"
+                  alt="Instagram Icon"
+                />
               </a>
             </li>
             <li>
@@ -243,14 +276,19 @@ function Footer() {
                 href="https://www.linkedin.com/company/partnership-capital-growth"
                 target="_blank"
               >
-                <img className="" src="/linkedin_icon.svg" alt="Linkedin Icon" />
+                <img
+                  className=""
+                  src="/linkedin_icon.svg"
+                  alt="Linkedin Icon"
+                />
               </a>
             </li>
           </ul>
         </div>
         <div className="footer-bottom">
           <p>
-            Copyright © {date} Partnership Capital Growth, LLC All Rights Reserved
+            Copyright © {date} Partnership Capital Growth, LLC All Rights
+            Reserved
           </p>
         </div>
       </div>

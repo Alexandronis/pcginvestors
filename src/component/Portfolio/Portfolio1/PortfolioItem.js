@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 
-const PortfolioItem = (props) => {
+const PortfolioItem = props => {
   const dataCard = useRef(null);
 
   const handleClick = () => {

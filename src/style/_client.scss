@@ -62,7 +62,7 @@
       }
       .company-values {
         margin: 0 0 60px;
-        .sub-company{
+        .sub-company {
           padding-left: 70px;
           @include respond-to("small") {
             padding-left: 50px;
@@ -388,7 +388,7 @@
                 }
               }
             }
-            .bottom-text{
+            .bottom-text {
               display: flex;
               flex-direction: row;
               margin: 0 auto;
@@ -398,13 +398,13 @@
                 flex-direction: column;
                 width: 100%;
               }
-              ul{
+              ul {
                 padding: 0px 24px;
                 @include respond-to("small") {
                   padding: 0;
                 }
                 list-style: none;
-                .list-title{
+                .list-title {
                   font-size: 16px;
                   font-weight: 700;
                   font-stretch: normal;
@@ -414,12 +414,11 @@
                   text-align: left;
                   color: #000000;
                 }
-                .list-text{
+                .list-text {
                   list-style: none;
                   white-space: nowrap;
                   overflow: hidden;
-                  text-overflow: ellipsis
-
+                  text-overflow: ellipsis;
                 }
               }
               .list-title::before {

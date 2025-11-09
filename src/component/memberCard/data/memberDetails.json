@@ -12,7 +12,7 @@
     "emailIcon": "/email-icon.svg",
     "emailAlt": "Email Icon",
     "linkedinIcon": "/linkedin-icon.svg",
-    "alt":"Brent Knudsen"
+    "alt": "Brent Knudsen"
   },
   {
     "id": 5,
@@ -27,7 +27,7 @@
     "emailIcon": "/email-icon.svg",
     "emailAlt": "Email Icon",
     "linkedinIcon": "/linkedin-icon.svg",
-    "alt":"Vern Christensen"
+    "alt": "Vern Christensen"
   },
 
   {
@@ -43,7 +43,7 @@
     "emailIcon": "/email-icon.svg",
     "emailAlt": "Email Icon",
     "linkedinIcon": "/linkedin-icon.svg",
-    "alt":"Webb Knudsen"
+    "alt": "Webb Knudsen"
   },
   {
     "id": 4,
@@ -57,7 +57,7 @@
     "emailAlt": "",
     "linkedin": "",
     "linkedinIcon": "/linkedin-icon.svg",
-    "alt":"Suise Lecker"
+    "alt": "Suise Lecker"
   },
   {
     "id": 2,
@@ -71,7 +71,7 @@
     "emailAlt": "",
     "linkedin": "https://www.linkedin.com/in/hiren-modi-0393692/",
     "linkedinIcon": "/linkedin-icon.svg",
-    "alt":"Hiren Modi"
+    "alt": "Hiren Modi"
   },
   {
     "id": 3,
@@ -86,13 +86,13 @@
     "emailIcon": "/email-icon.svg",
     "emailAlt": "Email Icon",
     "linkedinIcon": "/linkedin-icon.svg",
-    "alt":"Jason Winship"
+    "alt": "Jason Winship"
   },
   {
     "id": 0,
     "name": "Ben Weinberger",
     "title": "Advisor",
-    "description":"Ben thrives on travel and new adventures with his wife and daughter. Whether they are skiing, exploring mountain trails with their dog, avidly watching college basketball or enjoying the beach, Ben and family frequently are making memories together. Ben also takes on home renovation projects and is passionate about a variety of facets within the real estate industry.",
+    "description": "Ben thrives on travel and new adventures with his wife and daughter. Whether they are skiing, exploring mountain trails with their dog, avidly watching college basketball or enjoying the beach, Ben and family frequently are making memories together. Ben also takes on home renovation projects and is passionate about a variety of facets within the real estate industry.",
     "imgSrc": "/ben_weinberger/ben_black.jpg",
     "imgSrc2": "/ben_weinberger/ben_color.jpg",
     "imgSrcMobile": "/ben_weinberger/mobile/ben_weinberger@2x.jpg",
@@ -100,7 +100,7 @@
     "emailAlt": "",
     "linkedin": "",
     "linkedinIcon": "/linkedin-icon.svg",
-    "alt":"Ben Weinberger"
+    "alt": "Ben Weinberger"
   },
   {
     "id": 9,
@@ -115,11 +115,8 @@
     "emailIcon": "/email-icon.svg",
     "emailAlt": "Email Icon",
     "linkedinIcon": "/linkedin-icon.svg",
-    "alt":"Nicholai Christensen"
+    "alt": "Nicholai Christensen"
   },
-
-
-
 
   {
     "id": 7,
@@ -134,7 +131,7 @@
     "emailIcon": "/email-icon.svg",
     "emailAlt": "Email Icon",
     "linkedinIcon": "/linkedin-icon.svg",
-    "alt":"Michael Sala"
+    "alt": "Michael Sala"
   },
   {
     "id": 8,
@@ -149,7 +146,6 @@
     "emailIcon": "/email-icon.svg",
     "emailAlt": "Email Icon",
     "linkedinIcon": "/linkedin-icon.svg",
-    "alt":"Vicki Wiget"
+    "alt": "Vicki Wiget"
   }
-
 ]

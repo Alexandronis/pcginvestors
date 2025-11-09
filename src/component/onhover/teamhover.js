@@ -7,7 +7,6 @@ function TeamHover() {
       <div className="arrow-up about"></div>
       <div className="content">
         <div className="details-waper">
-
           <Link
             to="/about/#our-team"
             className="content-details"

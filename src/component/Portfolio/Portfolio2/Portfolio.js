@@ -7,7 +7,7 @@ const Data = require("../Data/Portfolio.json");
 var scrollDir = 1;
 var scroller = null;
 
-const Portfolio = (props) => {
+const Portfolio = props => {
   const slider = useRef(null);
   const [OpenedItem, setOpenedItem] = useState(null);
 
@@ -27,10 +27,10 @@ const Portfolio = (props) => {
     }
   };
 
-  const ScrollWhenClick = (i) => {
+  const ScrollWhenClick = i => {
     var amount = Math.floor(i / 3) * 170 - window.innerWidth / 2 + 380;
 
-    if (i > (Data.length * 3) - 4) {
+    if (i > Data.length * 3 - 4) {
       setTimeout(() => {
         slider.current.scroll(amount, 0);
       }, 300);

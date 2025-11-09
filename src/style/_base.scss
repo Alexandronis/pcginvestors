@@ -299,43 +299,42 @@ p {
     color: #a5cf3d;
   }
 }
-.show-section{
+.show-section {
   display: block;
 }
-.hide-section{
+.hide-section {
   display: none;
 }
 
-
-.switch-lable{
+.switch-lable {
   width: 12%;
   position: fixed;
-  @include respond-to("medium_lg"){
+  @include respond-to("medium_lg") {
     display: none;
   }
-  ul{
-    .active-tab{
+  ul {
+    .active-tab {
       background-color: $primary-color;
       padding: 12px;
       border-top-right-radius: 24px;
       border-bottom-right-radius: 24px;
-      color:$white-color;
+      color: $white-color;
       font-weight: 500;
       margin: 12px 0;
-      a{
+      a {
         text-decoration: none;
         color: $white-color;
       }
     }
-    .disable-tab{
+    .disable-tab {
       background-color: #d1d1d1;
       padding: 12px;
       border-top-right-radius: 24px;
       border-bottom-right-radius: 24px;
-      color:$white-color;
+      color: $white-color;
       font-weight: 500;
       margin: 12px 0;
-      a{
+      a {
         text-decoration: none;
         color: $white-color;
       }

@@ -55,7 +55,7 @@
     .value-box {
       text-align: center;
       padding: 0 33px;
-      background-image: url('../../public/value_icon/White_icon.svg');
+      background-image: url("../../public/value_icon/White_icon.svg");
       background-repeat: no-repeat;
       height: 324px;
       display: flex;
@@ -79,7 +79,7 @@
         height: 200px;
       }
       @include respond-to("small") {
-        background:url('../../public/value_icon/Mobile_White_icon.svg');
+        background: url("../../public/value_icon/Mobile_White_icon.svg");
         width: 70px;
         height: 70px;
         border-radius: 4px;
@@ -134,7 +134,8 @@
         align-items: center;
         justify-content: flex-end;
         width: 292px;
-        background: url("../../public/value_icon/Green_icon.svg") no-repeat center;
+        background: url("../../public/value_icon/Green_icon.svg") no-repeat
+          center;
         position: relative;
         box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
         border-radius: 12px;
@@ -370,7 +371,9 @@
             margin-top: 15px;
             visibility: hidden;
             opacity: 0;
-            transition: visibility 0s, opacity 0.5s linear;
+            transition:
+              visibility 0s,
+              opacity 0.5s linear;
             height: 0;
             span {
               a {
@@ -830,23 +833,22 @@
   }
 }
 
-
-.quotes-wrapper{
+.quotes-wrapper {
   background: #ffffff;
   padding: 80px 0 120px;
-  @include respond-to("small"){
+  @include respond-to("small") {
     padding: 50px 0 70px;
   }
-  .qt-slider{
+  .qt-slider {
     width: 60%;
     margin: 0 auto;
     justify-content: center;
     align-items: center;
     text-align: center;
-    @include respond-to("medium"){
+    @include respond-to("medium") {
       width: 80%;
     }
-    @include respond-to("small"){
+    @include respond-to("small") {
       width: 90%;
     }
     .section-title {
@@ -855,45 +857,43 @@
       @include respond-to("medium") {
         width: 100%;
       }
-      h2{
+      h2 {
         color: #484848;
         font-size: 32px;
         font-weight: 600;
         margin-bottom: 32px;
-        @include  respond-to("small"){
+        @include respond-to("small") {
           font-size: 18px;
         }
       }
     }
-  .slider-card{
-    .quote-text{
-      p{
-        color: #484848;
-        text-align: center;
-        font-style: italic;
-        font-size: 20px;
-        font-weight: 400;
-        @include respond-to("small"){
-          font-size: 12px;
-          font-weight: 300;
+    .slider-card {
+      .quote-text {
+        p {
+          color: #484848;
+          text-align: center;
+          font-style: italic;
+          font-size: 20px;
+          font-weight: 400;
+          @include respond-to("small") {
+            font-size: 12px;
+            font-weight: 300;
+          }
         }
       }
-    }
-    .quote-footer{
-      padding: 24px 0;
-      p{
-        color: #484848;
-        text-align: center;
-        font-size: 16px;
-        font-weight: 400;
-        @include respond-to("small"){
-          font-size: 12px;
-          font-weight: 300;
+      .quote-footer {
+        padding: 24px 0;
+        p {
+          color: #484848;
+          text-align: center;
+          font-size: 16px;
+          font-weight: 400;
+          @include respond-to("small") {
+            font-size: 12px;
+            font-weight: 300;
+          }
         }
       }
     }
   }
-  }
-
-
 }

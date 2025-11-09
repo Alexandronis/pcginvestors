@@ -2,7 +2,7 @@ $primary-color: #8eae3f;
 $dark: #343a40;
 $white-color: #fff;
 $black-color: #000000;
-$background-green :#F6F9F0;
+$background-green: #f6f9f0;
 
 // =========================================
 // =Mobile responsive settings code snippet=
@@ -41,12 +41,12 @@ $breakpoints: (
 ) !default;
 
 @mixin respond-to($breakpoint) {
-    @if map-has-key($breakpoints, $breakpoint) {
-      @media #{inspect(map-get($breakpoints, $breakpoint))} {
-        @content;
-      }
-    } @else {
-      @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
-          + "Available breakpoints are: #{map-keys($breakpoints)}.";
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media #{inspect(map-get($breakpoints, $breakpoint))} {
+      @content;
     }
+  } @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+          + "Available breakpoints are: #{map-keys($breakpoints)}.";
   }
+}

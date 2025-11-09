@@ -49,7 +49,7 @@ function homeSlider() {
     slidesToScroll: 1,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
-    appendDots: (dots) => (
+    appendDots: dots => (
       <div
         style={{
           textalign: "right",

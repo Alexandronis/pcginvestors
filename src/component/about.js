@@ -19,7 +19,7 @@ function About() {
   const [isShown, setIsShown] = useState(0);
   const boxRef = React.useRef([]);
 
-  const handleExpandClick = (index) => {
+  const handleExpandClick = index => {
     if (selectedIndex === index) {
       setSelectedIndex("");
     } else {
@@ -64,7 +64,7 @@ function About() {
     });
   }, [location]);
 
-  const handleTabClick = (hash) => {
+  const handleTabClick = hash => {
     navigate(`/about/${hash}`, { replace: true });
   };
 
@@ -108,7 +108,7 @@ function About() {
             {/* ABOUT PCG */}
             <section
               id="#about-pcg"
-              ref={(el) => {
+              ref={el => {
                 AboutPCG.current = el;
               }}
               className={
@@ -126,8 +126,8 @@ function About() {
                     <div className="value-text">
                       <p className="padding-para">
                         Partnership Capital Growth was founded in 2006 with a
-                        vision to foster growth within the healthy living
-                        sector by investing in consumer products, services, and
+                        vision to foster growth within the healthy living sector
+                        by investing in consumer products, services, and
                         technology. Here at PCG, we share a vision to improve
                         the world by helping people build a healthier and
                         happier future.
@@ -160,8 +160,8 @@ function About() {
                         value built on values approach.
                       </p>
                       <p>
-                        Under this focus on values C value, we invest in areas we
-                        know, partner with market- leading companies, and
+                        Under this focus on values C value, we invest in areas
+                        we know, partner with market- leading companies, and
                         maintain a disciplined approach to structure and
                         diligence to offer unparalleled financial and strategic
                         support.
@@ -227,7 +227,8 @@ function About() {
                               <ul>
                                 <li>Mutual trust and confidence</li>
                                 <li>
-                                  Clearly aligned interests among all stakeholders
+                                  Clearly aligned interests among all
+                                  stakeholders
                                 </li>
                               </ul>
                             </div>
@@ -282,12 +283,12 @@ function About() {
                             <div className="card_list_items">
                               <ul>
                                 <li>
-                                  Appropriate capital structure to support growth
-                                  with limited leverage
+                                  Appropriate capital structure to support
+                                  growth with limited leverage
                                 </li>
                                 <li>
-                                  Disciplined and constructive board, advisors and
-                                  outside resources
+                                  Disciplined and constructive board, advisors
+                                  and outside resources
                                 </li>
                               </ul>
                             </div>
@@ -328,7 +329,7 @@ function About() {
                   </div>
 
                   <div className="company-values">
-                    <CharitableContributions/>
+                    <CharitableContributions />
                   </div>
                 </div>
               </div>
@@ -379,7 +380,7 @@ function About() {
             {/* OUR TEAM */}
             <section
               id="#our-team"
-              ref={(el) => {
+              ref={el => {
                 OurTeam.current = el;
               }}
               className={
@@ -431,7 +432,7 @@ function About() {
                   {teamData.map((data, i) => {
                     return (
                       <div
-                        ref={(el) => (boxRef.current[i] = el)}
+                        ref={el => (boxRef.current[i] = el)}
                         className={
                           isShown === i + 1
                             ? "profile-main-content active index" + data.id
@@ -452,7 +453,7 @@ function About() {
                               />
                               <div className="rightside_containar">
                                 <div className="name_label">
-                                  <img src="/Maskteam.svg" alt="Green Card"/>
+                                  <img src="/Maskteam.svg" alt="Green Card" />
                                   <p>
                                     {data.name}
                                     <span>{data.designation}</span>
@@ -479,18 +480,18 @@ function About() {
                                   </a>
                                 </div>
                                 <div className="arrow_btn">
-                                    <span>
-                                      <Link to={`#section` + data.id}>
-                                        <img
-                                          onClick={() => {
-                                            handleExpandClick(data.id);
-                                            setIsShown(i + 1);
-                                          }}
-                                          src="/arrowDown.svg"
-                                          alt="Arrow Icon"
-                                        />
-                                      </Link>
-                                    </span>
+                                  <span>
+                                    <Link to={`#section` + data.id}>
+                                      <img
+                                        onClick={() => {
+                                          handleExpandClick(data.id);
+                                          setIsShown(i + 1);
+                                        }}
+                                        src="/arrowDown.svg"
+                                        alt="Arrow Icon"
+                                      />
+                                    </Link>
+                                  </span>
                                 </div>
                               </div>
                             </div>
