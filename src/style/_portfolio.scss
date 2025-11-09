@@ -8,7 +8,11 @@ $txtPrimary: #00000088;
 // =============== Mixins ===============
 // ======================================
 
-@mixin scrollbars($size, $foreground-color, $background-color: mix($foreground-color, white, 50%)) {
+@mixin scrollbars(
+  $size,
+  $foreground-color,
+  $background-color: mix($foreground-color, white, 50%)
+) {
   // For Google Chrome
   &::-webkit-scrollbar {
     width: $size;
@@ -54,8 +58,8 @@ $txtPrimary: #00000088;
 
   .prtfolio_slider {
     width: 100%;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     overflow-x: scroll;
 
     // make scroll behavior smooth only when mouseOver
@@ -96,7 +100,6 @@ $txtPrimary: #00000088;
           width: 150px;
           height: 150px;
           border-radius: 16px;
-          // box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.1);
           background-color: #ffffff22;
           margin: 10px;
           cursor: pointer;
@@ -173,8 +176,8 @@ $txtPrimary: #00000088;
 
         .dataCard_wrapper {
           position: absolute;
-          height: 0px;
-          width: 0px;
+          height: 0;
+          width: 0;
           overflow: hidden;
           transform: translateX(210px) translateY(20px);
           transition-duration: 0.3s;
@@ -213,7 +216,7 @@ $txtPrimary: #00000088;
             justify-content: space-between;
 
             .title_section {
-              transition-duration: 0.3;
+              transition-duration: 0.3s;
               opacity: 0;
               margin-left: 110px;
               h3 {
@@ -251,7 +254,7 @@ $txtPrimary: #00000088;
             }
 
             .desc_section {
-              transition-duration: 0.3;
+              transition-duration: 0.3s;
               opacity: 0;
               span {
                 font-family: Poppins;
@@ -290,7 +293,7 @@ $txtPrimary: #00000088;
             }
 
             .name_section {
-              transition-duration: 0.3;
+              transition-duration: 0.3s;
               opacity: 0;
               text-align: right;
 
@@ -344,19 +347,15 @@ $txtPrimary: #00000088;
 // ===========================================
 .portfolio2_wrapper {
   background-color: #f9fafb;
-  // background-color: #b9b9b9;
-  // padding-top: 150px;
-  // padding-bottom: 200px;
-  padding: 80px 0px;
+  padding: 80px 0;
   box-sizing: border-box;
   @include respond-to("small") {
-    padding-top: 0px;
+    padding-top: 0;
     background-color: #f1f1f1;
     padding-bottom: 20px;
   }
-  .mobile_title{
+  .mobile_title {
     display: none;
-    //margin: 64px 14px 29px;
     margin: 0 auto;
     padding: 28px 14px 62px;
     font-family: Poppins;
@@ -380,7 +379,6 @@ $txtPrimary: #00000088;
     font-style: normal;
     line-height: 1.5;
     letter-spacing: 1.73px;
-    // margin-bottom: 100px;
     padding-bottom: 80px;
     @include respond-to("small") {
       display: none;
@@ -389,8 +387,8 @@ $txtPrimary: #00000088;
 
   .prtfolio_slider {
     width: 100%;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     overflow-x: scroll;
 
     // make scroll behavior smooth only when mouseOver
@@ -431,7 +429,6 @@ $txtPrimary: #00000088;
           width: 150px;
           height: 150px;
           border-radius: 16px;
-          // box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.1);
           background-color: #ffffff22;
           margin: 10px;
           cursor: pointer;
@@ -480,7 +477,7 @@ $txtPrimary: #00000088;
           background-color: #ffffff;
           margin: 10px;
           cursor: pointer;
-          transition-duration: 0.3s; 
+          transition-duration: 0.3s;
 
           img {
             width: calc(100% - 36px);
@@ -491,10 +488,9 @@ $txtPrimary: #00000088;
           }
 
           &:hover {
-            //border: 3px solid #95c420; 
-            box-shadow: inset 0px 0px 0px 3px #95c420;
-        box-sizing: border-box;
-            
+            box-shadow: inset 0 0 0 3px #95c420;
+            box-sizing: border-box;
+
             img {
               filter: grayscale(0);
               opacity: 1;
@@ -512,8 +508,8 @@ $txtPrimary: #00000088;
 
         .dataCard_wrapper {
           position: absolute;
-          height: 0px;
-          width: 0px;
+          height: 0;
+          width: 0;
           overflow: hidden;
           transform: translateX(210px) translateY(20px);
           transition-duration: 0.3s;
@@ -552,7 +548,7 @@ $txtPrimary: #00000088;
             justify-content: space-between;
 
             .title_section {
-              transition-duration: 0.3;
+              transition-duration: 0.3s;
               opacity: 0;
               margin-left: 110px;
               h3 {
@@ -590,7 +586,7 @@ $txtPrimary: #00000088;
             }
 
             .desc_section {
-              transition-duration: 0.3;
+              transition-duration: 0.3s;
               opacity: 0;
               span {
                 font-family: Poppins;
@@ -629,7 +625,7 @@ $txtPrimary: #00000088;
             }
 
             .name_section {
-              transition-duration: 0.3;
+              transition-duration: 0.3s;
               opacity: 0;
               text-align: right;
 

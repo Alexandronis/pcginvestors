@@ -1,38 +1,33 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useCallback, useState, useEffect, useRef } from "react";
 
 import PortfolioItem from "./PortfolioItem";
 
-const Data = require("../Data/Portfolio.json");
+const Data = require("../../../data/portfolio.json");
 
-var scrollDir = 1;
-var scroller = null;
+let scrollDir = 1;
+let scroller = null;
 
-const Portfolio = (props) => {
+const Portfolio = () => {
   const slider = useRef(null);
   const [OpenedItem, setOpenedItem] = useState(null);
 
-  // scroll the slider
-  const scrollSlider = () => {
+  // scroll the Slider
+  const scrollSlider = useCallback(() => {
     if (slider.current && OpenedItem === null) {
       slider.current.scroll((slider.current.scrollLeft += scrollDir), 0);
-      if (
-        slider.current.scrollLeft ===
-        slider.current.scrollWidth - slider.current.clientWidth
-      ) {
+      if (slider.current.scrollLeft === slider.current.scrollWidth - slider.current.clientWidth) {
         scrollDir = -1;
       }
       if (slider.current.scrollLeft === 0) {
         scrollDir = 1;
       }
     }
-  };
+  }, [OpenedItem]);
 
-  const ScrollWhenClick = (i) => {
-    var amount = Math.floor(i / 3) * 170 - window.innerWidth / 2 + 380;
-    console.log(i);
-    console.log(Data.length - 4);
+  const ScrollWhenClick = i => {
+    const amount = Math.floor(i / 3) * 170 - window.innerWidth / 2 + 380;
 
-    if (i > (Data.length * 3) - 4) {
+    if (i > Data.length * 3 - 4) {
       setTimeout(() => {
         slider.current.scroll(amount, 0);
       }, 300);
@@ -43,7 +38,8 @@ const Portfolio = (props) => {
 
   useEffect(() => {
     scroller = setInterval(scrollSlider, 30);
-  }, []);
+    return () => clearInterval(scroller);
+  }, [scrollSlider]);
 
   return (
     <div className="portfolio2_wrapper">
@@ -55,6 +51,12 @@ const Portfolio = (props) => {
           clearInterval(scroller);
         }}
         onMouseLeave={() => {
+          scroller = setInterval(scrollSlider, 30);
+        }}
+        onFocus={() => {
+          clearInterval(scroller);
+        }}
+        onBlur={() => {
           scroller = setInterval(scrollSlider, 30);
         }}
         ref={slider}

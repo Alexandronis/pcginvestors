@@ -1,25 +1,22 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import { Link } from "react-router-dom";
 
-function TeamHover() {
+function AboutHover() {
   return (
     <div className="hover_container about">
       <div className="arrow-up about"></div>
       <div className="content">
         <div className="details-waper">
-         
           <Link
-            to="/about/#our-team"
+            to="/about/#about-pcg"
             className="content-details"
             onClick={() => document.getElementById("customFocus").focus}
           >
             <div className="img-box">
-              <img src="/Nav_hover_img/pcg_team.svg"></img>
+              <img src="/Nav_hover_img/about_pcg.svg" alt="About" />
             </div>
-            <h2>PCG TEAM</h2>
-            <p>
-              Our team of investment professionals dedicated to your success
-            </p>
+            <h2>ABOUT PCG</h2>
+            <p>Explore who we are - our mission, values, and principles</p>
           </Link>
         </div>
       </div>
@@ -27,4 +24,4 @@ function TeamHover() {
   );
 }
 
-export default TeamHover;
+export default AboutHover;

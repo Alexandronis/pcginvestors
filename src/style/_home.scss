@@ -4,19 +4,13 @@
 .home-main-wrapper {
   .home-banner {
     min-height: 600px;
-    //background-color: #f1f1f1;
-    //padding-top: 70px;
-    //padding-bottom: 70px;
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
     @include respond-to("medium_lg") {
-      min-height: 0px;
+      min-height: 0;
       align-items: flex-start;
     }
     @include respond-to("small") {
       padding-top: 20%;
-      padding-bottom: 0px;
+      padding-bottom: 0;
     }
     .video-thumb {
       width: 100%;
@@ -31,7 +25,6 @@
 //-------------------------value section--------------------
 .our-value-wrapper {
   box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.16);
-  //height: 250px;
   padding: 140px 0;
   background-color: #f1f1f1;
   @include respond-to("medium") {
@@ -40,14 +33,13 @@
   }
   @include respond-to("small") {
     height: 150px;
-    padding: 25px 0 0px;
+    padding: 25px 0 0;
   }
   .our-value {
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-    //top: -128px;
     box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.16);
     background-color: #ffffff;
     height: 243px;
@@ -63,7 +55,7 @@
     .value-box {
       text-align: center;
       padding: 0 33px;
-      background-image: url('../../public/value_icon/White_icon.svg');
+      background-image: url("../../public/value_icon/White_icon.svg");
       background-repeat: no-repeat;
       height: 324px;
       display: flex;
@@ -87,7 +79,7 @@
         height: 200px;
       }
       @include respond-to("small") {
-        background:url('../../public/value_icon/Mobile_White_icon.svg');
+        background: url("../../public/value_icon/Mobile_White_icon.svg");
         width: 70px;
         height: 70px;
         border-radius: 4px;
@@ -117,7 +109,6 @@
       .text {
         font-size: 24px;
         font-weight: 600;
-        //padding-bottom: 15px;
         color: #646466;
         position: absolute;
         top: 60%;
@@ -137,15 +128,14 @@
         }
       }
       &.center {
-        background: url("../../public/value_icon/Green_icon.svg");
-        background-repeat: no-repeat;
         height: 368px;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: flex-end;
         width: 292px;
-        background-position: center;
+        background: url("../../public/value_icon/Green_icon.svg") no-repeat
+          center;
         position: relative;
         box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
         border-radius: 12px;
@@ -167,7 +157,6 @@
           color: #ffffff;
           position: absolute;
           bottom: 40%;
-          //padding-right: 43px;
           @include respond-to("medium") {
             font-size: 37px;
             padding-right: 0;
@@ -181,9 +170,6 @@
         .text {
           position: absolute;
           bottom: 13%;
-          // padding-bottom: 60px;
-          // padding-top: 10px;
-          // padding-right: 26px;
           color: #f1f1f1;
           font-size: 36px;
           font-weight: 600;
@@ -225,7 +211,7 @@
 .our-team-wrapper {
   background: #646466;
   // padding: 160px 0 50px 0;
-  padding: 80px 0px 0px;
+  padding: 80px 0 0;
   @include respond-to("small") {
     background-color: #f1f1f1;
     padding: 60px 0 50px 0;
@@ -288,13 +274,11 @@
     }
 
     .team-card {
-      display: block;
       width: 24%;
       display: flex;
       flex-direction: column;
       margin: 22px;
       cursor: pointer;
-      //transition: transform 0.5s;
       @include respond-to("medium_lg") {
         width: 21%;
       }
@@ -304,18 +288,13 @@
       }
       @include respond-to("small") {
         flex-direction: row;
-
-        //margin: 15px auto;
-        //width: 40%;
       }
       img {
         object-fit: cover;
         width: 100%;
-        // transition: transform 0.5s;
       }
 
       .img_color {
-        // display: none;
         filter: grayscale(100%);
       }
       .details-box {
@@ -325,10 +304,6 @@
         @include respond-to("medium_lg") {
           padding: 6px;
           height: 65px;
-        }
-        @include respond-to("small") {
-          // height: 100%;
-          // width: 100%;
         }
         .line-1 {
           display: flex;
@@ -396,7 +371,9 @@
             margin-top: 15px;
             visibility: hidden;
             opacity: 0;
-            transition: visibility 0s, opacity 0.5s linear;
+            transition:
+              visibility 0s,
+              opacity 0.5s linear;
             height: 0;
             span {
               a {
@@ -417,7 +394,6 @@
         }
       }
       &.none-active {
-        // flex-grow: 0;
         width: 24%;
         display: flex;
         flex-direction: column;
@@ -441,9 +417,7 @@
 
       &.active {
         transform: scale(1);
-        // flex-grow: 1;
         .img_color {
-          // display: block;
           filter: grayscale(0%);
         }
         .img_black {
@@ -524,7 +498,6 @@
       display: block;
     }
     .card_containar {
-      margin: 10px;
       box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.16);
       transition: 0.3s;
       margin: 10px 10px 20px 10px;
@@ -536,14 +509,13 @@
         align-items: center;
         overflow: hidden;
         .image_containar {
-          //width: 156px;
           filter: grayscale(1);
         }
         .image_containar-color {
           display: none;
         }
         .card_list_items {
-          padding: 0px 10px;
+          padding: 0 10px;
           object-fit: contain;
           font-family: Poppins;
           font-size: 14px;
@@ -579,7 +551,6 @@
             margin-bottom: 15px;
           }
           .icon-set {
-            //padding: 0 10px;
             @include respond-to("small") {
               position: absolute;
               bottom: -30px;
@@ -603,7 +574,6 @@
         font-weight: 300;
         line-height: 1.5;
         letter-spacing: normal;
-        text-align: left;
         color: #000000;
         padding: 12px;
         text-align: justify;
@@ -645,7 +615,6 @@
 //----------------Investment Categories section ----------------------------------
 .inv-category-wrapper {
   background-color: #f9fafb;
-  // padding: 140px 0 50px;
   padding: 80px 0 0;
   @include respond-to("small") {
     padding: 50px 0 50px;
@@ -688,8 +657,6 @@
   .inv-category {
     display: flex;
     justify-content: center;
-    // margin: 50px 0 0;
-    // padding: 46px 180px;
     padding: 80px 180px;
     flex-flow: row wrap;
     @include respond-to("medium_lg") {
@@ -762,11 +729,8 @@
           @include respond-to("medium") {
             font-size: 12px;
             padding: 10px;
-            //padding: 69px 0;
           }
           @include respond-to("small") {
-            font-size: 12px;
-            padding: 10px;
             padding: 69px 10px;
             font-size: 14px;
             font-weight: 600;
@@ -869,23 +833,22 @@
   }
 }
 
-
-.quotes-wrapper{
+.quotes-wrapper {
   background: #ffffff;
   padding: 80px 0 120px;
-  @include respond-to("small"){
+  @include respond-to("small") {
     padding: 50px 0 70px;
   }
-  .qt-slider{
+  .qt-slider {
     width: 60%;
     margin: 0 auto;
     justify-content: center;
     align-items: center;
     text-align: center;
-    @include respond-to("medium"){
+    @include respond-to("medium") {
       width: 80%;
     }
-    @include respond-to("small"){
+    @include respond-to("small") {
       width: 90%;
     }
     .section-title {
@@ -894,45 +857,43 @@
       @include respond-to("medium") {
         width: 100%;
       }
-      h2{
+      h2 {
         color: #484848;
         font-size: 32px;
         font-weight: 600;
         margin-bottom: 32px;
-        @include  respond-to("small"){
+        @include respond-to("small") {
           font-size: 18px;
         }
       }
     }
-  .slider-card{
-    .quote-text{
-      p{
-        color: #484848;
-        text-align: center;
-        font-style: italic;
-        font-size: 20px;
-        font-weight: 400;
-        @include respond-to("small"){
-          font-size: 12px;
-          font-weight: 300;
+    .slider-card {
+      .quote-text {
+        p {
+          color: #484848;
+          text-align: center;
+          font-style: italic;
+          font-size: 20px;
+          font-weight: 400;
+          @include respond-to("small") {
+            font-size: 12px;
+            font-weight: 300;
+          }
         }
       }
-    }
-    .quote-footer{
-      padding: 24px 0;
-      p{
-        color: #484848;
-        text-align: center;
-        font-size: 16px;
-        font-weight: 400;
-        @include respond-to("small"){
-          font-size: 12px;
-          font-weight: 300;
+      .quote-footer {
+        padding: 24px 0;
+        p {
+          color: #484848;
+          text-align: center;
+          font-size: 16px;
+          font-weight: 400;
+          @include respond-to("small") {
+            font-size: 12px;
+            font-weight: 300;
+          }
         }
       }
     }
   }
-  }
-
-  
 }

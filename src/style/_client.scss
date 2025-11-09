@@ -61,8 +61,8 @@
         cursor: pointer;
       }
       .company-values {
-        margin: 0 0px 60px;
-        .sub-company{
+        margin: 0 0 60px;
+        .sub-company {
           padding-left: 70px;
           @include respond-to("small") {
             padding-left: 50px;
@@ -72,7 +72,7 @@
           display: flex;
           align-items: center;
           padding-left: 50px;
-         
+
           @include respond-to("small") {
             padding-left: 30px;
           }
@@ -107,7 +107,6 @@
           width: 100%;
           height: 275px;
           object-fit: cover;
-          // object-position: 0 0;
           @include respond-to("small") {
             height: 160px;
             object-fit: contain;
@@ -187,8 +186,7 @@
                   @include respond-to("small") {
                     transform: rotate(360deg);
                     height: 33px;
-                    margin-bottom: 18px;
-                    margin-bottom: 0px;
+                    margin-bottom: 0;
                   }
                 }
 
@@ -312,7 +310,7 @@
               line-height: 1.5;
               letter-spacing: normal;
               color: #000000;
-              padding: 20px 0px;
+              padding: 20px 0;
             }
             .list-items {
               padding: 20px;
@@ -339,7 +337,7 @@
                 color: #000000;
                 width: 1em;
                 font-weight: 900;
-                padding: 0px 10px 0px 0px;
+                padding: 0 10px 0 0;
                 font-size: 150%;
               }
             }
@@ -374,7 +372,7 @@
                   content: "\2022";
                   color: #8eae3f;
                   font-weight: 900;
-                  padding: 0px 4px 0px 0px;
+                  padding: 0 4px 0 0;
                   font-size: 150%;
                 }
                 h5 {
@@ -390,7 +388,7 @@
                 }
               }
             }
-            .bottom-text{
+            .bottom-text {
               display: flex;
               flex-direction: row;
               margin: 0 auto;
@@ -400,13 +398,13 @@
                 flex-direction: column;
                 width: 100%;
               }
-              ul{
+              ul {
                 padding: 0px 24px;
                 @include respond-to("small") {
                   padding: 0;
                 }
                 list-style: none;
-                .list-title{
+                .list-title {
                   font-size: 16px;
                   font-weight: 700;
                   font-stretch: normal;
@@ -416,26 +414,25 @@
                   text-align: left;
                   color: #000000;
                 }
-                .list-text{
+                .list-text {
                   list-style: none;
                   white-space: nowrap;
                   overflow: hidden;
-                  text-overflow: ellipsis
-
+                  text-overflow: ellipsis;
                 }
               }
               .list-title::before {
                 content: "\2022";
                 color: #8eae3f;
                 font-weight: 900;
-                padding: 0px 4px 0px 0px;
+                padding: 0 4px 0 0;
                 font-size: 150%;
               }
               .list-text::before {
                 content: "\2022";
                 color: #ffffff;
                 font-weight: 900;
-                padding: 0px 4px 0px 0px;
+                padding: 0 4px 0 0;
                 font-size: 150%;
               }
             }

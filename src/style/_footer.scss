@@ -96,9 +96,6 @@ footer {
     .cert {
       width: 20%;
       text-align: right;
-      .b_logo_containar {
-        // opacity: 60%;
-      }
     }
   }
   .footer-bottom {
@@ -138,23 +135,19 @@ footer {
   padding: 50px 0 20px;
 
   .footer-wrapper {
-    //margin: 0 auto;
     .menu {
       text-align: center;
       width: 40%;
       margin: 0 auto;
       ul {
-        //width: 80%;
         list-style: none;
         margin-bottom: 30px;
         li {
           margin-bottom: 15px;
-          //text-align: left;
           a {
             font-size: 14px;
             color: #ffffff;
             text-decoration: none;
-            //text-align: left;
           }
         }
       }
@@ -172,33 +165,24 @@ footer {
     width: 58%;
     margin: 0 auto 45px;
     border: none;
-    //margin-top: 30px;
-    //padding: 0 10%;
 
     .cert {
-      //display: flex;
       align-items: center;
-      //padding: 0 10%;
       .b_logo_containar {
-        // opacity: 60%;
         width: 23%;
         margin: 40px auto 20px;
       }
     }
 
     .footer-top {
-      //display: flex;
       align-items: center;
-      //padding: 0 10%;
       margin: 20px auto 30px;
       img {
         width: 90%;
-        //margin-right: 80px;
       }
     }
 
     .address {
-      //width: 30%;
       ul {
         list-style: none;
         li {
@@ -233,7 +217,6 @@ footer {
   }
 
   .icon {
-    // width: 30%;
     width: 65%;
     margin: 0 auto;
 

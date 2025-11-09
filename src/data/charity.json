@@ -1,65 +1,58 @@
 [
-    {
-        "id":0,
-        "title":"Utah Food Bank",
-        "webLink":"https://www.utahfoodbank.org/give-money/?gclid=Cj0KCQiAw8OeBhCeARIsAGxWtUyRUxOSZyRRO4fnYS_WolOmCPRwvJ25ZowcwOswhLhUDSgqDwWEa8AaApCREALw_wcB",
-        "logo":"/charity/uth_food_bank.png",
-        "logoRound":"/charity/uth_food_bank_round.png",
-        "description":"Utah Food Bank works with community partners and volunteers to fight hunger statewide."
-
-    },
-    {
-        "id":1,
-        "title":"Tali’s Fund",
-        "webLink":"https://talisfund.org/",
-        "logo":"/charity/tails_fund.png",
-        "logoRound":"/charity/tails_fund_round.png",
-        "description":"“Tali’s Fund helps fund vital research at SickKids Hospital, aimed at learning more about pediatric brain tumors.” – Tali’s Fund"
-
-    },
-    {
-        "id":2,
-        "title":"Habitat for Humanity",
-        "webLink":"https://www.habitat.org/",
-        "logo":"/charity/habitat_for_humanity.png",
-        "logoRound":"/charity/habitat_for_humanity_round.png",
-        "description":"Habitat for Humanity is a national nonprofit housing organization that builds houses through the help of volunteers for low-income families."
-
-    },
-    {
-        "id":3,
-        "title":"Pet Partners",
-        "webLink":"https://petpartners.org/act/aacr/?gclid=Cj0KCQiAw8OeBhCeARIsAGxWtUy3lbZKV0rWMalgD5dftqf4lKg3HDIsO6jeHgTDpAAr3VoDoOYwCN8aArSKEALw_wcB",
-        "logo":"/charity/pet_partners.png",
-        "logoRound":"/charity/pet_partners_round.png",
-        "description":"“Pet Partner’s mission is to improve human health and well-being through the human-animal bond.” – Pet Partners"
-
-    },
-    {
-        "id":4,
-        "title":"Second Harvest of Silicon Valley",
-        "webLink":"https://www.shfb.org/?utm_source=google&utm_medium=adwords&utm_campaign=evergreen&utm_content=smart-campaign&gclid=Cj0KCQiAw8OeBhCeARIsAGxWtUxbiF02jK8PfxHbspwDvq0zyrc2EfQzbCMCtxc3EAPfAH4eF2Td8aEaAmEDEALw_wcB",
-        "logo":"/charity/second_harvest.png",
-        "logoRound":"/charity/second_harvest_round.png",
-        "description":"Second Harvest of Silicon Valley distributes food through a network of hundreds of partners across the Santa Clara and San Mateo counties to build a hunger-free community."
-
-    },
-    {
-        "id":5,
-        "title":"Good + Foundation",
-        "webLink":"https://goodplusfoundation.org/",
-        "logo":"/charity/good_foundation.png",
-        "logoRound":"/charity/good_foundation_round.png",
-        "description":"Good+ Foundation is a national nonprofit that helps low-income fathers, mothers, and caregivers enroll and participate in anti-poverty programs."
-
-    },
-    {
-        "id":6,
-        "title":"Augie quest",
-        "webLink":"https://augiesquest.org/",
-        "logo":"/charity/augie_quest.png",
-        "logoRound":"/charity/augie_quest_round.png",
-        "description":"Augie’s Quest is a charity with a mission to raise awareness and funding to find the cure for ALS."
-
-    }
+  {
+    "id": 0,
+    "title": "Utah Food Bank",
+    "webLink": "https://www.utahfoodbank.org/give-money/?gclid=Cj0KCQiAw8OeBhCeARIsAGxWtUyRUxOSZyRRO4fnYS_WolOmCPRwvJ25ZowcwOswhLhUDSgqDwWEa8AaApCREALw_wcB",
+    "logo": "/charity/uth_food_bank.png",
+    "logoRound": "/charity/uth_food_bank_round.png",
+    "description": "Utah Food Bank works with community partners and volunteers to fight hunger statewide."
+  },
+  {
+    "id": 1,
+    "title": "Tali’s Fund",
+    "webLink": "https://talisfund.org/",
+    "logo": "/charity/tails_fund.png",
+    "logoRound": "/charity/tails_fund_round.png",
+    "description": "“Tali’s Fund helps fund vital research at SickKids Hospital, aimed at learning more about pediatric brain tumors.” – Tali’s Fund"
+  },
+  {
+    "id": 2,
+    "title": "Habitat for Humanity",
+    "webLink": "https://www.habitat.org/",
+    "logo": "/charity/habitat_for_humanity.png",
+    "logoRound": "/charity/habitat_for_humanity_round.png",
+    "description": "Habitat for Humanity is a national nonprofit housing organization that builds houses through the help of volunteers for low-income families."
+  },
+  {
+    "id": 3,
+    "title": "Pet Partners",
+    "webLink": "https://petpartners.org/act/aacr/?gclid=Cj0KCQiAw8OeBhCeARIsAGxWtUy3lbZKV0rWMalgD5dftqf4lKg3HDIsO6jeHgTDpAAr3VoDoOYwCN8aArSKEALw_wcB",
+    "logo": "/charity/pet_partners.png",
+    "logoRound": "/charity/pet_partners_round.png",
+    "description": "“Pet Partner’s mission is to improve human health and well-being through the human-animal bond.” – Pet Partners"
+  },
+  {
+    "id": 4,
+    "title": "Second Harvest of Silicon Valley",
+    "webLink": "https://www.shfb.org/?utm_source=google&utm_medium=adwords&utm_campaign=evergreen&utm_content=smart-campaign&gclid=Cj0KCQiAw8OeBhCeARIsAGxWtUxbiF02jK8PfxHbspwDvq0zyrc2EfQzbCMCtxc3EAPfAH4eF2Td8aEaAmEDEALw_wcB",
+    "logo": "/charity/second_harvest.png",
+    "logoRound": "/charity/second_harvest_round.png",
+    "description": "Second Harvest of Silicon Valley distributes food through a network of hundreds of partners across the Santa Clara and San Mateo counties to build a hunger-free community."
+  },
+  {
+    "id": 5,
+    "title": "Good + Foundation",
+    "webLink": "https://goodplusfoundation.org/",
+    "logo": "/charity/good_foundation.png",
+    "logoRound": "/charity/good_foundation_round.png",
+    "description": "Good+ Foundation is a national nonprofit that helps low-income fathers, mothers, and caregivers enroll and participate in anti-poverty programs."
+  },
+  {
+    "id": 6,
+    "title": "Augie quest",
+    "webLink": "https://augiesquest.org/",
+    "logo": "/charity/augie_quest.png",
+    "logoRound": "/charity/augie_quest_round.png",
+    "description": "Augie’s Quest is a charity with a mission to raise awareness and funding to find the cure for ALS."
+  }
 ]

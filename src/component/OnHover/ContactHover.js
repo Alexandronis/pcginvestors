@@ -1,7 +1,7 @@
-import React, { useState, useCallback, useEffect } from "react";
-import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import React from "react";
+import { Link } from "react-router-dom";
 
-function contacthover() {
+function ContactHover() {
   return (
     <div className="hover_container contact">
       <div className="arrow-up contact"></div>
@@ -13,11 +13,11 @@ function contacthover() {
             onClick={() => document.getElementById("customFocus").focus}
           >
             <div className="img-box">
-              <img src="/Nav_hover_img/contact.svg"></img>
+              <img src="/Nav_hover_img/contact.svg" alt="Contact" />
             </div>
 
             <h2>Contact</h2>
-            <p>Let's talk business</p>
+            <p>Let&apos;s talk business</p>
           </Link>
         </div>
       </div>
@@ -25,4 +25,4 @@ function contacthover() {
   );
 }
 
-export default contacthover;
+export default ContactHover;
