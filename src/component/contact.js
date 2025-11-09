@@ -1,19 +1,16 @@
 import React, { useEffect, useRef } from "react";
-import {
-  BrowserRouter as Router,
-  useLocation,
-} from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import { Helmet } from "react-helmet";
 
 import ScrollHandler from "./scrollHandler";
 
 function Contact(props) {
-  if (props.location.pathname === "/contact") {
-    document.body.classList.add("inner-header");
-  }
-
   const ContactUs = useRef();
   const Location = useLocation();
+
+  if (Location.pathname === "/contact") {
+    document.body.classList.add("inner-header");
+  }
 
   useEffect(() => {
     if (Location.hash === "#ContactUs" && ContactUs.current) {
@@ -24,7 +21,7 @@ function Contact(props) {
       ContactUs.current.scrollIntoView();
     }
 
-    if (props.location.pathname === "/contact/") {
+    if (Location.pathname === "/contact/") {
       document.body.classList.add("inner-header");
     }
 
@@ -40,7 +37,6 @@ function Contact(props) {
       <meta name="description" content="Contact number, address, and e mail address of PCG investors" />
       </Helmet>
       <link rel="canonical" href="https://www.pcginvestors.com/contact"></link>
-      <Router>
         <ScrollHandler />
         <section
           id={`#ContactUs`}
@@ -115,7 +111,6 @@ function Contact(props) {
             </div>
           </div>
         </section>
-      </Router>
     </div>
   );
 }

@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
-import { BrowserRouter as Router, Link, useLocation, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import ScrollHandler from "./scrollHandler";
 const OrgData = require("./Portfolio/Data/organization.json");
