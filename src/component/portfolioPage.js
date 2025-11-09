@@ -81,19 +81,19 @@ function PortfolioPage() {
             <div className="switch-lable">
               <ul>
                 <li className={Location.hash === "#Portfolio" || Location.hash === "" ? "active-tab" : "disable-tab"}>
-                  <Link to="/about/#about-pcg"
+                  <Link to="/portfolio-page/#Portfolio"
                         onClick={() => navigate("/portfolio-page/#Portfolio", {replace: true})}>
                     Portfolio
                   </Link>
                 </li>
                 <li className={Location.hash === "#Investment" ? "active-tab" : "disable-tab"}>
-                  <Link to="/about/#our-team"
+                  <Link to="/portfolio-page/#Investment"
                         onClick={() => navigate("/portfolio-page/#Investment", {replace: true})}>
                     Investment
                   </Link>
                 </li>
                 <li className={Location.hash === "#Criteria" ? "active-tab" : "disable-tab"}>
-                  <Link to="/about/#our-team"
+                  <Link to="/portfolio-page/#Criteria"
                         onClick={() => navigate("/portfolio-page/#Criteria", {replace: true})}>
                     Criteria
                   </Link>
@@ -280,7 +280,7 @@ function PortfolioPage() {
               </section>
               {/* Investmnet Categories */}
               <section
-                id={`#Investment`}
+                id={`Investment`}
                 ref={(el) => {
                   Investment.current = el;
                 }}

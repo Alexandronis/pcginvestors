@@ -35,7 +35,7 @@ function About() {
   useEffect(() => {
     if (location.hash === "#about-pcg" && AboutPCG.current) {
       AboutPCG.current.scrollIntoView();
-      window.scrollTo(0, window.scrollY - 100);
+      window.scrollTo(0, window.scrollY + 100);
     }
 
     if (location.hash === "#our-team" && OurTeam.current) {
@@ -44,7 +44,7 @@ function About() {
 
     if (location.pathname === "/about" && AboutPCG.current) {
       AboutPCG.current.scrollIntoView();
-      window.scrollTo(0, window.scrollY - 100);
+      window.scrollTo(0, window.scrollY + 100);
     }
 
     // ✅ replaced props.location.pathname
@@ -60,7 +60,7 @@ function About() {
     }
 
     setTimeout(() => {
-      window.scrollTo(0, window.scrollY - 100);
+      window.scrollTo(0, window.scrollY + 100);
     });
   }, [location]);
 
@@ -394,7 +394,6 @@ function About() {
                 location.hash === "#sectionteam7" ||
                 location.hash === "#sectionteam8" ||
                 location.hash === "#sectionteam9" ||
-                location.hash === "#section0" ||
                 location.hash === "#section1" ||
                 location.hash === "#section2" ||
                 location.hash === "#section3" ||
@@ -403,7 +402,8 @@ function About() {
                 location.hash === "#section6" ||
                 location.hash === "#section7" ||
                 location.hash === "#section8" ||
-                location.hash === "#section9"
+                location.hash === "#section9" ||
+                location.hash === "#section10"
                   ? "show-section"
                   : "hide-section"
               }
@@ -426,59 +426,59 @@ function About() {
                       </p>
                     </div>
                   </div>
-
-                  <div className="team-profile-wrapper">
-                    {teamData.map((data, i) => {
-                      return (
-                        <div
-                          ref={(el) => (boxRef.current[i] = el)}
-                          className={
-                            isShown === i + 1
-                              ? "profile-main-content active index" + data.id
-                              : isShown === 0
-                                ? "profile-main-content"
-                                : "profile-main-content none-active"
-                          }
-                          id={`#sectionteam` + i}
-                          key={i}
-                        >
-                          <div className="discription_block_team">
-                            <div className="card_containar_team">
-                              <div className="leftside_text_team">
-                                <img
-                                  className="image_containar_team"
-                                  src={data.image}
-                                  alt={data.alt}
-                                />
-                                <div className="rightside_containar">
-                                  <div className="name_label">
-                                    <img src="/Maskteam.svg" alt="Green Card" />
-                                    <p>
-                                      {data.name}
-                                      <span>{data.designation}</span>
-                                    </p>
-                                  </div>
-                                  <p className="short-desc">
-                                    {data.short_description}
+                </div>
+                <div className="team-profile-wrapper">
+                  {teamData.map((data, i) => {
+                    return (
+                      <div
+                        ref={(el) => (boxRef.current[i] = el)}
+                        className={
+                          isShown === i + 1
+                            ? "profile-main-content active index" + data.id
+                            : isShown === 0
+                              ? "profile-main-content"
+                              : "profile-main-content none-active"
+                        }
+                        id={`#sectionteam` + i}
+                        key={i}
+                      >
+                        <div className="discription_block_team">
+                          <div className="card_containar_team">
+                            <div className="leftside_text_team">
+                              <img
+                                className="image_containar_team"
+                                src={data.image}
+                                alt={data.alt}
+                              />
+                              <div className="rightside_containar">
+                                <div className="name_label">
+                                  <img src="/Maskteam.svg" alt="Green Card"/>
+                                  <p>
+                                    {data.name}
+                                    <span>{data.designation}</span>
                                   </p>
-                                  <div className="header_icons">
-                                    {data.email !== "" ? (
-                                      <a href={data.email}>
-                                        <img
-                                          src={data.emailIcon}
-                                          alt={data.emailAlt}
-                                        />
-                                      </a>
-                                    ) : null}
-
-                                    <a href={data.linkedin} target="_blank">
+                                </div>
+                                <p className="short-desc">
+                                  {data.short_description}
+                                </p>
+                                <div className="header_icons">
+                                  {data.email !== "" ? (
+                                    <a href={data.email}>
                                       <img
-                                        src={data.linkedinIcon}
-                                        alt="Linkedin Icon"
+                                        src={data.emailIcon}
+                                        alt={data.emailAlt}
                                       />
                                     </a>
-                                  </div>
-                                  <div className="arrow_btn">
+                                  ) : null}
+
+                                  <a href={data.linkedin} target="_blank">
+                                    <img
+                                      src={data.linkedinIcon}
+                                      alt="Linkedin Icon"
+                                    />
+                                  </a>
+                                </div>
+                                <div className="arrow_btn">
                                     <span>
                                       <Link to={`#section` + data.id}>
                                         <img
@@ -491,96 +491,95 @@ function About() {
                                         />
                                       </Link>
                                     </span>
-                                  </div>
                                 </div>
                               </div>
                             </div>
                           </div>
-                          <section id={`#section` + data.id}>
-                            <div className="profile-lg-card">
-                              <div className="profilr-lg-inner">
-                                {selectedIndex === data.id ? (
-                                  <>
-                                    <div className="card_content_wrapper">
-                                      <img
-                                        src={data.coverImage}
-                                        alt={data.alt}
-                                        className="cover-img"
-                                      />
-                                      <div className="card_content-col">
-                                        <div className="image_cap">
-                                          <div className="profile_discription">
-                                            <img
-                                              src={data.colorImage}
-                                              alt={data.alt}
-                                            />
-                                            <p className="profile-text-01">
-                                              {data.short_description}
-                                            </p>
-                                          </div>
-                                        </div>
-                                        <div className="profile_header">
-                                          <div className="header_tagline">
-                                            <div className="subheding_text">
-                                              <h2>{data.name}</h2>
-                                              <h5>{data.designation}</h5>
-                                            </div>
-                                            <div className="header_icons">
-                                              {data.email !== "" ? (
-                                                <a href={data.email}>
-                                                  <img
-                                                    src={data.emailIcon}
-                                                    alt={data.emailAlt}
-                                                  />
-                                                </a>
-                                              ) : null}
-
-                                              {data.linkedin !== "" ? (
-                                                <a
-                                                  href={data.linkedin}
-                                                  target="_blank"
-                                                >
-                                                  <img
-                                                    src={data.linkedinIcon}
-                                                    alt="Linkedin Icon"
-                                                    target="_blank"
-                                                  />
-                                                </a>
-                                              ) : (
-                                                ""
-                                              )}
-
-                                              <Link to={`#section` + data.id}>
-                                                <img
-                                                  className="arrow"
-                                                  src="/arrowUp.svg"
-                                                  alt="Arrow Icon"
-                                                  onClick={() => {
-                                                    handleExpandClick(data.id);
-                                                    setIsShown(0);
-                                                  }}
-                                                />
-                                              </Link>
-                                            </div>
-                                          </div>
-                                          <p className="main-desc one">
-                                            {data.long_description}
-                                          </p>
-                                          <p className="main-desc">
-                                            {data.long_description2}
+                        </div>
+                        <section id={`section` + data.id}>
+                          <div className="profile-lg-card">
+                            <div className="profilr-lg-inner">
+                              {selectedIndex === data.id ? (
+                                <>
+                                  <div className="card_content_wrapper">
+                                    <img
+                                      src={data.coverImage}
+                                      alt={data.alt}
+                                      className="cover-img"
+                                    />
+                                    <div className="card_content-col">
+                                      <div className="image_cap">
+                                        <div className="profile_discription">
+                                          <img
+                                            src={data.colorImage}
+                                            alt={data.alt}
+                                          />
+                                          <p className="profile-text-01">
+                                            {data.short_description}
                                           </p>
                                         </div>
                                       </div>
+                                      <div className="profile_header">
+                                        <div className="header_tagline">
+                                          <div className="subheding_text">
+                                            <h2>{data.name}</h2>
+                                            <h5>{data.designation}</h5>
+                                          </div>
+                                          <div className="header_icons">
+                                            {data.email !== "" ? (
+                                              <a href={data.email}>
+                                                <img
+                                                  src={data.emailIcon}
+                                                  alt={data.emailAlt}
+                                                />
+                                              </a>
+                                            ) : null}
+
+                                            {data.linkedin !== "" ? (
+                                              <a
+                                                href={data.linkedin}
+                                                target="_blank"
+                                              >
+                                                <img
+                                                  src={data.linkedinIcon}
+                                                  alt="Linkedin Icon"
+                                                  target="_blank"
+                                                />
+                                              </a>
+                                            ) : (
+                                              ""
+                                            )}
+
+                                            <Link to={`#section` + data.id}>
+                                              <img
+                                                className="arrow"
+                                                src="/arrowUp.svg"
+                                                alt="Arrow Icon"
+                                                onClick={() => {
+                                                  handleExpandClick(data.id);
+                                                  setIsShown(0);
+                                                }}
+                                              />
+                                            </Link>
+                                          </div>
+                                        </div>
+                                        <p className="main-desc one">
+                                          {data.long_description}
+                                        </p>
+                                        <p className="main-desc">
+                                          {data.long_description2}
+                                        </p>
+                                      </div>
                                     </div>
-                                  </>
-                                ) : null}
-                              </div>
+                                  </div>
+                                </>
+                              ) : null}
                             </div>
-                          </section>
-                        </div>
-                      );
-                    })}
-                  </div>
+                          </div>
+                        </section>
+                      </div>
+                    );
+                  })}
                 </div>
               </div>
             </section>
