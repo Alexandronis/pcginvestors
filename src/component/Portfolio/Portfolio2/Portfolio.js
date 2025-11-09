@@ -1,34 +1,31 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useCallback, useState, useEffect, useRef } from "react";
 
 import PortfolioItem from "./PortfolioItem";
 
 const Data = require("../../../data/portfolio.json");
 
-var scrollDir = 1;
-var scroller = null;
+let scrollDir = 1;
+let scroller = null;
 
 const Portfolio = () => {
   const slider = useRef(null);
   const [OpenedItem, setOpenedItem] = useState(null);
 
   // scroll the Slider
-  const scrollSlider = () => {
+  const scrollSlider = useCallback(() => {
     if (slider.current && OpenedItem === null) {
       slider.current.scroll((slider.current.scrollLeft += scrollDir), 0);
-      if (
-        slider.current.scrollLeft ===
-        slider.current.scrollWidth - slider.current.clientWidth
-      ) {
+      if (slider.current.scrollLeft === slider.current.scrollWidth - slider.current.clientWidth) {
         scrollDir = -1;
       }
       if (slider.current.scrollLeft === 0) {
         scrollDir = 1;
       }
     }
-  };
+  }, [OpenedItem]);
 
   const ScrollWhenClick = i => {
-    var amount = Math.floor(i / 3) * 170 - window.innerWidth / 2 + 380;
+    const amount = Math.floor(i / 3) * 170 - window.innerWidth / 2 + 380;
 
     if (i > Data.length * 3 - 4) {
       setTimeout(() => {
@@ -41,7 +38,8 @@ const Portfolio = () => {
 
   useEffect(() => {
     scroller = setInterval(scrollSlider, 30);
-  }, []);
+    return () => clearInterval(scroller);
+  }, [scrollSlider]);
 
   return (
     <div className="portfolio2_wrapper">
