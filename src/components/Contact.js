@@ -1,34 +1,32 @@
 import React, { useEffect, useRef } from "react";
 import { useLocation } from "react-router-dom";
 import { Helmet } from "react-helmet";
-
 import ScrollHandler from "./ScrollHandler";
 
-function Contact() {
-  const ContactUs = useRef();
-  const Location = useLocation();
+const Contact = () => {
+  const contactUs = useRef(null);
+  const location = useLocation();
 
-  if (Location.pathname === "/contact") {
-    document.body.classList.add("inner-header");
-  }
-
+  // Manage header class and scroll behavior
   useEffect(() => {
-    if (Location.hash === "#ContactUs" && ContactUs.current) {
-      ContactUs.current.scrollIntoView();
-    }
-
-    if (Location.pathname === "/contact" && ContactUs.current) {
-      ContactUs.current.scrollIntoView();
-    }
-
-    if (Location.pathname === "/contact/") {
+    if (location.pathname === "/contact" || location.pathname === "/contact/") {
       document.body.classList.add("inner-header");
+    } else {
+      document.body.classList.remove("inner-header");
     }
 
+    if (
+      (location.hash === "#ContactUs" || location.pathname === "/contact") &&
+      contactUs.current
+    ) {
+      contactUs.current.scrollIntoView({ behavior: "smooth" });
+    }
+
+    // Offset scroll by 70px
     setTimeout(() => {
       window.scrollTo(0, window.scrollY - 70);
-    });
-  }, [Location]);
+    }, 100);
+  }, [location]);
 
   return (
     <div>
@@ -38,15 +36,12 @@ function Contact() {
           name="description"
           content="Contact number, address, and e mail address of PCG investors"
         />
+        <link rel="canonical" href="https://www.pcginvestors.com/contact" />
       </Helmet>
-      <link rel="canonical" href="https://www.pcginvestors.com/contact"></link>
+
       <ScrollHandler />
-      <section
-        id={`#ContactUs`}
-        ref={el => {
-          ContactUs.current = el;
-        }}
-      >
+
+      <section id="ContactUs" ref={contactUs}>
         <div className="inner-page-wrapper contact-us-wrapper">
           <div className="content-wrapper">
             <div className="content-inner-box">
@@ -55,22 +50,26 @@ function Contact() {
                   <span></span>
                   <h2>Contact Details</h2>
                 </div>
+
                 <div className="value-text">
                   <div className="principles">
                     <h3>HQ in the heart of Silicon Valley</h3>
+
                     <div className="card_containar">
                       <div className="leftside_text contact_leftside_text">
                         <img
                           className="image_containar"
                           src="/contact/Group 613.svg"
                           alt="Location Icon"
+                          loading="lazy"
                         />
                         <div className="card_list_items contact-us-item">
                           <ul>
                             <li>
-                              PO Box 7,<br></br> Los Gatos,<br></br> CA, 95031
-                              <br></br>(vs One Embarcadero Center)
-                              <br></br>
+                              PO Box 7,<br />
+                              Los Gatos,<br />
+                              CA, 95031<br />
+                              (vs One Embarcadero Center)
                             </li>
                           </ul>
                         </div>
@@ -83,11 +82,11 @@ function Contact() {
                           className="image_containar"
                           src="/contact/Group 614.svg"
                           alt="Telephone Icon"
+                          loading="lazy"
                         />
                         <div className="card_list_items contact-us-item">
                           <ul>
                             <li>415.407.2700 (Telephone)</li>
-                            {/* <li>408.354.8482 (Fax)</li> */}
                           </ul>
                         </div>
                       </div>
@@ -99,6 +98,7 @@ function Contact() {
                           className="image_containar"
                           src="/contact/Group 615.svg"
                           alt="Email Icon"
+                          loading="lazy"
                         />
                         <div className="card_list_items contact-us-item">
                           <ul>
@@ -116,6 +116,6 @@ function Contact() {
       </section>
     </div>
   );
-}
+};
 
 export default Contact;
