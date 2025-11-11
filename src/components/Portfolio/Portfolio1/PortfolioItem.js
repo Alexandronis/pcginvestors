@@ -42,7 +42,7 @@ const PortfolioItem = ({ data, index, opened, setOpen, ScrollWhenClick }) => {
         tabIndex={0}
         className={opened ? "portfolioClose opened" : "portfolioClose"}
         onClick={handleClick}
-        onKeyDown={(e) => e.key === "Enter" && handleClick()}
+        onKeyDown={e => e.key === "Enter" && handleClick()}
       >
         <div className="icon">
           <span className="bar"></span>
@@ -54,7 +54,7 @@ const PortfolioItem = ({ data, index, opened, setOpen, ScrollWhenClick }) => {
         tabIndex={0}
         className={opened ? "portfolioItem opened" : "portfolioItem"}
         onClick={handleClick}
-        onKeyDown={(e) => e.key === "Enter" && handleClick()}
+        onKeyDown={e => e.key === "Enter" && handleClick()}
       >
         <img alt={data.alt} src={data.image} loading="lazy" />
       </div>

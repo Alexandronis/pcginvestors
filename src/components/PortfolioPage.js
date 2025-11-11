@@ -189,7 +189,10 @@ function PortfolioPage() {
                               onClick={() =>
                                 navigate("/client-page", { state: { data } })
                               }
-                              onKeyPress={(e) => e.key === "Enter" && navigate("/client-page", { state: { data } })}
+                              onKeyPress={e =>
+                                e.key === "Enter" &&
+                                navigate("/client-page", { state: { data } })
+                              }
                             >
                               <div className="logo-img-box">
                                 <img
@@ -222,7 +225,10 @@ function PortfolioPage() {
                               onClick={() =>
                                 navigate("/client-page", { state: { data } })
                               }
-                              onKeyPress={(e) => e.key === "Enter" && navigate("/client-page", { state: { data } })}
+                              onKeyPress={e =>
+                                e.key === "Enter" &&
+                                navigate("/client-page", { state: { data } })
+                              }
                             >
                               <div className="logo-img-box">
                                 <img
@@ -257,7 +263,10 @@ function PortfolioPage() {
                               onClick={() =>
                                 navigate("/client-page", { state: { data } })
                               }
-                              onKeyPress={(e) => e.key === "Enter" && navigate("/client-page", { state: { data } })}
+                              onKeyPress={e =>
+                                e.key === "Enter" &&
+                                navigate("/client-page", { state: { data } })
+                              }
                             >
                               <div className="logo-img-box">
                                 <img
@@ -288,7 +297,10 @@ function PortfolioPage() {
                               onClick={() =>
                                 navigate("/client-page", { state: { data } })
                               }
-                              onKeyPress={(e) => e.key === "Enter" && navigate("/client-page", { state: { data } })}
+                              onKeyPress={e =>
+                                e.key === "Enter" &&
+                                navigate("/client-page", { state: { data } })
+                              }
                             >
                               <div className="logo-img-box">
                                 <img
@@ -319,7 +331,10 @@ function PortfolioPage() {
                               onClick={() =>
                                 navigate("/client-page", { state: { data } })
                               }
-                              onKeyPress={(e) => e.key === "Enter" && navigate("/client-page", { state: { data } })}
+                              onKeyPress={e =>
+                                e.key === "Enter" &&
+                                navigate("/client-page", { state: { data } })
+                              }
                             >
                               <div className="logo-img-box">
                                 <img
@@ -350,7 +365,10 @@ function PortfolioPage() {
                               onClick={() =>
                                 navigate("/client-page", { state: { data } })
                               }
-                              onKeyPress={(e) => e.key === "Enter" && navigate("/client-page", { state: { data } })}
+                              onKeyPress={e =>
+                                e.key === "Enter" &&
+                                navigate("/client-page", { state: { data } })
+                              }
                             >
                               <div className="logo-img-box">
                                 <img
@@ -381,7 +399,10 @@ function PortfolioPage() {
                               onClick={() =>
                                 navigate("/client-page", { state: { data } })
                               }
-                              onKeyPress={(e) => e.key === "Enter" && navigate("/client-page", { state: { data } })}
+                              onKeyPress={e =>
+                                e.key === "Enter" &&
+                                navigate("/client-page", { state: { data } })
+                              }
                             >
                               <div className="logo-img-box">
                                 <img
@@ -608,12 +629,12 @@ function PortfolioPage() {
                                 interests, attitudes, or opinions of groups or
                                 cultures and seek to inspire, guide, and
                                 motivate people, with the goal of their products
-                                contributing to the definition of the consumer&apos;s
-                                way of life. A business becomes a lifestyle
-                                brand by focusing on evoking an emotional
-                                connection with its customers, creating a desire
-                                for a consumer to be affiliated with a
-                                particular group or brand.
+                                contributing to the definition of the
+                                consumer&apos;s way of life. A business becomes
+                                a lifestyle brand by focusing on evoking an
+                                emotional connection with its customers,
+                                creating a desire for a consumer to be
+                                affiliated with a particular group or brand.
                               </p>
                               <div className="brand-logos">
                                 <img

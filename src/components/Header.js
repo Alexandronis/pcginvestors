@@ -41,7 +41,9 @@ function Header() {
           onClick={() => {
             localStorage.setItem("activePage", "");
           }}
-          onKeyPress={(e) => e.key === "Enter" && localStorage.setItem("activePage", "")}
+          onKeyPress={e =>
+            e.key === "Enter" && localStorage.setItem("activePage", "")
+          }
         >
           <a href="/">
             <img src="/pcg-logo.png" alt="PCG Logo" />

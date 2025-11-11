@@ -28,7 +28,7 @@ function SamplePrevArrow(props) {
         opacity: 0,
       }}
       onClick={onClick}
-      onKeyPress={(e) => e.key === "Enter" && onClick(e)}
+      onKeyPress={e => e.key === "Enter" && onClick(e)}
     />
   );
 }
@@ -46,7 +46,7 @@ function SampleNextArrow(props) {
         opacity: 0,
       }}
       onClick={onClick}
-      onKeyPress={(e) => e.key === "Enter" && onClick(e)}
+      onKeyPress={e => e.key === "Enter" && onClick(e)}
     />
   );
 }
@@ -58,9 +58,10 @@ const Quotes = () => {
         <div className="slider-card">
           <div className="quote-text">
             <p>
-              “PCG&apos;s early investment has helped SEB accelerate our U.S. and
-              global expansion, capitalizing on the company&apos;s robust growth rate
-              and global consumer interest in fitness / health clubs.”
+              “PCG&apos;s early investment has helped SEB accelerate our U.S.
+              and global expansion, capitalizing on the company&apos;s robust
+              growth rate and global consumer interest in fitness / health
+              clubs.”
             </p>
           </div>
           <div className="quote-footer">

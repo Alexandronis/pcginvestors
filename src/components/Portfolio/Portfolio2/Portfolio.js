@@ -14,7 +14,10 @@ const Portfolio = () => {
     if (slider.current && OpenedItem === null) {
       slider.current.scroll((slider.current.scrollLeft += scrollDir), 0);
 
-      if (slider.current.scrollLeft === slider.current.scrollWidth - slider.current.clientWidth) {
+      if (
+        slider.current.scrollLeft ===
+        slider.current.scrollWidth - slider.current.clientWidth
+      ) {
         scrollDir = -1;
       }
       if (slider.current.scrollLeft === 0) {
@@ -23,7 +26,7 @@ const Portfolio = () => {
     }
   }, [OpenedItem]);
 
-  const ScrollWhenClick = (i) => {
+  const ScrollWhenClick = i => {
     const amount = Math.floor(i / 3) * 170 - window.innerWidth / 2 + 380;
 
     if (i > Data.length * 3 - 4) {
@@ -53,7 +56,11 @@ const Portfolio = () => {
         onFocus={() => clearInterval(scroller)}
         onBlur={() => (scroller = setInterval(scrollSlider, 30))}
       >
-        <div className={OpenedItem ? "prtfolio_container pause" : "prtfolio_container"}>
+        <div
+          className={
+            OpenedItem ? "prtfolio_container pause" : "prtfolio_container"
+          }
+        >
           {[1, 2, 3].map((_, r) =>
             Data.map((item, i) => {
               const index = r * Data.length + i;

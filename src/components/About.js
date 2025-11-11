@@ -18,7 +18,7 @@ const About = () => {
   const [isShown, setIsShown] = useState(0);
   const boxRef = useRef([]);
 
-  const handleExpandClick = (index) => {
+  const handleExpandClick = index => {
     setSelectedIndex(prev => (prev === index ? "" : index));
   };
 
@@ -27,7 +27,10 @@ const About = () => {
   }
 
   useEffect(() => {
-    if (AboutPCG.current && (location.hash === "#about-pcg" || location.pathname === "/about")) {
+    if (
+      AboutPCG.current &&
+      (location.hash === "#about-pcg" || location.pathname === "/about")
+    ) {
       AboutPCG.current.scrollIntoView();
       window.scrollTo(0, window.scrollY + 100);
     }
@@ -49,7 +52,7 @@ const About = () => {
     setTimeout(() => window.scrollTo(0, window.scrollY + 100), 0);
   }, [location]);
 
-  const handleTabClick = (hash) => {
+  const handleTabClick = hash => {
     navigate(`/about/${hash}`, { replace: true });
   };
 
@@ -71,11 +74,21 @@ const About = () => {
             <ul>
               {location.hash === "#about-pcg" || location.hash === "" ? (
                 <li className="active-tab">
-                  <Link to="/about/#about-pcg" onClick={() => handleTabClick("#about-pcg")}>About PCG</Link>
+                  <Link
+                    to="/about/#about-pcg"
+                    onClick={() => handleTabClick("#about-pcg")}
+                  >
+                    About PCG
+                  </Link>
                 </li>
               ) : (
                 <li className="active-tab">
-                  <Link to="/about/#our-team" onClick={() => handleTabClick("#our-team")}>PCG Team</Link>
+                  <Link
+                    to="/about/#our-team"
+                    onClick={() => handleTabClick("#our-team")}
+                  >
+                    PCG Team
+                  </Link>
                 </li>
               )}
             </ul>
@@ -85,8 +98,14 @@ const About = () => {
             {/* ABOUT PCG */}
             <section
               id="#about-pcg"
-              ref={el => { AboutPCG.current = el; }}
-              className={location.hash === "#about-pcg" || location.hash === "" ? "show-section" : "hide-section"}
+              ref={el => {
+                AboutPCG.current = el;
+              }}
+              className={
+                location.hash === "#about-pcg" || location.hash === ""
+                  ? "show-section"
+                  : "hide-section"
+              }
             >
               <div className="content-wrapper">
                 <div className="content-inner-box">
@@ -97,10 +116,22 @@ const About = () => {
                     </div>
                     <div className="value-text">
                       <p className="padding-para">
-                        Partnership Capital Growth was founded in 2006 with a vision to foster growth within the healthy living sector by investing in consumer products, services, and technology. Here at PCG, we share a vision to improve the world by helping people build a healthier and happier future.
+                        Partnership Capital Growth was founded in 2006 with a
+                        vision to foster growth within the healthy living sector
+                        by investing in consumer products, services, and
+                        technology. Here at PCG, we share a vision to improve
+                        the world by helping people build a healthier and
+                        happier future.
                       </p>
                       <p>
-                        Being founded by some of the first to specialize in the healthy living space, we bring an experience-led perspective that has outlasted the test of time since inception. With a 20- year legacy of successful investments in renowned brands, our mission is to deliver substantial value for our portfolio companies and investors through our partnership- capital-growth / value built on values approach.
+                        Being founded by some of the first to specialize in the
+                        healthy living space, we bring an experience-led
+                        perspective that has outlasted the test of time since
+                        inception. With a 20- year legacy of successful
+                        investments in renowned brands, our mission is to
+                        deliver substantial value for our portfolio companies
+                        and investors through our partnership- capital-growth /
+                        value built on values approach.
                       </p>
                     </div>
                   </div>
@@ -111,10 +142,21 @@ const About = () => {
                     </div>
                     <div className="value-text">
                       <p className="padding-para">
-                        Being founded by some of the first to specialize in the healthy living space, we bring an experience-led perspective that has outlasted the test of time since inception. With a 20- year legacy of successful investments in renowned brands, our mission is to deliver substantial value for our portfolio companies and investors through our partnership- capital-growth / value built on values approach.
+                        Being founded by some of the first to specialize in the
+                        healthy living space, we bring an experience-led
+                        perspective that has outlasted the test of time since
+                        inception. With a 20- year legacy of successful
+                        investments in renowned brands, our mission is to
+                        deliver substantial value for our portfolio companies
+                        and investors through our partnership- capital-growth /
+                        value built on values approach.
                       </p>
                       <p>
-                        Under this focus on values C value, we invest in areas we know, partner with market- leading companies, and maintain a disciplined approach to structure and diligence to offer unparalleled financial and strategic support.
+                        Under this focus on values C value, we invest in areas
+                        we know, partner with market- leading companies, and
+                        maintain a disciplined approach to structure and
+                        diligence to offer unparalleled financial and strategic
+                        support.
                       </p>
                     </div>
                   </div>
@@ -126,19 +168,34 @@ const About = () => {
                       <h2>OUR PRINCIPLES</h2>
                     </div>
                     <div className="value-text">
-                      <p className="padding-para">We practice our values through an absolute commitment to:</p>
+                      <p className="padding-para">
+                        We practice our values through an absolute commitment
+                        to:
+                      </p>
                       <div className="principles">
                         {principlesData.map((card, i) => (
                           <div className="card_containar" key={i}>
                             <div className="leftside_text">
                               <div className="image_containar">
-                                <img className="image" src="/green_card.svg" alt="Green Card" loading="lazy" />
-                                <img className="image_icon" src={card.icon} alt={`${card.title} Icon`} loading="lazy" />
+                                <img
+                                  className="image"
+                                  src="/green_card.svg"
+                                  alt="Green Card"
+                                  loading="lazy"
+                                />
+                                <img
+                                  className="image_icon"
+                                  src={card.icon}
+                                  alt={`${card.title} Icon`}
+                                  loading="lazy"
+                                />
                                 <h2>{card.title}</h2>
                               </div>
                               <div className="card_list_items">
                                 <ul>
-                                  {card.list.map((item, idx) => <li key={idx}>{item}</li>)}
+                                  {card.list.map((item, idx) => (
+                                    <li key={idx}>{item}</li>
+                                  ))}
                                 </ul>
                               </div>
                             </div>
@@ -168,9 +225,24 @@ const About = () => {
                           <div className="card_containar" key={i}>
                             <div className="leftside_text">
                               <div className="download_img">
-                                <a target="_blank" href={card.href} download rel="noreferrer">
-                                  <img className="image_containar" src={card.mainIcon} alt="Green Card" loading="lazy" />
-                                  <img className="download" src={card.secondaryIcon} alt="Download Icon" loading="lazy" />
+                                <a
+                                  target="_blank"
+                                  href={card.href}
+                                  download
+                                  rel="noreferrer"
+                                >
+                                  <img
+                                    className="image_containar"
+                                    src={card.mainIcon}
+                                    alt="Green Card"
+                                    loading="lazy"
+                                  />
+                                  <img
+                                    className="download"
+                                    src={card.secondaryIcon}
+                                    alt="Download Icon"
+                                    loading="lazy"
+                                  />
                                 </a>
                               </div>
                               <div className="card_list_items">
@@ -191,8 +263,16 @@ const About = () => {
             {/* OUR TEAM */}
             <section
               id="#our-team"
-              ref={el => { OurTeam.current = el; }}
-              className={location.hash.startsWith("#our-team") || location.hash.startsWith("#sectionteam") || location.hash.startsWith("#section") ? "show-section" : "hide-section"}
+              ref={el => {
+                OurTeam.current = el;
+              }}
+              className={
+                location.hash.startsWith("#our-team") ||
+                location.hash.startsWith("#sectionteam") ||
+                location.hash.startsWith("#section")
+                  ? "show-section"
+                  : "hide-section"
+              }
             >
               <div className="content-wrapper">
                 <div className="content-inner-box">
@@ -202,7 +282,13 @@ const About = () => {
                     </div>
                     <div className="value-text">
                       <p>
-                        Partnership Capital Growth Investors has a team of investment professionals who are dedicated to healthy living and the success of our investments and portfolio companies. PCG’s seasoned team of investment professionals combines industry leading experience from private equity, investment banking, consulting and operations.
+                        Partnership Capital Growth Investors has a team of
+                        investment professionals who are dedicated to healthy
+                        living and the success of our investments and portfolio
+                        companies. PCG’s seasoned team of investment
+                        professionals combines industry leading experience from
+                        private equity, investment banking, consulting and
+                        operations.
                       </p>
                     </div>
                   </div>
@@ -225,21 +311,60 @@ const About = () => {
                       <div className="discription_block_team">
                         <div className="card_containar_team">
                           <div className="leftside_text_team">
-                            <img className="image_containar_team" src={data.image} alt={data.alt} loading="lazy" />
+                            <img
+                              className="image_containar_team"
+                              src={data.image}
+                              alt={data.alt}
+                              loading="lazy"
+                            />
                             <div className="rightside_containar">
                               <div className="name_label">
-                                <img src="/Maskteam.svg" alt="Green Card" loading="lazy" />
-                                <p>{data.name}<span>{data.designation}</span></p>
+                                <img
+                                  src="/Maskteam.svg"
+                                  alt="Green Card"
+                                  loading="lazy"
+                                />
+                                <p>
+                                  {data.name}
+                                  <span>{data.designation}</span>
+                                </p>
                               </div>
-                              <p className="short-desc">{data.short_description}</p>
+                              <p className="short-desc">
+                                {data.short_description}
+                              </p>
                               <div className="header_icons">
-                                {data.email && <a href={data.email}><img src={data.emailIcon} alt={data.emailAlt} loading="lazy" /></a>}
-                                {data.linkedin && <a href={data.linkedin} target="_blank" rel="noreferrer"><img src={data.linkedinIcon} alt="Linkedin Icon" loading="lazy" /></a>}
+                                {data.email && (
+                                  <a href={data.email}>
+                                    <img
+                                      src={data.emailIcon}
+                                      alt={data.emailAlt}
+                                      loading="lazy"
+                                    />
+                                  </a>
+                                )}
+                                {data.linkedin && (
+                                  <a
+                                    href={data.linkedin}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                  >
+                                    <img
+                                      src={data.linkedinIcon}
+                                      alt="Linkedin Icon"
+                                      loading="lazy"
+                                    />
+                                  </a>
+                                )}
                               </div>
                               <div className="arrow_btn">
                                 <span>
                                   <Link to={`#section${data.id}`}>
-                                    <button onClick={() => { handleExpandClick(data.id); setIsShown(i + 1); }}>
+                                    <button
+                                      onClick={() => {
+                                        handleExpandClick(data.id);
+                                        setIsShown(i + 1);
+                                      }}
+                                    >
                                       <img
                                         src="/arrowDown.svg"
                                         alt="Arrow Icon"
@@ -259,12 +384,23 @@ const About = () => {
                           <div className="profilr-lg-inner">
                             {selectedIndex === data.id && (
                               <div className="card_content_wrapper">
-                                <img src={data.coverImage} alt={data.alt} className="cover-img" loading="lazy" />
+                                <img
+                                  src={data.coverImage}
+                                  alt={data.alt}
+                                  className="cover-img"
+                                  loading="lazy"
+                                />
                                 <div className="card_content-col">
                                   <div className="image_cap">
                                     <div className="profile_discription">
-                                      <img src={data.colorImage} alt={data.alt} loading="lazy" />
-                                      <p className="profile-text-01">{data.short_description}</p>
+                                      <img
+                                        src={data.colorImage}
+                                        alt={data.alt}
+                                        loading="lazy"
+                                      />
+                                      <p className="profile-text-01">
+                                        {data.short_description}
+                                      </p>
                                     </div>
                                   </div>
                                   <div className="profile_header">
@@ -274,13 +410,36 @@ const About = () => {
                                         <h5>{data.designation}</h5>
                                       </div>
                                       <div className="header_icons">
-                                        {data.email && <a href={data.email}><img src={data.emailIcon} alt={data.emailAlt} loading="lazy" /></a>}
-                                        {data.linkedin && <a href={data.linkedin} target="_blank" rel="noreferrer"><img src={data.linkedinIcon} alt="Linkedin Icon" loading="lazy" /></a>}
+                                        {data.email && (
+                                          <a href={data.email}>
+                                            <img
+                                              src={data.emailIcon}
+                                              alt={data.emailAlt}
+                                              loading="lazy"
+                                            />
+                                          </a>
+                                        )}
+                                        {data.linkedin && (
+                                          <a
+                                            href={data.linkedin}
+                                            target="_blank"
+                                            rel="noreferrer"
+                                          >
+                                            <img
+                                              src={data.linkedinIcon}
+                                              alt="Linkedin Icon"
+                                              loading="lazy"
+                                            />
+                                          </a>
+                                        )}
                                         <Link to={`#section${data.id}`}>
-                                          <button className="arrow" onClick={() => {
-                                            handleExpandClick(data.id);
-                                            setIsShown(0);
-                                          }}>
+                                          <button
+                                            className="arrow"
+                                            onClick={() => {
+                                              handleExpandClick(data.id);
+                                              setIsShown(0);
+                                            }}
+                                          >
                                             <img
                                               src="/arrowUp.svg"
                                               alt="Arrow Icon"
@@ -290,8 +449,12 @@ const About = () => {
                                         </Link>
                                       </div>
                                     </div>
-                                    <p className="main-desc one">{data.long_description}</p>
-                                    <p className="main-desc">{data.long_description2}</p>
+                                    <p className="main-desc one">
+                                      {data.long_description}
+                                    </p>
+                                    <p className="main-desc">
+                                      {data.long_description2}
+                                    </p>
                                   </div>
                                 </div>
                               </div>
@@ -309,6 +472,6 @@ const About = () => {
       </div>
     </div>
   );
-}
+};
 
 export default About;

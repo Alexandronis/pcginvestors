@@ -1,8 +1,8 @@
-import React, { useEffect } from 'react';
+import React, { useEffect } from "react";
 
 const NotFoundPage = () => {
   useEffect(() => {
-    document.body.classList.remove('404-page');
+    document.body.classList.remove("404-page");
   }, []);
 
   return (

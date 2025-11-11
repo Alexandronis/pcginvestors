@@ -18,7 +18,11 @@ const AboutHover = () => {
             onClick={handleFocus}
           >
             <div className="img-box">
-              <img src="/Nav_hover_img/about_pcg.svg" alt="About" loading="lazy" />
+              <img
+                src="/Nav_hover_img/about_pcg.svg"
+                alt="About"
+                loading="lazy"
+              />
             </div>
             <h2>ABOUT PCG</h2>
             <p>Explore who we are - our mission, values, and principles</p>

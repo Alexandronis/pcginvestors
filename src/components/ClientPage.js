@@ -40,7 +40,7 @@ function ClientPage() {
             <img
               className="close-img"
               onClick={handleClick}
-              onKeyPress={(e) => e.key === "Enter" && handleClick(e)}
+              onKeyPress={e => e.key === "Enter" && handleClick(e)}
               src="/close-btn.svg"
               alt="close"
             />
