@@ -4,6 +4,11 @@ A responsive single-page React application for **PCG Investors**, built with mod
 
 ---
 
+## 💻 Requirements
+
+- Node.js **v18+**
+- npm **v9+**
+
 ## 🚀 Getting Started
 
 ### 1️⃣ Clone the repository
