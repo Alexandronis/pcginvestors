@@ -8,7 +8,7 @@ A responsive single-page React application for **PCG Investors**, built with mod
 
 ### 1️⃣ Clone the repository
 ```bash
-git clone https://github.com/yourusername/pcginvestors.git
+git clone git clone https://github.com/Charly-agency-account/partnership-capital-growth.git
 cd pcginvestors
 ```
 
