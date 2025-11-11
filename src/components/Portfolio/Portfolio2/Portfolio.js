@@ -1,8 +1,6 @@
 import React, { useCallback, useState, useEffect, useRef } from "react";
-
 import PortfolioItem from "./PortfolioItem";
-
-const Data = require("../../../data/portfolio.json");
+import Data from "../../../data/portfolio.json";
 
 let scrollDir = 1;
 let scroller = null;
@@ -11,10 +9,11 @@ const Portfolio = () => {
   const slider = useRef(null);
   const [OpenedItem, setOpenedItem] = useState(null);
 
-  // scroll the Slider
+  // scroll the slider automatically
   const scrollSlider = useCallback(() => {
     if (slider.current && OpenedItem === null) {
       slider.current.scroll((slider.current.scrollLeft += scrollDir), 0);
+
       if (slider.current.scrollLeft === slider.current.scrollWidth - slider.current.clientWidth) {
         scrollDir = -1;
       }
@@ -24,7 +23,7 @@ const Portfolio = () => {
     }
   }, [OpenedItem]);
 
-  const ScrollWhenClick = i => {
+  const ScrollWhenClick = (i) => {
     const amount = Math.floor(i / 3) * 170 - window.innerWidth / 2 + 380;
 
     if (i > Data.length * 3 - 4) {
@@ -47,42 +46,30 @@ const Portfolio = () => {
       <h2 className="mobile_title">What clients say about us</h2>
 
       <div
-        onMouseOver={() => {
-          clearInterval(scroller);
-        }}
-        onMouseLeave={() => {
-          scroller = setInterval(scrollSlider, 30);
-        }}
-        onFocus={() => {
-          clearInterval(scroller);
-        }}
-        onBlur={() => {
-          scroller = setInterval(scrollSlider, 30);
-        }}
         ref={slider}
         className="prtfolio_slider"
+        onMouseOver={() => clearInterval(scroller)}
+        onMouseLeave={() => (scroller = setInterval(scrollSlider, 30))}
+        onFocus={() => clearInterval(scroller)}
+        onBlur={() => (scroller = setInterval(scrollSlider, 30))}
       >
-        <div
-          className={
-            OpenedItem ? "prtfolio_container pause" : "prtfolio_container"
-          }
-        >
-          {[1, 2, 3].map((data, r) => {
-            return Data.map((data, i) => {
+        <div className={OpenedItem ? "prtfolio_container pause" : "prtfolio_container"}>
+          {[1, 2, 3].map((_, r) =>
+            Data.map((item, i) => {
               const index = r * Data.length + i;
               return (
                 <PortfolioItem
-                  data={data}
-                  index={index}
                   key={index}
+                  data={item}
+                  index={index}
                   opened={index === OpenedItem}
                   openedId={OpenedItem}
                   setOpen={setOpenedItem}
                   ScrollWhenClick={ScrollWhenClick}
                 />
               );
-            });
-          })}
+            })
+          )}
         </div>
       </div>
     </div>
