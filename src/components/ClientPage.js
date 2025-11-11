@@ -2,13 +2,13 @@ import React, { useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import ScrollHandler from "./ScrollHandler";
 
-function ClientPage() {
+const ClientPage = () => {
   const location = useLocation();
   const navigate = useNavigate();
 
   const data = location.state?.data;
 
-  // Handle redirect if no data (in case user opens /client-page directly)
+  // Redirect if opened directly
   useEffect(() => {
     if (!data) navigate("/portfolio-page");
   }, [data, navigate]);
@@ -23,10 +23,10 @@ function ClientPage() {
     };
   }, [location.pathname]);
 
-  function handleClick() {
+  const handleClick = () => {
     navigate("/portfolio-page");
     document.body.classList.remove("popup-page");
-  }
+  };
 
   if (!data) return null; // prevent crash before redirect
 
@@ -36,33 +36,40 @@ function ClientPage() {
       <div className="inner-page-wrapper client-wrapper">
         <div className="content-wrapper">
           <div className="content-inner-box">
-            {/* eslint-disable-next-line jsx-a11y/no-noninteractive-element-interactions */}
-            <img
-              className="close-img"
-              onClick={handleClick}
-              onKeyPress={e => e.key === "Enter" && handleClick(e)}
-              src="/close-btn.svg"
-              alt="close"
-            />
+            <button className="close-img" onClick={handleClick}>
+              <img
+                src="/close-btn.svg"
+                alt="close"
+                loading="lazy"
+              />
+            </button>
+
             <div className="company-values">
               <div className="values-title">
                 <span></span>
                 <h2>{data.company}</h2>
               </div>
-              <p className="sub-company">
-                {data.parent_company !== undefined ? data.parent_company : ""}
-              </p>
+              {data.parent_company && (
+                <p className="sub-company">{data.parent_company}</p>
+              )}
             </div>
 
             <div className="card-content-wrapper">
-              <img src={data.cover_image} alt="" className="cover-photo" />
+              <img
+                src={data.cover_image}
+                alt={`${data.company} cover`}
+                className="cover-photo"
+                loading="lazy"
+              />
+
               <div className="card-content-col">
                 <div className="image-cap">
                   <div className="logo-img-box">
                     <img
                       src={data.company_logo_large}
-                      alt={data.alt}
+                      alt={data.alt || `${data.company} logo`}
                       className="profile-image"
+                      loading="lazy"
                     />
                     <a
                       href={data.url}
@@ -83,6 +90,7 @@ function ClientPage() {
                       </p>
                       <span>&quot;</span>
                     </div>
+
                     <div className="name_labels">
                       <h4>{data.author}</h4>
                       <h4>{data.autho_designation}</h4>
@@ -97,6 +105,7 @@ function ClientPage() {
                       <div className="card-main-title">{data.company}</div>
                       <div className="card-sub-heading">{data.subheading}</div>
                     </div>
+
                     <a
                       href={data.url}
                       className="btn-btn-visit desktop"
@@ -111,19 +120,19 @@ function ClientPage() {
 
                   <div className="list-items">
                     <ul>
-                      {data.features.map((option, i) => (
+                      {data.features?.map((option, i) => (
                         <li key={i}>{option}</li>
                       ))}
                     </ul>
                   </div>
 
                   <div className="bottom-text">
-                    {data.leadership !== "" ? (
+                    {data.leadership && (
                       <ul className="list-wrap">
                         <li className="list-title">Leadership</li>
                         <li className="list-text">{data.leadership}</li>
                       </ul>
-                    ) : null}
+                    )}
 
                     <ul className="list-wrap">
                       <li className="list-title">Website</li>
@@ -142,6 +151,6 @@ function ClientPage() {
       </div>
     </div>
   );
-}
+};
 
 export default ClientPage;
