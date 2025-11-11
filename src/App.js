@@ -1,15 +1,15 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import "./style/main.scss";
+import "./styles/main.scss";
 
-import About from "./component/About";
-import Home from "./component/Home";
-import Contact from "./component/Contact";
-import PortfolioPage from "./component/PortfolioPage";
-import ClientPage from "./component/ClientPage";
-import Header from "./component/Header";
+import About from "./components/About";
+import Home from "./components/Home";
+import Contact from "./components/Contact";
+import PortfolioPage from "./components/PortfolioPage";
+import ClientPage from "./components/ClientPage";
+import Header from "./components/Header";
 import NotFoundPage from "./404";
-import Footer from "./component/Footer";
+import Footer from "./components/Footer";
 
 function App() {
   return (

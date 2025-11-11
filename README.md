@@ -1,68 +1,105 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# 🏢 PCG Investors Website
 
-## Available Scripts
+A responsive single-page React application for **PCG Investors**, built with modern React (v18), SASS, and accessibility improvements.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🚀 Getting Started
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### 1️⃣ Clone the repository
+```bash
+git clone https://github.com/yourusername/pcginvestors.git
+cd pcginvestors
+```
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+### 2️⃣ Install dependencies
+```bash
+npm install
+```
 
-### `npm test`
+### 3️⃣ Run the development server
+```bash
+npm start
+```
+This will start the app in development mode and open http://localhost:3000
+in your browser.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The page automatically reloads when changes are saved, and ESLint errors will appear in the console.
 
-### `npm run build`
+## ⚙️ Available Scripts
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+| Command         | Description                                                |
+|-----------------|------------------------------------------------------------|
+| `npm start`     | Runs the app locally in development mode                   |
+| `npm test`      | Launches the interactive test runner                       |
+| `npm run build` | Builds the app for production (output in `/build`)         |
+| `npm run eject` | Copies CRA configuration for full customization (irreversible) |
+| `npm run lint`  | Checks code for linting and accessibility issues           |
+| `npm run lint:fix` | Automatically fixes lint issues where possible          |
+| `npm run format` | Formats all code using Prettier                           |
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## 🧱 Development Notes
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Built using React 18 and React Scripts 5 (Create React App base).
+- Uses React Router v6 for client-side navigation.
+- Includes Prettier and ESLint setup for consistent code quality.
+- Accessibility (a11y) best practices enforced via eslint-plugin-jsx-a11y.
+- Supports SASS for styling with modular SCSS structure.
+- Fully compatible with Node 18+ and npm 9+.
 
-### `npm run eject`
+## 🧰 Tech Stack
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- React 18
+- React Router DOM 6
+- SASS
+- Prettier + ESLint
+- React Slick (slider)
+- React Scroll / React Scrollspy
+- React Helmet
+- React PageFlip
+- React Player
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🧪 Testing
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Run all tests in watch mode:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```bash
+npm test
+```
 
-## Learn More
+This uses `@testing-library/react` for component testing and DOM assertions.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🧾 Deployment
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+To build the app for production:
 
-### Code Splitting
+```bash
+npm run build
+```
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+This command creates an optimized build in the `/build` folder.
 
-### Analyzing the Bundle Size
+Your app is ready to be deployed — for example to Netlify, Vercel, or your preferred hosting.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+## 🧩 Project Structure
 
-### Making a Progressive Web App
+```text
+pcginvestors/
+├── public/
+├── src/
+│   ├── components/
+│   ├── styles/
+│   ├── assets/
+│   └── App.js
+├── package.json
+└── README.md
+```
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+## 🪪 License
 
-### Advanced Configuration
+This project is private and proprietary.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+Unauthorized use, distribution, or modification is prohibited.
 
-### Deployment
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
 
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
