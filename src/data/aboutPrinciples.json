@@ -1,0 +1,43 @@
+[
+  {
+    "title": "FOCUS",
+    "icon": "/about_card/focus.svg",
+    "list": [
+      "Only invest in areas we know",
+      "Work with market leading companies with proven profitability and growth",
+      "Keep it simple"
+    ]
+  },
+  {
+    "title": "PARTNERSHIP",
+    "icon": "/about_card/Partnerships.svg",
+    "list": [
+      "Mutual trust and confidence",
+      "Clearly aligned interests among all stakeholders"
+    ]
+  },
+  {
+    "title": "DILIGENCE",
+    "icon": "/about_card/Diligence.svg",
+    "list": [
+      "Thorough understanding of key business fundamentals and value drivers",
+      "Become intimately familiar with the downside risks and upside opportunities"
+    ]
+  },
+  {
+    "title": "STRUCTURE",
+    "icon": "/about_card/structure.svg",
+    "list": [
+      "Appropriate capital structure to support growth with limited leverage",
+      "Disciplined and constructive board, advisors and outside resources"
+    ]
+  },
+  {
+    "title": "VALUES & VALUE",
+    "icon": "/about_card/Values_and_value.svg",
+    "list": [
+      "Values: trust, respect, integrity, balance & excellence",
+      "Value: consistent and transparent focus on building eventual exit value"
+    ]
+  }
+]

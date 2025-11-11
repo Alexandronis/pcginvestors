@@ -381,6 +381,12 @@
                   bottom: 10px;
                   right: 15px;
                 }
+                button {
+                  background: none;
+                  border: 0;
+                  box-shadow: none;
+                  padding: 0;
+                }
               }
             }
           }
@@ -501,7 +507,11 @@
                       a {
                         margin-left: 20px;
 
-                        img {
+                        img, button {
+                          background: none;
+                          border: 0;
+                          box-shadow: none;
+                          padding: 0;
                           @include respond-to("small") {
                             display: none;
                           }
@@ -689,6 +699,12 @@
                 @include respond-to("small") {
                   bottom: 10px;
                   right: 15px;
+                }
+                button {
+                  background: none;
+                  border: 0;
+                  box-shadow: none;
+                  padding: 0;
                 }
               }
             }
