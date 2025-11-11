@@ -18,7 +18,7 @@ const ContactHover = () => {
             onClick={handleFocus}
           >
             <div className="img-box">
-              <img src="/Nav_hover_img/contact.svg" alt="Contact" />
+              <img src="/Nav_hover_img/contact.svg" alt="Contact" loading="lazy" />
             </div>
 
             <h2>Contact</h2>
