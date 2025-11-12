@@ -7,10 +7,12 @@ let scroller = null;
 
 const Portfolio = () => {
   const slider = useRef(null);
-  const [openedItem, setOpenedItem] = useState(null);
+  const [OpenedItem, setOpenedItem] = useState(null);
+  const portfolioData = Data.portfolioMain;
 
+  // scroll the slider automatically
   const scrollSlider = useCallback(() => {
-    if (slider.current && openedItem === null) {
+    if (slider.current && OpenedItem === null) {
       slider.current.scroll((slider.current.scrollLeft += scrollDir), 0);
 
       if (
@@ -23,11 +25,18 @@ const Portfolio = () => {
         scrollDir = 1;
       }
     }
-  }, [openedItem]);
+  }, [OpenedItem]);
 
-  const scrollWhenClick = index => {
-    const amount = Math.floor(index / 3) * 170 - window.innerWidth / 2 + 380;
-    slider.current.scroll(amount, 0);
+  const ScrollWhenClick = i => {
+    const amount = Math.floor(i / 3) * 170 - window.innerWidth / 2 + 380;
+
+    if (i > portfolioData.length * 3 - 4) {
+      setTimeout(() => {
+        slider.current.scroll(amount, 0);
+      }, 300);
+    } else {
+      slider.current.scroll(amount, 0);
+    }
   };
 
   useEffect(() => {
@@ -36,8 +45,9 @@ const Portfolio = () => {
   }, [scrollSlider]);
 
   return (
-    <div className="portfolio1_wrapper">
+    <div className="portfolio2_wrapper">
       <h1 className="title">PCG Investment Portfolio</h1>
+      <h2 className="mobile_title">What clients say about us</h2>
 
       <div
         ref={slider}
@@ -49,20 +59,25 @@ const Portfolio = () => {
       >
         <div
           className={
-            openedItem ? "prtfolio_container pause" : "prtfolio_container"
+            OpenedItem ? "prtfolio_container pause" : "prtfolio_container"
           }
         >
-          {Data.map((data, i) => (
-            <PortfolioItem
-              key={i}
-              data={data}
-              index={i}
-              opened={i === openedItem}
-              openedId={openedItem}
-              setOpen={setOpenedItem}
-              ScrollWhenClick={scrollWhenClick}
-            />
-          ))}
+          {[1, 2, 3].map((_, r) =>
+            portfolioData.map((item, i) => {
+              const index = r * portfolioData.length + i;
+              return (
+                <PortfolioItem
+                  key={index}
+                  data={item}
+                  index={index}
+                  opened={index === OpenedItem}
+                  openedId={OpenedItem}
+                  setOpen={setOpenedItem}
+                  ScrollWhenClick={ScrollWhenClick}
+                />
+              );
+            })
+          )}
         </div>
       </div>
     </div>

@@ -1,4 +1,6 @@
-import Portfolio1 from "./Portfolio1/Portfolio";
-import Portfolio2 from "./Portfolio2/Portfolio";
+import PortfolioHome from "./PortfolioHome/Portfolio";
+import PortfolioCriteria from "./PortfolioCriteria/PortfolioCriteria";
+import PortfolioInvestment from "./PortfolioInvestment/PortfolioInvestment";
+import PortfolioSection from "./PortfolioSection/PortfolioSection";
 
-export { Portfolio1, Portfolio2 };
+export { PortfolioCriteria, PortfolioInvestment, PortfolioHome, PortfolioSection };

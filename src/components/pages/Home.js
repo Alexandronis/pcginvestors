@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Portfolio2 } from "../common/Portfolio";
+import { PortfolioHome } from "../common/Portfolio";
 import ReactPlayer from "react-player";
 import { Helmet } from "react-helmet";
 import ScrollHandler from "../common/ScrollHandler";
@@ -76,7 +76,7 @@ const Home = () => {
         </div>
 
         <div className="logo-slider">
-          <Portfolio2 />
+          <PortfolioHome />
         </div>
 
         <div className="quotes-wrapper">
