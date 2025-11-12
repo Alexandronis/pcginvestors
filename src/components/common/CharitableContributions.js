@@ -1,17 +1,18 @@
 import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import Chart from "./Chart";
+import charityData from "../../data/charity.json";
+import otherCharities from "../../data/otherCharity.json";
 
-function CharitableContributions() {
-  const Location = useLocation();
+const CharitableContributions = () => {
+  const location = useLocation();
+
   useEffect(() => {
+    // Adjust scroll for anchor links
     setTimeout(() => {
       window.scrollTo(0, window.scrollY - 70);
-    });
-  }, [Location]);
-
-  const charityData = require("../data/charity.json");
-  const otherCharities = require("../data/otherCharity.json");
+    }, 0);
+  }, [location]);
 
   return (
     <div className="charityble-contribution-wrapper">
@@ -31,46 +32,43 @@ function CharitableContributions() {
             </p>
           </div>
         </div>
+
         <div className="chart-container">
           <div className="fosus-sec-wapper">
             <Chart />
           </div>
         </div>
+
         <div className="mobile-content">
-          {charityData.map((data, i) => {
-            return (
-              <div key={i}>
-                <a href={data.webLink} target="_blank" rel="noreferrer">
-                  <div className="charity-card">
-                    <div className="image-block">
-                      <img src={data.logo} alt={data.title} />
-                    </div>
-                    <div className="content-block">
-                      <p>{data.description}</p>
-                    </div>
-                  </div>
-                </a>
+          {charityData.map((data, i) => (
+            <a href={data.webLink} target="_blank" rel="noreferrer" key={i}>
+              <div className="charity-card">
+                <div className="image-block">
+                  <img src={data.logo} alt={data.title} />
+                </div>
+                <div className="content-block">
+                  <p>{data.description}</p>
+                </div>
               </div>
-            );
-          })}
+            </a>
+          ))}
         </div>
       </div>
+
       <div className="other-charity">
         <div className="title">
-          <h3>Historically we’ve also contributed to;</h3>
+          <h3>Historically we’ve also contributed to:</h3>
         </div>
         <div className="box-container">
-          {otherCharities.map((data, i) => {
-            return (
-              <div className="data-card" key={i}>
-                {data.name}
-              </div>
-            );
-          })}
+          {otherCharities.map((data, i) => (
+            <div className="data-card" key={i}>
+              {data.name}
+            </div>
+          ))}
         </div>
       </div>
     </div>
   );
-}
+};
 
 export default CharitableContributions;

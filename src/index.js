@@ -5,20 +5,21 @@ import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 
-// Get the root DOM node
 const container = document.getElementById("root");
-
-// Create a root
 const root = createRoot(container);
 
-// Render the app
-root.render(
-  <React.StrictMode>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
-  </React.StrictMode>
-);
+// Render your app
+const renderApp = () => {
+  root.render(
+    <React.StrictMode>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </React.StrictMode>
+  );
+};
+
+renderApp();
 
 // Service worker
 serviceWorker.unregister();

@@ -1,182 +1,349 @@
-[
-  {
-    "id": 1,
-    "url": "https://designerprotein.com/",
-    "name": "Paul Pruett",
-    "designation": "CEO",
-    "company": "Designer Wellness",
-    "description": "In the consumer health / wellness space there is no firm with better historic perspective, strategic insights and personal relationships than PCG",
-    "image": "/images/portfolio/designer_wellness_logo@3x.png",
-    "alt": "PCG Investment in Designer Wellness"
-  },
-  {
-    "id": 2,
-    "url": "https://www.sambazon.com/",
-    "name": "Ryan Black",
-    "designation": "CEO",
-    "company": "Sambazon",
-    "description": "PCG's industry knowledge and team has added value to our business each and every year",
-    "image": "/images/portfolio/sambazon@3x.png",
-    "alt": "PCG Investment in Sambazon"
-  },
-  {
-    "id": 3,
-    "url": "https://www.anytimefitness.com/",
-    "name": "Chuck Runyon",
-    "designation": "CEO/CO-Founder",
-    "company": "Anytime Fitness",
-    "description": "PCG's early investment has helped SEB accelerate our U.S. and global expansion, capitalizing on the company's robust growth rate and global consumer interest in fitness / health clubs",
-    "image": "/images/portfolio/anytime-fitness@3x.png",
-    "alt": "PCG Investment in Anytime Fitness"
-  },
-  {
-    "id": 4,
-    "url": "https://www.thedrybar.com/",
-    "name": "Michael Landau",
-    "designation": "CEO",
-    "company": "DryBar",
-    "description": "The process prior to bringing PCG on board was daunting and intimidating which changed 180 degrees after they took the helm, managed the process and secured multiple excellent partners to choose from",
-    "image": "/images/portfolio/drybar@3x.png",
-    "alt": "PCG Investment in DryBar"
-  },
-  {
-    "id": 5,
-    "url": "https://www.gaiaherbs.com/",
-    "name": "Ric Scalzo",
-    "designation": "CEO",
-    "company": "Gaia Herbs",
-    "description": "TBL and PCG under the leadership of Brent Knudsen have truly been a partner to develop real value for our company",
-    "image": "/images/portfolio/gaia-herbs@3x.png",
-    "alt": "PCG Investment in Gaia Herbs"
-  },
-  {
-    "id": 6,
-    "url": "https://numitea.com/#gsc.tab=0",
-    "name": "Ahmed Rahim",
-    "designation": "CEO",
-    "company": "Numi Tea",
-    "description": "PCG has provided Numi with good insights into the marketplace, opportunities for strategic partnerships and overall industry awareness, both for organizational and board growth",
-    "image": "/images/portfolio/numi-on-state@3x.png",
-    "alt": "PCG Investment in Numi Tea"
-  },
-  {
-    "id": 7,
-    "url": "https://www.promaxnutrition.com/",
-    "name": "Simon Goode",
-    "designation": "CEO",
-    "company": "Promax Nutrition",
-    "description": "We appreciate PCG's counsel and support. Their broad industry knowledge gives them a unique perspective that provides significant operating value.",
-    "image": "/images/portfolio/promax@3x.png",
-    "alt": "PCG Investment in Promax Nutrition"
-  },
-  {
-    "id": 8,
-    "url": "https://www.runragnar.com/",
-    "name": "Tanner Bell",
-    "designation": "Founder and CEO",
-    "company": "Ragnar Relay",
-    "description": "PCG delivers on what they promise and are true partner in the business. They provide much more than just capital",
-    "image": "/images/portfolio/ragnar@3x.png",
-    "alt": "PCG Investment in Ragnar Relay"
-  },
-  {
-    "id": 9,
-    "url": "https://surftech.com/",
-    "name": "Chris Dunn",
-    "designation": "CEO",
-    "company": "Surftech",
-    "description": "PCG has been a tremendous partner over the years; their insight and leadership has been very valuable",
-    "image": "/images/portfolio/surftech@3x.png",
-    "alt": "PCG Investment in Surftech"
-  },
-  {
-    "id": 10,
-    "url": "https://www.califiafarms.com/",
-    "name": "Greg Steltenpohl",
-    "designation": "Founder",
-    "company": "Califia Farms",
-    "description": "PCG has been a great partner to Califia Farms and our predecessor companies for many years. We consider PCG good friends in addition to being business partners. Most importantly PCG shares Califia Farms values",
-    "image": "/images/portfolio/califia-002.png",
-    "alt": "PCG Investment in Califia Farms"
-  },
-  {
-    "id": 11,
-    "url": "https://www.musclemilk.com/",
-    "name": "Mike Pickett",
-    "designation": "Founder and President",
-    "company": "CytoSport",
-    "description": "PCG allowed Cytosport to grow from a powder business to ready to drink, bars and more, more than tripling the size of our business before our sale to Hormel and later to Pepsi Co.",
-    "image": "/images/portfolio/crosport@3x.png",
-    "alt": "PCG Investment in CytoSport"
-  },
-  {
-    "id": 12,
-    "url": "https://www.frontstream.com/",
-    "name": "Steve Fafel",
-    "designation": "CEO",
-    "company": "Gift Works",
-    "description": "TBL/PCG understood our values based vision and provided a means for us grow and eventually find the right acquisition partner",
-    "image": "/images/portfolio/giftWorks@3x.png",
-    "alt": "PCG Investment in Gift Works"
-  },
-  {
-    "id": 14,
-    "url": "https://healthylivingnet.com/",
-    "name": "Jason Bliss",
-    "designation": "Founder",
-    "company": "Healthy Living Network",
-    "description": "PCG was responsible for bringing the capital and focus to our business that allowed HLN to grow throughout the west coast. PCG not only brings capital but a true spirit of partnership",
-    "image": "/images/portfolio/HealthyLiving@3x.png",
-    "alt": "PCG Investment in Healthy Living Network"
-  },
-  {
-    "id": 17,
-    "url": "https://greensnaturalfoods.com/",
-    "name": "Harold Hochberger",
-    "designation": "Founder",
-    "company": " Mrs. Green's Natural Market",
-    "description": "The PCG team provided us the opportunity to expand throughout the Northeastern corridor and eventually sell to Planet Organic creating a strong US / CN natural grocer",
-    "image": "/images/portfolio/MrsGreens@3x.png",
-    "alt": "PCG Investment in Mrs. Green's Natural Market"
-  },
-  {
-    "id": 18,
-    "url": "http://www.planetorganic.com/",
-    "name": "Darren Krissie",
-    "designation": "CEO",
-    "company": "Planet Organic",
-    "description": "PCG took the reins in combining our business into a US – CN stronghold in natural and organic grocery, with a strong partnership focus and high values",
-    "image": "/images/portfolio/planetOrganic@3x.png",
-    "alt": "PCG Investment in Planet Organic"
-  },
-  {
-    "id": 19,
-    "url": "https://rudysbarbershop.com/",
-    "name": "Katie Trent",
-    "designation": "CEO",
-    "company": "Rudy's",
-    "description": "We appreciate PCG’s partnership in supporting Rudy’s growth in retail and products throughout the Northwestern US. They are great partners",
-    "image": "/images/portfolio/rudys@3x.png",
-    "alt": "PCG Investment in Rudy's"
-  },
-  {
-    "id": 22,
-    "url": "https://www.thealaskaclub.com/",
-    "name": "Robert Brewster",
-    "designation": "CEO",
-    "company": "The Alaska Club",
-    "description": "PCG has been a great partner to The Alaska Club, allowing us to expand our clubs to provide more services to our members and add new formats in our trampoline park and yoga studio formats",
-    "image": "/images/portfolio/theAlaskaClub@3x.png",
-    "alt": "PCG Investment in The Alaska Club"
-  },
-  {
-    "id": 24,
-    "url": "https://gymvmt.com/",
-    "name": "Rob Leach",
-    "designation": "Founder and CEO",
-    "company": "World Health",
-    "description": "PCG was responsible for acquisitions and organic growth that developed GYMVMT from a small Calgary based fitness club to a leader in Western Canada with multiple formats",
-    "image": "/images/portfolio/worldHelth@3x.png",
-    "alt": "PCG Investment in World Health"
-  }
-]
+{
+  "portfolioMain": [
+    {
+      "id": 1,
+      "url": "https://designerprotein.com/",
+      "name": "Paul Pruett",
+      "designation": "CEO",
+      "company": "Designer Wellness",
+      "description": "In the consumer health / wellness space there is no firm with better historic perspective, strategic insights and personal relationships than PCG",
+      "image": "/images/portfolio/designer_wellness_logo@3x.png",
+      "alt": "PCG Investment in Designer Wellness"
+    },
+    {
+      "id": 2,
+      "url": "https://www.sambazon.com/",
+      "name": "Ryan Black",
+      "designation": "CEO",
+      "company": "Sambazon",
+      "description": "PCG's industry knowledge and team has added value to our business each and every year",
+      "image": "/images/portfolio/sambazon@3x.png",
+      "alt": "PCG Investment in Sambazon"
+    },
+    {
+      "id": 3,
+      "url": "https://www.anytimefitness.com/",
+      "name": "Chuck Runyon",
+      "designation": "CEO/CO-Founder",
+      "company": "Anytime Fitness",
+      "description": "PCG's early investment has helped SEB accelerate our U.S. and global expansion, capitalizing on the company's robust growth rate and global consumer interest in fitness / health clubs",
+      "image": "/images/portfolio/anytime-fitness@3x.png",
+      "alt": "PCG Investment in Anytime Fitness"
+    },
+    {
+      "id": 4,
+      "url": "https://www.thedrybar.com/",
+      "name": "Michael Landau",
+      "designation": "CEO",
+      "company": "DryBar",
+      "description": "The process prior to bringing PCG on board was daunting and intimidating which changed 180 degrees after they took the helm, managed the process and secured multiple excellent partners to choose from",
+      "image": "/images/portfolio/drybar@3x.png",
+      "alt": "PCG Investment in DryBar"
+    },
+    {
+      "id": 5,
+      "url": "https://www.gaiaherbs.com/",
+      "name": "Ric Scalzo",
+      "designation": "CEO",
+      "company": "Gaia Herbs",
+      "description": "TBL and PCG under the leadership of Brent Knudsen have truly been a partner to develop real value for our company",
+      "image": "/images/portfolio/gaia-herbs@3x.png",
+      "alt": "PCG Investment in Gaia Herbs"
+    },
+    {
+      "id": 6,
+      "url": "https://numitea.com/#gsc.tab=0",
+      "name": "Ahmed Rahim",
+      "designation": "CEO",
+      "company": "Numi Tea",
+      "description": "PCG has provided Numi with good insights into the marketplace, opportunities for strategic partnerships and overall industry awareness, both for organizational and board growth",
+      "image": "/images/portfolio/numi-on-state@3x.png",
+      "alt": "PCG Investment in Numi Tea"
+    },
+    {
+      "id": 7,
+      "url": "https://www.promaxnutrition.com/",
+      "name": "Simon Goode",
+      "designation": "CEO",
+      "company": "Promax Nutrition",
+      "description": "We appreciate PCG's counsel and support. Their broad industry knowledge gives them a unique perspective that provides significant operating value.",
+      "image": "/images/portfolio/promax@3x.png",
+      "alt": "PCG Investment in Promax Nutrition"
+    },
+    {
+      "id": 8,
+      "url": "https://www.runragnar.com/",
+      "name": "Tanner Bell",
+      "designation": "Founder and CEO",
+      "company": "Ragnar Relay",
+      "description": "PCG delivers on what they promise and are true partner in the business. They provide much more than just capital",
+      "image": "/images/portfolio/ragnar@3x.png",
+      "alt": "PCG Investment in Ragnar Relay"
+    },
+    {
+      "id": 9,
+      "url": "https://surftech.com/",
+      "name": "Chris Dunn",
+      "designation": "CEO",
+      "company": "Surftech",
+      "description": "PCG has been a tremendous partner over the years; their insight and leadership has been very valuable",
+      "image": "/images/portfolio/surftech@3x.png",
+      "alt": "PCG Investment in Surftech"
+    },
+    {
+      "id": 10,
+      "url": "https://www.califiafarms.com/",
+      "name": "Greg Steltenpohl",
+      "designation": "Founder",
+      "company": "Califia Farms",
+      "description": "PCG has been a great partner to Califia Farms and our predecessor companies for many years. We consider PCG good friends in addition to being business partners. Most importantly PCG shares Califia Farms values",
+      "image": "/images/portfolio/califia-002.png",
+      "alt": "PCG Investment in Califia Farms"
+    },
+    {
+      "id": 11,
+      "url": "https://www.musclemilk.com/",
+      "name": "Mike Pickett",
+      "designation": "Founder and President",
+      "company": "CytoSport",
+      "description": "PCG allowed Cytosport to grow from a powder business to ready to drink, bars and more, more than tripling the size of our business before our sale to Hormel and later to Pepsi Co.",
+      "image": "/images/portfolio/crosport@3x.png",
+      "alt": "PCG Investment in CytoSport"
+    },
+    {
+      "id": 12,
+      "url": "https://www.frontstream.com/",
+      "name": "Steve Fafel",
+      "designation": "CEO",
+      "company": "Gift Works",
+      "description": "TBL/PCG understood our values based vision and provided a means for us grow and eventually find the right acquisition partner",
+      "image": "/images/portfolio/giftWorks@3x.png",
+      "alt": "PCG Investment in Gift Works"
+    },
+    {
+      "id": 14,
+      "url": "https://healthylivingnet.com/",
+      "name": "Jason Bliss",
+      "designation": "Founder",
+      "company": "Healthy Living Network",
+      "description": "PCG was responsible for bringing the capital and focus to our business that allowed HLN to grow throughout the west coast. PCG not only brings capital but a true spirit of partnership",
+      "image": "/images/portfolio/HealthyLiving@3x.png",
+      "alt": "PCG Investment in Healthy Living Network"
+    },
+    {
+      "id": 17,
+      "url": "https://greensnaturalfoods.com/",
+      "name": "Harold Hochberger",
+      "designation": "Founder",
+      "company": " Mrs. Green's Natural Market",
+      "description": "The PCG team provided us the opportunity to expand throughout the Northeastern corridor and eventually sell to Planet Organic creating a strong US / CN natural grocer",
+      "image": "/images/portfolio/MrsGreens@3x.png",
+      "alt": "PCG Investment in Mrs. Green's Natural Market"
+    },
+    {
+      "id": 18,
+      "url": "http://www.planetorganic.com/",
+      "name": "Darren Krissie",
+      "designation": "CEO",
+      "company": "Planet Organic",
+      "description": "PCG took the reins in combining our business into a US – CN stronghold in natural and organic grocery, with a strong partnership focus and high values",
+      "image": "/images/portfolio/planetOrganic@3x.png",
+      "alt": "PCG Investment in Planet Organic"
+    },
+    {
+      "id": 19,
+      "url": "https://rudysbarbershop.com/",
+      "name": "Katie Trent",
+      "designation": "CEO",
+      "company": "Rudy's",
+      "description": "We appreciate PCG’s partnership in supporting Rudy’s growth in retail and products throughout the Northwestern US. They are great partners",
+      "image": "/images/portfolio/rudys@3x.png",
+      "alt": "PCG Investment in Rudy's"
+    },
+    {
+      "id": 22,
+      "url": "https://www.thealaskaclub.com/",
+      "name": "Robert Brewster",
+      "designation": "CEO",
+      "company": "The Alaska Club",
+      "description": "PCG has been a great partner to The Alaska Club, allowing us to expand our clubs to provide more services to our members and add new formats in our trampoline park and yoga studio formats",
+      "image": "/images/portfolio/theAlaskaClub@3x.png",
+      "alt": "PCG Investment in The Alaska Club"
+    },
+    {
+      "id": 24,
+      "url": "https://gymvmt.com/",
+      "name": "Rob Leach",
+      "designation": "Founder and CEO",
+      "company": "World Health",
+      "description": "PCG was responsible for acquisitions and organic growth that developed GYMVMT from a small Calgary based fitness club to a leader in Western Canada with multiple formats",
+      "image": "/images/portfolio/worldHelth@3x.png",
+      "alt": "PCG Investment in World Health"
+    }
+  ],
+  "portfolioCriteria": [
+    {
+      "icon": "/Portfolio_card_icon/doller.svg",
+      "alt": "Dollar Icon",
+      "text": [
+        "Revenue at or approaching at least $10M, strong growth characteristics, and positive EBITDA history",
+        "Conservative leverage profile appropriately scaled to cash flow"
+      ]
+    },
+    {
+      "icon": "/Portfolio_card_icon/Proven.svg",
+      "alt": "Proven Management Icon",
+      "text": ["Proven management team, ethically responsible"]
+    },
+    {
+      "icon": "/Portfolio_card_icon/Leading_market.svg",
+      "alt": "Leading Market Icon",
+      "text": ["Leading market share in a large sector (or on that trajectory)"]
+    },
+    {
+      "icon": "/Portfolio_card_icon/Core_following.svg",
+      "alt": "Core Following Icon",
+      "text": [
+        "Core following with opportunity to expand into a larger consumer base"
+      ]
+    },
+    {
+      "icon": "/Portfolio_card_icon/Appropriate.svg",
+      "alt": "Appropriate Systems Icon",
+      "text": [
+        "Appropriate systems and focus on data-driven management practices"
+      ]
+    },
+    {
+      "icon": "/Portfolio_card_icon/Clear_thesis.svg",
+      "alt": "Clear Thesis Icon",
+      "text": [
+        "Clear thesis and alignment with management on how we will add value",
+        "Agreement on a PCG Investment Blueprint and 100-day action plan pre-close"
+      ]
+    },
+    {
+      "icon": "/Portfolio_card_icon/Clearly.svg",
+      "alt": "Clearly Defined Icon",
+      "text": [
+        "Clearly defined exit strategies",
+        "Clearly understood risks and opportunities"
+      ]
+    }
+  ],
+  "portfolioInvestment": [
+    {
+      "id": 1,
+      "hash": "#section5",
+      "title": "Fitness",
+      "image": "/home-fitness.png",
+      "alt": "Fitness",
+      "description": "PCG invests in companies that focus on fitness, health, and overall maintenance of the body, mind and spirit. This may include gyms/fitness centers, fitness equipment companies, clothing companies, sporting goods companies. The different methods by which people train for fitness has expanded greatly over the last couple of years and we aim to be at the forefront of these shifts.",
+      "logos": [
+        {
+          "src": "/logos/worldHealth.png",
+          "alt": "PCG Investment in World Health"
+        },
+        {
+          "src": "/logos/anytime-fitness@3x.png",
+          "alt": "PCG Investment in Self Esteem Brands"
+        },
+        {
+          "src": "/logos/ragnar@3x.png",
+          "alt": "PCG Investment in Ragnar Relay"
+        },
+        {
+          "src": "/logos/the_alaska_club.png",
+          "alt": "PCG Investment in The Alaska Club"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "hash": "#section4",
+      "title": "Food & Beverage",
+      "image": "/chocolate-pancake.png",
+      "alt": "Food & Beverage",
+      "description": "The food and beverage industry is comprised of all companies involved in processing raw food materials, packaging, and distributing them. This includes fresh, prepared foods as well as packaged foods, and nonalcoholic beverages.",
+      "logos": [
+        {
+          "src": "/logos/sambazon@3x.png",
+          "alt": "PCG Investment in Sambazon"
+        },
+        { "src": "/logos/gnoSport.png", "alt": "PCG Investment in CytoSport" },
+        {
+          "src": "/logos/promax@3x.png",
+          "alt": "PCG Investment in Promax Nutrition"
+        },
+        {
+          "src": "/logos/numi-on-state@3x.png",
+          "alt": "PCG Investment in Numi Tea"
+        },
+        {
+          "src": "/logos/califia.png",
+          "alt": "PCG Investment in Califia Farms"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "hash": "#section6",
+      "title": "Consumer Services / Retail",
+      "image": "/supermarket.png",
+      "alt": "Consumer Services / Retail",
+      "description": "Consumer Services refers to services for personal, household or domestic use or consumption. PCG is interested in consumer services geared toward consumer products in food, herbs, beverages, vitamins, pharmaceuticals, cosmetics, hair products, household cleaners, etc.",
+      "logos": [
+        {
+          "src": "/logos/healthy_living.png",
+          "alt": "PCG Investment in Healthy Living Network"
+        },
+        {
+          "src": "/logos/planet_organic.png",
+          "alt": "PCG Investment in Planet Organic"
+        },
+        {
+          "src": "/logos/mrs_greens.png",
+          "alt": "PCG Investment in Mrs. Green's"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "hash": "#section7",
+      "title": "Lifestyle",
+      "image": "/lifestyles.png",
+      "alt": "Lifestyle",
+      "description": "Lifestyle brands embody values, aspirations, interests, attitudes, or opinions of groups or cultures and seek to inspire, guide, and motivate people, with the goal of their products contributing to the definition of the consumer's way of life. A business becomes a lifestyle brand by focusing on evoking an emotional connection with its customers, creating a desire for a consumer to be affiliated with a particular group or brand.",
+      "logos": [
+        {
+          "src": "/logos/surftech@3x.png",
+          "alt": "PCG Investment in Surftech"
+        },
+        { "src": "/logos/drybar@3x.png", "alt": "PCG Investment in DryBar" },
+        {
+          "src": "/logos/giftWorks.png",
+          "alt": "PCG Investment in Gift Works"
+        },
+        { "src": "/logos/rudy's-1.png", "alt": "PCG Investment in Rudy's" }
+      ]
+    },
+    {
+      "id": 5,
+      "hash": "#section8",
+      "title": "Supplements",
+      "image": "/man-drinking.png",
+      "alt": "Supplements",
+      "description": "Supplements include vitamins, minerals, amino acids, and herbs or botanicals, as well as other substances that can be used to supplement the diet. Dietary supplements come in many forms, including tablets, capsules, powders, energy bars, and liquids. People use dietary supplements for a wide assortment of reasons - diets, medical conditions, boost energy, or to get a good night's sleep.",
+      "logos": [
+        {
+          "src": "/logos/designer_wellness_logo@3x.png",
+          "alt": "PCG Investment in Designer Wellness"
+        },
+        {
+          "src": "/logos/gaia-herbs@3x.png",
+          "alt": "PCG Investment in Gaia Herbs"
+        }
+      ]
+    }
+  ]
+}

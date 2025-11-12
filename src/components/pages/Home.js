@@ -1,25 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Portfolio2 } from "./Portfolio";
+import { PortfolioHome } from "../common/Portfolio";
 import ReactPlayer from "react-player";
 import { Helmet } from "react-helmet";
-import ScrollHandler from "./ScrollHandler";
-import HomeVideo from "../assets/low_size.mp4";
-import Quotes from "./Quotes";
+import ScrollHandler from "../common/ScrollHandler";
+import HomeVideo from "../../assets/low_size.mp4";
+import Quotes from "../common/Quotes";
 
-function Home() {
-  const location = useLocation(); // <-- use React Router v6 hook
+const Home = () => {
+  const location = useLocation();
+  const [isVideoLoaded, setIsVideoLoaded] = useState(false);
 
-  //==================Our Team==========================
-  const [isVideoLoaded, setIsVideoLoaded] = React.useState(false);
-  const src = HomeVideo;
+  const handleVideoLoad = () => setIsVideoLoaded(true);
 
-  const onLoadedData = () => {
-    setIsVideoLoaded(true);
-  };
-  //==================End Our Team==========================
-
-  // used for changing the CSS class in header color
+  // Used for changing the CSS class in header color
   if (location.pathname === "/") {
     document.body.classList.remove("inner-header");
   }
@@ -28,38 +22,42 @@ function Home() {
     <div>
       <Helmet>
         <title>
-          PCG Investors-Private equity firm for value-based investing
+          PCG Investors - Private equity firm for value-based investing
         </title>
         <meta
           name="description"
           content="PCG is a private equity investor fund for growth stage consumer investing in healthcare, fitness and lifestyle to create value as a growth capital investor"
         />
+        <link rel="canonical" href="https://www.pcginvestors.com/" />
       </Helmet>
-      <link rel="canonical" href="https://www.pcginvestors.com/"></link>
+
       <ScrollHandler />
+
       <div className="home-main-wrapper">
         <div className="home-banner">
           <img
             src="/frame-opt.png"
             className="video-thumb tiny"
             alt="PCG video thumb"
+            loading="lazy"
             style={{ display: isVideoLoaded ? "none" : "block" }}
           />
           <ReactPlayer
-            url={src}
-            playsinline={true}
+            url={HomeVideo}
+            playsinline
             preload="none"
             webkit-playsinline="yes"
-            playing={true}
-            loop={true}
-            muted={true}
+            playing
+            loop
+            muted
             controls={false}
             width="100%"
             height="100%"
-            onLoadedData={onLoadedData}
+            onLoadedData={handleVideoLoad}
             style={{ display: isVideoLoaded ? "block" : "none" }}
           />
         </div>
+
         <div className="our-value-wrapper">
           <div className="our-value">
             <div className="value-box">
@@ -76,10 +74,11 @@ function Home() {
             </div>
           </div>
         </div>
-        {/* Slider */}
+
         <div className="logo-slider">
-          <Portfolio2 />
+          <PortfolioHome />
         </div>
+
         <div className="quotes-wrapper">
           <div className="qt-slider">
             <div className="section-title">
@@ -97,42 +96,47 @@ function Home() {
               wellness, health-tech, and healthcare
             </p>
           </div>
+
           <div className="inv-category">
             <Link to="/portfolio-page/#section5" className="card">
               <div className="card_img">
-                <img src="/cat02.png" alt="Fitness" />
+                <img src="/cat02.png" alt="Fitness" loading="lazy" />
               </div>
               <div className="cardInfo">
                 <h2>Fitness</h2>
               </div>
             </Link>
+
             <Link to="/portfolio-page/#section4" className="card">
               <div className="card_img">
-                <img src="/cat01.png" alt="Food & Beverage" />
+                <img src="/cat01.png" alt="Food & Beverage" loading="lazy" />
               </div>
               <div className="cardInfo">
                 <h2>Food & Beverage</h2>
               </div>
             </Link>
+
             <Link to="/portfolio-page/#section6" className="card">
               <div className="card_img">
-                <img src="/cat03.png" alt="Consumer Services" />
+                <img src="/cat03.png" alt="Consumer Services" loading="lazy" />
               </div>
               <div className="cardInfo">
                 <h2>Consumer Services</h2>
               </div>
             </Link>
+
             <Link to="/portfolio-page/#section7" className="card">
               <div className="card_img">
-                <img src="/cat04.png" alt="Lifestyle" />
+                <img src="/cat04.png" alt="Lifestyle" loading="lazy" />
               </div>
               <div className="cardInfo">
                 <h2>Lifestyle</h2>
               </div>
             </Link>
+
             <Link to="/portfolio-page/#section8" className="card">
               <div className="card_img">
-                <img src="/cat05.png" alt="Supplements" />
+                <img src="/cat05.png" alt="Supplements" loading="lazy" />
               </div>
               <div className="cardInfo">
                 <h2>Supplements</h2>
@@ -146,20 +150,23 @@ function Home() {
             className="contact-img"
             src="/home-contact-banner.png"
             alt="PCG Banner Logo"
+            loading="lazy"
           />
           <img
             className="contact-img-mobile"
-            src="/contact/Mask Group 30.png"
+            src="/contact/Mask%20Group%2030.png"
             alt="PCG Banner Logo"
+            loading="lazy"
           />
+
           <div className="contact">
             <div className="content">
               <p>
-                Our &quot;partnership capital growth&quot; approach means partnering with
-                strong investment partners (other investors and/or founders &
-                management teams) and providing capital for growth in businesses
-                where we can add value based on our experience and focus in
-                healthy living.
+                Our &quot;partnership capital growth&quot; approach means
+                partnering with strong investment partners (other investors
+                and/or founders & management teams) and providing capital for
+                growth in businesses where we can add value based on our
+                experience and focus in healthy living.
               </p>
               <Link to="/contact">
                 <button>Contact Us</button>
@@ -170,6 +177,6 @@ function Home() {
       </div>
     </div>
   );
-}
+};
 
 export default Home;
