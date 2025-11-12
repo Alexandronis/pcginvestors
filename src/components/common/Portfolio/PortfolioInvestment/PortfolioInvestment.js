@@ -8,7 +8,7 @@ const PortfolioInvestment = ({ sectionRef, location }) => {
     "#section5",
     "#section6",
     "#section7",
-    "#section8"
+    "#section8",
   ];
 
   return (
@@ -16,9 +16,7 @@ const PortfolioInvestment = ({ sectionRef, location }) => {
       id="Investment"
       ref={sectionRef}
       className={
-        visibleHashes.includes(location.hash)
-          ? "show-section"
-          : "hide-section"
+        visibleHashes.includes(location.hash) ? "show-section" : "hide-section"
       }
     >
       <div className="content-wrapper">
@@ -31,7 +29,7 @@ const PortfolioInvestment = ({ sectionRef, location }) => {
         </div>
 
         <div className="investment-profile-wrapper">
-          {portfolioData.portfolioInvestment.map((item) => (
+          {portfolioData.portfolioInvestment.map(item => (
             <section id={item.hash} key={item.id}>
               <div className="investment-main-content">
                 <div className="discription_block_investment">
@@ -50,9 +48,7 @@ const PortfolioInvestment = ({ sectionRef, location }) => {
                             src="/Maskteam.svg"
                             alt="Green Card"
                           />
-                          <p className={`lable_p p${item.id}`}>
-                            {item.title}
-                          </p>
+                          <p className={`lable_p p${item.id}`}>{item.title}</p>
                         </div>
                         <p className="short-desc">{item.description}</p>
                         <div className="brand-logos">

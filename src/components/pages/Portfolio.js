@@ -2,7 +2,11 @@ import React, { useEffect, useRef } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import ScrollHandler from "../common/ScrollHandler";
-import { PortfolioCriteria, PortfolioInvestment, PortfolioSection } from "../common/Portfolio";
+import {
+  PortfolioCriteria,
+  PortfolioInvestment,
+  PortfolioSection,
+} from "../common/Portfolio";
 
 function Portfolio() {
   const navigate = useNavigate();
@@ -14,7 +18,10 @@ function Portfolio() {
 
   // Add inner-header class once
   useEffect(() => {
-    if (location.pathname === "/portfolio-page" || location.pathname === "/portfolio-page/") {
+    if (
+      location.pathname === "/portfolio-page" ||
+      location.pathname === "/portfolio-page/"
+    ) {
       document.body.classList.add("inner-header");
       localStorage.setItem("activePage", "portfolio");
     }
@@ -23,7 +30,7 @@ function Portfolio() {
   // Scroll to section on hash change
   useEffect(() => {
     const scrollOffset = 100;
-    const scrollToRef = (ref) => {
+    const scrollToRef = ref => {
       if (ref.current) {
         ref.current.scrollIntoView();
         window.scrollTo(0, window.scrollY - scrollOffset);
@@ -58,26 +65,46 @@ function Portfolio() {
         <div className="page-block-portfolio">
           <div className="switch-lable">
             <ul>
-              <li className={location.hash === "#Portfolio" || location.hash === "" ? "active-tab" : "disable-tab"}>
+              <li
+                className={
+                  location.hash === "#Portfolio" || location.hash === ""
+                    ? "active-tab"
+                    : "disable-tab"
+                }
+              >
                 <Link
                   to="/portfolio-page/#Portfolio"
-                  onClick={() => navigate("/portfolio-page/#Portfolio", { replace: true })}
+                  onClick={() =>
+                    navigate("/portfolio-page/#Portfolio", { replace: true })
+                  }
                 >
                   Portfolio
                 </Link>
               </li>
-              <li className={location.hash === "#Investment" ? "active-tab" : "disable-tab"}>
+              <li
+                className={
+                  location.hash === "#Investment" ? "active-tab" : "disable-tab"
+                }
+              >
                 <Link
                   to="/portfolio-page/#Investment"
-                  onClick={() => navigate("/portfolio-page/#Investment", { replace: true })}
+                  onClick={() =>
+                    navigate("/portfolio-page/#Investment", { replace: true })
+                  }
                 >
                   Investment
                 </Link>
               </li>
-              <li className={location.hash === "#Criteria" ? "active-tab" : "disable-tab"}>
+              <li
+                className={
+                  location.hash === "#Criteria" ? "active-tab" : "disable-tab"
+                }
+              >
                 <Link
                   to="/portfolio-page/#Criteria"
-                  onClick={() => navigate("/portfolio-page/#Criteria", { replace: true })}
+                  onClick={() =>
+                    navigate("/portfolio-page/#Criteria", { replace: true })
+                  }
                 >
                   Criteria
                 </Link>

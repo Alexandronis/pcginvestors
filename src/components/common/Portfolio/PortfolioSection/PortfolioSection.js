@@ -8,7 +8,9 @@ const LogoCard = ({ data, navigate }) => (
     tabIndex={0}
     className="logo-box"
     onClick={() => navigate("/client-page", { state: { data } })}
-    onKeyPress={(e) => e.key === "Enter" && navigate("/client-page", { state: { data } })}
+    onKeyPress={e =>
+      e.key === "Enter" && navigate("/client-page", { state: { data } })
+    }
   >
     <div className="logo-img-box">
       <img
@@ -26,15 +28,17 @@ const PortfolioSection = ({ location, sectionRef }) => {
   const storedOption = localStorage.getItem("portfolioOption");
   const [viewOption, setViewOption] = useState(storedOption || "Realized");
 
-  const handleChange = (e) => {
+  const handleChange = e => {
     const value = e.target.value;
     setViewOption(value);
     localStorage.setItem("portfolioOption", value);
   };
 
   // Filter by status
-  const realized = organisationData.filter((org) => org.status === "realized");
-  const unrealized = organisationData.filter((org) => org.status === "unrealized");
+  const realized = organisationData.filter(org => org.status === "realized");
+  const unrealized = organisationData.filter(
+    org => org.status === "unrealized"
+  );
 
   // Filter by category
   const categories = [
@@ -45,9 +49,9 @@ const PortfolioSection = ({ location, sectionRef }) => {
     { key: "supplement", label: "SUPPLEMENTS" },
   ];
 
-  const filteredByCategory = categories.map((cat) => ({
+  const filteredByCategory = categories.map(cat => ({
     ...cat,
-    items: organisationData.filter((org) => org.category === cat.key),
+    items: organisationData.filter(org => org.category === cat.key),
   }));
 
   return (
@@ -74,7 +78,12 @@ const PortfolioSection = ({ location, sectionRef }) => {
         <div className="select-menu">
           <label htmlFor="View">
             View by:
-            <select name="Views" id="Views" onChange={handleChange} value={viewOption}>
+            <select
+              name="Views"
+              id="Views"
+              onChange={handleChange}
+              value={viewOption}
+            >
               <option value="Realized">Unrealized / Realized</option>
               <option value="Category">Category</option>
             </select>
@@ -93,11 +102,13 @@ const PortfolioSection = ({ location, sectionRef }) => {
             </div>
             <div className="card-investments">
               <div className="card-wrapper">
-                {unrealized.map((data) => (
+                {unrealized.map(data => (
                   <LogoCard key={data.id} data={data} navigate={navigate} />
                 ))}
               </div>
-              <p className="ref-word">*These investments are partially realized.</p>
+              <p className="ref-word">
+                *These investments are partially realized.
+              </p>
             </div>
 
             {/* Realized Investments */}
@@ -108,7 +119,7 @@ const PortfolioSection = ({ location, sectionRef }) => {
             </div>
             <div className="card-investments">
               <div className="card-wrapper">
-                {realized.map((data) => (
+                {realized.map(data => (
                   <LogoCard key={data.id} data={data} navigate={navigate} />
                 ))}
               </div>
@@ -116,7 +127,7 @@ const PortfolioSection = ({ location, sectionRef }) => {
           </div>
         ) : (
           <div className="category">
-            {filteredByCategory.map((cat) =>
+            {filteredByCategory.map(cat =>
               cat.items.length > 0 ? (
                 <div key={cat.key} className="content-inner-box">
                   <div className="company-values">
@@ -126,8 +137,12 @@ const PortfolioSection = ({ location, sectionRef }) => {
                   </div>
                   <div className="card-investments">
                     <div className="card-wrapper">
-                      {cat.items.map((data) => (
-                        <LogoCard key={data.id} data={data} navigate={navigate} />
+                      {cat.items.map(data => (
+                        <LogoCard
+                          key={data.id}
+                          data={data}
+                          navigate={navigate}
+                        />
                       ))}
                     </div>
                   </div>

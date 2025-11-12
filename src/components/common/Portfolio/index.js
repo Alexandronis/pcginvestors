@@ -3,4 +3,9 @@ import PortfolioCriteria from "./PortfolioCriteria/PortfolioCriteria";
 import PortfolioInvestment from "./PortfolioInvestment/PortfolioInvestment";
 import PortfolioSection from "./PortfolioSection/PortfolioSection";
 
-export { PortfolioCriteria, PortfolioInvestment, PortfolioHome, PortfolioSection };
+export {
+  PortfolioCriteria,
+  PortfolioInvestment,
+  PortfolioHome,
+  PortfolioSection,
+};

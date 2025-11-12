@@ -66,9 +66,12 @@ const Contact = () => {
                         <div className="card_list_items contact-us-item">
                           <ul>
                             <li>
-                              PO Box 7,<br />
-                              Los Gatos,<br />
-                              CA, 95031<br />
+                              PO Box 7,
+                              <br />
+                              Los Gatos,
+                              <br />
+                              CA, 95031
+                              <br />
                               (vs One Embarcadero Center)
                             </li>
                           </ul>

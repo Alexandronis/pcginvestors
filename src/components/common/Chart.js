@@ -3,7 +3,7 @@ import charityData from "../../data/charity.json";
 
 const Chart = () => {
   const [onHover, setOnHover] = useState(9);
-  const handleMouseEnter = (index) => {
+  const handleMouseEnter = index => {
     onHover === index + 1 ? setOnHover(0) : setOnHover(index + 1);
   };
 
@@ -49,7 +49,9 @@ const Chart = () => {
                 onMouseLeave={handleMouseLeave}
               >
                 <img
-                  className={onHover === data.id + 1 ? "icon-none" : "icon-image"}
+                  className={
+                    onHover === data.id + 1 ? "icon-none" : "icon-image"
+                  }
                   src={data.logoRound}
                   alt={data.title}
                   loading="lazy"

@@ -6,7 +6,9 @@ const PortfolioCriteria = ({ sectionRef, location }) => {
     <section
       id="Criteria"
       ref={sectionRef}
-      className={location.hash === "#Criteria" ? "show-section" : "hide-section"}
+      className={
+        location.hash === "#Criteria" ? "show-section" : "hide-section"
+      }
     >
       <div className="content-wrapper">
         <div className="content-inner-box">

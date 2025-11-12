@@ -100,11 +100,7 @@ const Home = () => {
           <div className="inv-category">
             <Link to="/portfolio-page/#section5" className="card">
               <div className="card_img">
-                <img
-                  src="/cat02.png"
-                  alt="Fitness"
-                  loading="lazy"
-                />
+                <img src="/cat02.png" alt="Fitness" loading="lazy" />
               </div>
               <div className="cardInfo">
                 <h2>Fitness</h2>
@@ -113,11 +109,7 @@ const Home = () => {
 
             <Link to="/portfolio-page/#section4" className="card">
               <div className="card_img">
-                <img
-                  src="/cat01.png"
-                  alt="Food & Beverage"
-                  loading="lazy"
-                />
+                <img src="/cat01.png" alt="Food & Beverage" loading="lazy" />
               </div>
               <div className="cardInfo">
                 <h2>Food & Beverage</h2>
@@ -126,11 +118,7 @@ const Home = () => {
 
             <Link to="/portfolio-page/#section6" className="card">
               <div className="card_img">
-                <img
-                  src="/cat03.png"
-                  alt="Consumer Services"
-                  loading="lazy"
-                />
+                <img src="/cat03.png" alt="Consumer Services" loading="lazy" />
               </div>
               <div className="cardInfo">
                 <h2>Consumer Services</h2>
@@ -139,11 +127,7 @@ const Home = () => {
 
             <Link to="/portfolio-page/#section7" className="card">
               <div className="card_img">
-                <img
-                  src="/cat04.png"
-                  alt="Lifestyle"
-                  loading="lazy"
-                />
+                <img src="/cat04.png" alt="Lifestyle" loading="lazy" />
               </div>
               <div className="cardInfo">
                 <h2>Lifestyle</h2>
@@ -152,11 +136,7 @@ const Home = () => {
 
             <Link to="/portfolio-page/#section8" className="card">
               <div className="card_img">
-                <img
-                  src="/cat05.png"
-                  alt="Supplements"
-                  loading="lazy"
-                />
+                <img src="/cat05.png" alt="Supplements" loading="lazy" />
               </div>
               <div className="cardInfo">
                 <h2>Supplements</h2>

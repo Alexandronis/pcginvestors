@@ -111,9 +111,7 @@ const Header = () => {
                   smooth={true}
                   offset={-150}
                   duration={1500}
-                  onClick={() =>
-                    handleNavClick("/portfolio-page/#Portfolio")
-                  }
+                  onClick={() => handleNavClick("/portfolio-page/#Portfolio")}
                   onMouseEnter={() => handleMouseEnter(2)}
                 >
                   <p>Portfolio</p>
@@ -232,9 +230,7 @@ const Header = () => {
 
                   <li className="list">
                     <Link
-                      className={
-                        location.hash === "#Portfolio" ? "active" : ""
-                      }
+                      className={location.hash === "#Portfolio" ? "active" : ""}
                       to="/portfolio-page/#Portfolio"
                       spy={true}
                       hashSpy={true}

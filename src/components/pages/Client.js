@@ -37,11 +37,7 @@ const Client = () => {
         <div className="content-wrapper">
           <div className="content-inner-box">
             <button className="close-img" onClick={handleClick}>
-              <img
-                src="/close-btn.svg"
-                alt="close"
-                loading="lazy"
-              />
+              <img src="/close-btn.svg" alt="close" loading="lazy" />
             </button>
 
             <div className="company-values">

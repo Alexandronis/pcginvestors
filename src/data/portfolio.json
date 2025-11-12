@@ -198,9 +198,7 @@
     {
       "icon": "/Portfolio_card_icon/Leading_market.svg",
       "alt": "Leading Market Icon",
-      "text": [
-        "Leading market share in a large sector (or on that trajectory)"
-      ]
+      "text": ["Leading market share in a large sector (or on that trajectory)"]
     },
     {
       "icon": "/Portfolio_card_icon/Core_following.svg",
@@ -242,10 +240,22 @@
       "alt": "Fitness",
       "description": "PCG invests in companies that focus on fitness, health, and overall maintenance of the body, mind and spirit. This may include gyms/fitness centers, fitness equipment companies, clothing companies, sporting goods companies. The different methods by which people train for fitness has expanded greatly over the last couple of years and we aim to be at the forefront of these shifts.",
       "logos": [
-        { "src": "/logos/worldHealth.png", "alt": "PCG Investment in World Health" },
-        { "src": "/logos/anytime-fitness@3x.png", "alt": "PCG Investment in Self Esteem Brands" },
-        { "src": "/logos/ragnar@3x.png", "alt": "PCG Investment in Ragnar Relay" },
-        { "src": "/logos/the_alaska_club.png", "alt": "PCG Investment in The Alaska Club" }
+        {
+          "src": "/logos/worldHealth.png",
+          "alt": "PCG Investment in World Health"
+        },
+        {
+          "src": "/logos/anytime-fitness@3x.png",
+          "alt": "PCG Investment in Self Esteem Brands"
+        },
+        {
+          "src": "/logos/ragnar@3x.png",
+          "alt": "PCG Investment in Ragnar Relay"
+        },
+        {
+          "src": "/logos/the_alaska_club.png",
+          "alt": "PCG Investment in The Alaska Club"
+        }
       ]
     },
     {
@@ -256,11 +266,23 @@
       "alt": "Food & Beverage",
       "description": "The food and beverage industry is comprised of all companies involved in processing raw food materials, packaging, and distributing them. This includes fresh, prepared foods as well as packaged foods, and nonalcoholic beverages.",
       "logos": [
-        { "src": "/logos/sambazon@3x.png", "alt": "PCG Investment in Sambazon" },
+        {
+          "src": "/logos/sambazon@3x.png",
+          "alt": "PCG Investment in Sambazon"
+        },
         { "src": "/logos/gnoSport.png", "alt": "PCG Investment in CytoSport" },
-        { "src": "/logos/promax@3x.png", "alt": "PCG Investment in Promax Nutrition" },
-        { "src": "/logos/numi-on-state@3x.png", "alt": "PCG Investment in Numi Tea" },
-        { "src": "/logos/califia.png", "alt": "PCG Investment in Califia Farms" }
+        {
+          "src": "/logos/promax@3x.png",
+          "alt": "PCG Investment in Promax Nutrition"
+        },
+        {
+          "src": "/logos/numi-on-state@3x.png",
+          "alt": "PCG Investment in Numi Tea"
+        },
+        {
+          "src": "/logos/califia.png",
+          "alt": "PCG Investment in Califia Farms"
+        }
       ]
     },
     {
@@ -271,9 +293,18 @@
       "alt": "Consumer Services / Retail",
       "description": "Consumer Services refers to services for personal, household or domestic use or consumption. PCG is interested in consumer services geared toward consumer products in food, herbs, beverages, vitamins, pharmaceuticals, cosmetics, hair products, household cleaners, etc.",
       "logos": [
-        { "src": "/logos/healthy_living.png", "alt": "PCG Investment in Healthy Living Network" },
-        { "src": "/logos/planet_organic.png", "alt": "PCG Investment in Planet Organic" },
-        { "src": "/logos/mrs_greens.png", "alt": "PCG Investment in Mrs. Green's" }
+        {
+          "src": "/logos/healthy_living.png",
+          "alt": "PCG Investment in Healthy Living Network"
+        },
+        {
+          "src": "/logos/planet_organic.png",
+          "alt": "PCG Investment in Planet Organic"
+        },
+        {
+          "src": "/logos/mrs_greens.png",
+          "alt": "PCG Investment in Mrs. Green's"
+        }
       ]
     },
     {
@@ -284,9 +315,15 @@
       "alt": "Lifestyle",
       "description": "Lifestyle brands embody values, aspirations, interests, attitudes, or opinions of groups or cultures and seek to inspire, guide, and motivate people, with the goal of their products contributing to the definition of the consumer's way of life. A business becomes a lifestyle brand by focusing on evoking an emotional connection with its customers, creating a desire for a consumer to be affiliated with a particular group or brand.",
       "logos": [
-        { "src": "/logos/surftech@3x.png", "alt": "PCG Investment in Surftech" },
+        {
+          "src": "/logos/surftech@3x.png",
+          "alt": "PCG Investment in Surftech"
+        },
         { "src": "/logos/drybar@3x.png", "alt": "PCG Investment in DryBar" },
-        { "src": "/logos/giftWorks.png", "alt": "PCG Investment in Gift Works" },
+        {
+          "src": "/logos/giftWorks.png",
+          "alt": "PCG Investment in Gift Works"
+        },
         { "src": "/logos/rudy's-1.png", "alt": "PCG Investment in Rudy's" }
       ]
     },
@@ -298,8 +335,14 @@
       "alt": "Supplements",
       "description": "Supplements include vitamins, minerals, amino acids, and herbs or botanicals, as well as other substances that can be used to supplement the diet. Dietary supplements come in many forms, including tablets, capsules, powders, energy bars, and liquids. People use dietary supplements for a wide assortment of reasons - diets, medical conditions, boost energy, or to get a good night's sleep.",
       "logos": [
-        { "src": "/logos/designer_wellness_logo@3x.png", "alt": "PCG Investment in Designer Wellness" },
-        { "src": "/logos/gaia-herbs@3x.png", "alt": "PCG Investment in Gaia Herbs" }
+        {
+          "src": "/logos/designer_wellness_logo@3x.png",
+          "alt": "PCG Investment in Designer Wellness"
+        },
+        {
+          "src": "/logos/gaia-herbs@3x.png",
+          "alt": "PCG Investment in Gaia Herbs"
+        }
       ]
     }
   ]

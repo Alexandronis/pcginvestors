@@ -26,8 +26,10 @@ const Footer = () => {
               <li>
                 <i className="fa fa-map-marker"></i>
                 <p>
-                  PO Box 7,<br />
-                  Los Gatos,<br />
+                  PO Box 7,
+                  <br />
+                  Los Gatos,
+                  <br />
                   CA 95031
                 </p>
               </li>
@@ -140,8 +142,8 @@ const Footer = () => {
 
         <div className="footer-bottom">
           <p>
-            Copyright © {currentYear} Partnership Capital Growth, LLC All Rights
-            Reserved
+            Copyright © {currentYear} Partnership Capital Growth, LLC All
+            Rights Reserved
           </p>
         </div>
       </footer>
@@ -200,8 +202,10 @@ const Footer = () => {
               <li>
                 <i className="fa fa-map-marker"></i>
                 <p>
-                  2 N Santa Cruz,<br />
-                  Suite 201 Los Gatos,<br />
+                  2 N Santa Cruz,
+                  <br />
+                  Suite 201 Los Gatos,
+                  <br />
                   CA 95030
                 </p>
               </li>
@@ -280,8 +284,8 @@ const Footer = () => {
 
         <div className="footer-bottom">
           <p>
-            Copyright © {currentYear} Partnership Capital Growth, LLC All Rights
-            Reserved
+            Copyright © {currentYear} Partnership Capital Growth, LLC All
+            Rights Reserved
           </p>
         </div>
       </div>
