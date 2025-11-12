@@ -1,16 +1,16 @@
 import React, { Suspense, lazy } from "react";
 import { Routes, Route } from "react-router-dom";
 import "./styles/main.scss";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import PageLoader from "./components/PageLoader";
+import Header from "./components/layout/Header";
+import Footer from "./components/layout/Footer";
+import PageLoader from "./components/layout/PageLoader";
 import NotFoundPage from "./404";
 
-const Home = lazy(() => import("./components/Home"));
-const About = lazy(() => import("./components/About"));
-const Contact = lazy(() => import("./components/Contact"));
+const Home = lazy(() => import("./components/pages/Home"));
+const About = lazy(() => import("./components/pages/About"));
+const Contact = lazy(() => import("./components/pages/Contact"));
 const PortfolioPage = lazy(() => import("./components/PortfolioPage"));
-const ClientPage = lazy(() => import("./components/ClientPage"));
+const ClientPage = lazy(() => import("./components/pages/Client"));
 
 const App = () => {
   return (
