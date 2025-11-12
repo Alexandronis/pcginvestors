@@ -5,15 +5,19 @@ const ScrollHandler = () => {
   const location = useLocation();
 
   useEffect(() => {
-    const elementId = location.hash.replace("#", ""); // remove '#' for getElementById
-    const element = document.getElementById(elementId);
+    const scrollToHashElement = () => {
+      const elementId = location.hash.replace("#", "");
+      const element = document.getElementById(elementId);
 
-    setTimeout(() => {
       window.scrollTo({
         behavior: "auto",
         top: element ? element.offsetTop - 100 : 0, // adjust offset if needed
       });
-    }, 0); // 0ms timeout ensures DOM is ready
+    };
+
+    // Use small timeout to ensure DOM is ready
+    const timer = setTimeout(scrollToHashElement, 0);
+    return () => clearTimeout(timer);
   }, [location]);
 
   return null;
