@@ -6,45 +6,37 @@ import { PortfolioCriteria, PortfolioInvestment, PortfolioSection } from "./comm
 
 function PortfolioPage() {
   const navigate = useNavigate();
+  const location = useLocation();
 
-  const Portfolio = useRef();
-  const Investment = useRef();
-  const Criteria = useRef();
-  const Location = useLocation();
+  const portfolioRef = useRef(null);
+  const investmentRef = useRef(null);
+  const criteriaRef = useRef(null);
 
-  if (Location.pathname === "/portfolio-page") {
-    document.body.classList.add("inner-header");
-  }
-
+  // Add inner-header class once
   useEffect(() => {
-    if (Location.hash === "#Portfolio" && Portfolio.current) {
-      Portfolio.current.scrollIntoView();
-      window.scrollTo(0, window.scrollY - 100);
-    }
-    if (Location.hash === "#Investment" && Investment.current) {
-      Investment.current.scrollIntoView();
-      window.scrollTo(0, window.scrollY - 100);
-    }
-    if (Location.hash === "#Criteria" && Criteria.current) {
-      Criteria.current.scrollIntoView();
-      window.scrollTo(0, window.scrollY - 100);
-    }
-    if (Location.hash.includes("section")) {
-      setTimeout(() => {
-        window.scrollTo(0, window.scrollY - 100);
-      });
-    }
-    if (Location.pathname === "/portfolio-page" && Portfolio.current) {
-      Portfolio.current.scrollIntoView();
-      window.scrollTo(0, window.scrollY - 100);
-    }
-    if (Location.pathname === "/portfolio-page/") {
+    if (location.pathname === "/portfolio-page" || location.pathname === "/portfolio-page/") {
       document.body.classList.add("inner-header");
-    }
-    if (Location.pathname === "/portfolio-page") {
       localStorage.setItem("activePage", "portfolio");
     }
-  }, [Location]);
+  }, [location.pathname]);
+
+  // Scroll to section on hash change
+  useEffect(() => {
+    const scrollOffset = 100;
+    const scrollToRef = (ref) => {
+      if (ref.current) {
+        ref.current.scrollIntoView();
+        window.scrollTo(0, window.scrollY - scrollOffset);
+      }
+    };
+
+    if (location.hash === "#Portfolio") scrollToRef(portfolioRef);
+    if (location.hash === "#Investment") scrollToRef(investmentRef);
+    if (location.hash === "#Criteria") scrollToRef(criteriaRef);
+    if (location.hash.includes("section")) {
+      setTimeout(() => window.scrollTo(0, window.scrollY - scrollOffset));
+    }
+  }, [location.hash]);
 
   return (
     <div>
@@ -60,81 +52,43 @@ function PortfolioPage() {
       <link
         rel="canonical"
         href="https://www.pcginvestors.com/portfolio-page"
-      ></link>
+      />
       <div className="inner-page-wrapper portfoilo-wrapper">
         <ScrollHandler />
         <div className="page-block-portfolio">
           <div className="switch-lable">
             <ul>
-              <li
-                className={
-                  Location.hash === "#Portfolio" || Location.hash === ""
-                    ? "active-tab"
-                    : "disable-tab"
-                }
-              >
+              <li className={location.hash === "#Portfolio" || location.hash === "" ? "active-tab" : "disable-tab"}>
                 <Link
                   to="/portfolio-page/#Portfolio"
-                  onClick={() =>
-                    navigate("/portfolio-page/#Portfolio", { replace: true })
-                  }
+                  onClick={() => navigate("/portfolio-page/#Portfolio", { replace: true })}
                 >
                   Portfolio
                 </Link>
               </li>
-              <li
-                className={
-                  Location.hash === "#Investment" ? "active-tab" : "disable-tab"
-                }
-              >
+              <li className={location.hash === "#Investment" ? "active-tab" : "disable-tab"}>
                 <Link
                   to="/portfolio-page/#Investment"
-                  onClick={() =>
-                    navigate("/portfolio-page/#Investment", { replace: true })
-                  }
+                  onClick={() => navigate("/portfolio-page/#Investment", { replace: true })}
                 >
                   Investment
                 </Link>
               </li>
-              <li
-                className={
-                  Location.hash === "#Criteria" ? "active-tab" : "disable-tab"
-                }
-              >
+              <li className={location.hash === "#Criteria" ? "active-tab" : "disable-tab"}>
                 <Link
                   to="/portfolio-page/#Criteria"
-                  onClick={() =>
-                    navigate("/portfolio-page/#Criteria", { replace: true })
-                  }
+                  onClick={() => navigate("/portfolio-page/#Criteria", { replace: true })}
                 >
                   Criteria
                 </Link>
               </li>
             </ul>
           </div>
-          <div>
-            {/* Section */}
-            <PortfolioSection
-              location={Location}
-              sectionRef={el => {
-                Portfolio.current = el;
-              }}
-            />
-            {/* Investment */}
-            <PortfolioInvestment
-              location={Location}
-              sectionRef={el => {
-                Investment.current = el;
-              }}
-            />
-            {/* Criteria */}
-            <PortfolioCriteria
-              location={Location}
-              sectionRef={el => {
-                Criteria.current = el;
-              }}
-            />
-          </div>
+
+          {/* Sections */}
+          <PortfolioSection location={location} sectionRef={portfolioRef} />
+          <PortfolioInvestment location={location} sectionRef={investmentRef} />
+          <PortfolioCriteria location={location} sectionRef={criteriaRef} />
         </div>
       </div>
     </div>
