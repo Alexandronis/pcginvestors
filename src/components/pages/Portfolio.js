@@ -1,10 +1,10 @@
 import React, { useEffect, useRef } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet";
-import ScrollHandler from "./common/ScrollHandler";
-import { PortfolioCriteria, PortfolioInvestment, PortfolioSection } from "./common/Portfolio";
+import ScrollHandler from "../common/ScrollHandler";
+import { PortfolioCriteria, PortfolioInvestment, PortfolioSection } from "../common/Portfolio";
 
-function PortfolioPage() {
+function Portfolio() {
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -95,4 +95,4 @@ function PortfolioPage() {
   );
 }
 
-export default PortfolioPage;
+export default Portfolio;

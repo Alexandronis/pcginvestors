@@ -9,7 +9,7 @@ import NotFoundPage from "./404";
 const Home = lazy(() => import("./components/pages/Home"));
 const About = lazy(() => import("./components/pages/About"));
 const Contact = lazy(() => import("./components/pages/Contact"));
-const PortfolioPage = lazy(() => import("./components/PortfolioPage"));
+const PortfolioPage = lazy(() => import("./components/pages/Portfolio"));
 const ClientPage = lazy(() => import("./components/pages/Client"));
 
 const App = () => {
