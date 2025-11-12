@@ -19,9 +19,7 @@ export const register = config => {
 
       if (isLocalhost) {
         checkValidServiceWorker(swUrl, config);
-        navigator.serviceWorker.ready.then(() => {
-          console.log("Service Worker ready on localhost");
-        });
+        navigator.serviceWorker.ready.then(() => {});
       } else {
         registerValidSW(swUrl, config);
       }
@@ -67,10 +65,7 @@ const checkValidServiceWorker = (swUrl, config) => {
       } else {
         registerValidSW(swUrl, config);
       }
-    })
-    .catch(() =>
-      console.log("No internet connection. App is running in offline mode.")
-    );
+    });
 };
 
 export const unregister = () => {
