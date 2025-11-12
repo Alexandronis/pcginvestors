@@ -7,7 +7,7 @@ import PortfolioHover from "./OnHover/PortfolioHover";
 import ContactHover from "./OnHover/ContactHover";
 import TeamHover from "./OnHover/TeamHover";
 
-function Header() {
+const Header = () => {
   const [isShown, setIsShown] = useState(0);
   const [scroll, setScroll] = useState(false);
   const navigate = useNavigate();
@@ -19,6 +19,17 @@ function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // --- Handlers ---
+  const handleMouseLeave = () => setIsShown(0);
+
+  const handleLogoClick = () => {
+    localStorage.setItem("activePage", "");
+  };
+
+  const handleLogoKeyPress = e => {
+    if (e.key === "Enter") localStorage.setItem("activePage", "");
+  };
+
   const menuOnclick = () => {
     const el = document.getElementById("burgerBtnMob");
     if (el) el.checked = false;
@@ -28,25 +39,30 @@ function Header() {
     localStorage.removeItem("portfolioOption");
   };
 
+  const handleNavClick = (path, replace = true) => {
+    menuOnclick();
+    navigate(path, { replace });
+  };
+
+  const handleMouseEnter = index => {
+    setIsShown(index);
+  };
+
   return (
     <div
       className={scroll ? "App-header bg-black" : "App-header bg-white"}
-      onMouseLeave={() => setIsShown(0)}
+      onMouseLeave={handleMouseLeave}
     >
       <header className="main-header">
         <div
           role="button"
           tabIndex={0}
           className="logo"
-          onClick={() => {
-            localStorage.setItem("activePage", "");
-          }}
-          onKeyPress={e =>
-            e.key === "Enter" && localStorage.setItem("activePage", "")
-          }
+          onClick={handleLogoClick}
+          onKeyPress={handleLogoKeyPress}
         >
           <a href="/">
-            <img src="/pcg-logo.png" alt="PCG Logo" />
+            <img src="/pcg-logo.png" alt="PCG Logo" loading="lazy" />
           </a>
         </div>
 
@@ -68,11 +84,8 @@ function Header() {
                   smooth={true}
                   offset={-150}
                   duration={1500}
-                  onClick={() => {
-                    menuOnclick();
-                    navigate("/about", { replace: true });
-                  }}
-                  onMouseEnter={() => setIsShown(1)}
+                  onClick={() => handleNavClick("/about")}
+                  onMouseEnter={() => handleMouseEnter(1)}
                 >
                   <p>About Us</p>
                   <span></span>
@@ -98,11 +111,10 @@ function Header() {
                   smooth={true}
                   offset={-150}
                   duration={1500}
-                  onClick={() => {
-                    menuOnclick();
-                    navigate("/portfolio-page/#Portfolio", { replace: true });
-                  }}
-                  onMouseEnter={() => setIsShown(2)}
+                  onClick={() =>
+                    handleNavClick("/portfolio-page/#Portfolio")
+                  }
+                  onMouseEnter={() => handleMouseEnter(2)}
                 >
                   <p>Portfolio</p>
                   <span></span>
@@ -126,11 +138,8 @@ function Header() {
                   smooth={true}
                   offset={-150}
                   duration={1500}
-                  onClick={() => {
-                    menuOnclick();
-                    navigate("/about/#our-team", { replace: true });
-                  }}
-                  onMouseEnter={() => setIsShown(3)}
+                  onClick={() => handleNavClick("/about/#our-team")}
+                  onMouseEnter={() => handleMouseEnter(3)}
                 >
                   <p>Team</p>
                   <span></span>
@@ -154,11 +163,8 @@ function Header() {
                   smooth={true}
                   offset={-150}
                   duration={2500}
-                  onClick={() => {
-                    menuOnclick();
-                    navigate("/contact", { replace: true });
-                  }}
-                  onMouseEnter={() => setIsShown(4)}
+                  onClick={() => handleNavClick("/contact")}
+                  onMouseEnter={() => handleMouseEnter(4)}
                 >
                   <p>Contact</p>
                   <span></span>
@@ -182,7 +188,7 @@ function Header() {
         <nav>
           <div className="logo">
             <a href="/">
-              <img src="/pcg-logo.png" alt="PCG Logo" />
+              <img src="/pcg-logo.png" alt="PCG Logo" loading="lazy" />
             </a>
           </div>
           <div className="menu">
@@ -203,10 +209,7 @@ function Header() {
                       smooth={true}
                       offset={-150}
                       duration={1500}
-                      onClick={() => {
-                        menuOnclick();
-                        navigate("/about", { replace: true });
-                      }}
+                      onClick={() => handleNavClick("/about")}
                     >
                       About Us
                     </Link>
@@ -221,10 +224,7 @@ function Header() {
                       smooth={true}
                       offset={-150}
                       duration={1500}
-                      onClick={() => {
-                        menuOnclick();
-                        navigate("/about/#our-team", { replace: true });
-                      }}
+                      onClick={() => handleNavClick("/about/#our-team")}
                     >
                       Team
                     </Link>
@@ -232,19 +232,18 @@ function Header() {
 
                   <li className="list">
                     <Link
-                      className={location.hash === "#Portfolio" ? "active" : ""}
+                      className={
+                        location.hash === "#Portfolio" ? "active" : ""
+                      }
                       to="/portfolio-page/#Portfolio"
                       spy={true}
                       hashSpy={true}
                       smooth={true}
                       offset={-150}
                       duration={1500}
-                      onClick={() => {
-                        menuOnclick();
-                        navigate("/portfolio-page/#Portfolio", {
-                          replace: true,
-                        });
-                      }}
+                      onClick={() =>
+                        handleNavClick("/portfolio-page/#Portfolio")
+                      }
                     >
                       Portfolio
                     </Link>
@@ -261,12 +260,9 @@ function Header() {
                       smooth={true}
                       offset={-150}
                       duration={1500}
-                      onClick={() => {
-                        menuOnclick();
-                        navigate("/portfolio-page/#Investment", {
-                          replace: true,
-                        });
-                      }}
+                      onClick={() =>
+                        handleNavClick("/portfolio-page/#Investment")
+                      }
                     >
                       Investment Categories
                     </Link>
@@ -281,12 +277,9 @@ function Header() {
                       smooth={true}
                       offset={-150}
                       duration={1500}
-                      onClick={() => {
-                        menuOnclick();
-                        navigate("/portfolio-page/#Criteria", {
-                          replace: true,
-                        });
-                      }}
+                      onClick={() =>
+                        handleNavClick("/portfolio-page/#Criteria")
+                      }
                     >
                       Criteria
                     </Link>
@@ -303,10 +296,7 @@ function Header() {
                       smooth={true}
                       offset={-150}
                       duration={2500}
-                      onClick={() => {
-                        menuOnclick();
-                        navigate("/contact", { replace: true });
-                      }}
+                      onClick={() => handleNavClick("/contact")}
                     >
                       Contact
                     </Link>
@@ -319,6 +309,6 @@ function Header() {
       </header>
     </div>
   );
-}
+};
 
 export default Header;
